@@ -1,0 +1,120 @@
+--------------------------------------------
+
+20150317_182627_TTOF5600_1ug_64w_Spectronaut7_Report.FG.NormalizedTotalPeakArea
+identification: 5940
+replication: 0.0588236595232838
+accuracy: 
+  A:B 
+0.923 
+precision: 0.0491203139788561
+separation: 
+                  A:B
+HUMAN-YEAST 0.9416483
+HUMAN-ECOLI 0.9514672
+YEAST-ECOLI 0.9807080
+
+--------------------------------------------
+
+20150317_182627_TTOF5600_1ug_64w_Spectronaut7_Report.FG.TotalPeakArea
+identification: 5940
+replication: 0.0618500095434645
+accuracy: 
+  A:B 
+0.924 
+precision: 0.0507937504759432
+separation: 
+                  A:B
+HUMAN-YEAST 0.9425277
+HUMAN-ECOLI 0.9507755
+YEAST-ECOLI 0.9806432
+
+--------------------------------------------
+
+20150317_215925_TTOF6600_1ug_32w_Spectronaut7_Report.FG.NormalizedTotalPeakArea
+identification: 6269
+replication: 0.0414921912229174
+accuracy: 
+ A:B 
+0.93 
+precision: 0.0544080475067763
+separation: 
+                  A:B
+HUMAN-YEAST 0.9262309
+HUMAN-ECOLI 0.9310814
+YEAST-ECOLI 0.9672650
+
+--------------------------------------------
+
+20150317_215925_TTOF6600_1ug_32w_Spectronaut7_Report.FG.TotalPeakArea
+identification: 6269
+replication: 0.0672710271502978
+accuracy: 
+  A:B 
+0.933 
+precision: 0.0436007850757655
+separation: 
+                  A:B
+HUMAN-YEAST 0.9298873
+HUMAN-ECOLI 0.9312233
+YEAST-ECOLI 0.9686157
+
+--------------------------------------------
+
+20150318_003107_TTOF6600_1ug_64w_Spectronaut7_Report.FG.NormalizedTotalPeakArea
+identification: 6539
+replication: 0.0377034868573529
+accuracy: 
+ A:B 
+0.94 
+precision: 0.0417491941520693
+separation: 
+                  A:B
+HUMAN-YEAST 0.9585444
+HUMAN-ECOLI 0.9642619
+YEAST-ECOLI 0.9826064
+
+--------------------------------------------
+
+20150318_003107_TTOF6600_1ug_64w_Spectronaut7_Report.FG.TotalPeakArea
+identification: 6539
+replication: 0.0673502886689724
+accuracy: 
+  A:B 
+0.944 
+precision: 0.0274288616394212
+separation: 
+                  A:B
+HUMAN-YEAST 0.9633590
+HUMAN-ECOLI 0.9626538
+YEAST-ECOLI 0.9831670
+
+--------------------------------------------
+
+20150318_162129_TTOF5600_1ug_32w_Spectronaut7_Report.FG.NormalizedTotalPeakArea
+identification: 5476
+replication: 0.0625180628558591
+accuracy: 
+  A:B 
+0.903 
+precision: 0.134444565106812
+separation: 
+                  A:B
+HUMAN-YEAST 0.8923283
+HUMAN-ECOLI 0.9043557
+YEAST-ECOLI 0.9520902
+
+--------------------------------------------
+
+20150318_162129_TTOF5600_1ug_32w_Spectronaut7_Report.FG.TotalPeakArea
+identification: 5476
+replication: 0.0698670362401782
+accuracy: 
+  A:B 
+0.903 
+precision: 0.131448731549747
+separation: 
+                  A:B
+HUMAN-YEAST 0.8922308
+HUMAN-ECOLI 0.9034685
+YEAST-ECOLI 0.9518404
+

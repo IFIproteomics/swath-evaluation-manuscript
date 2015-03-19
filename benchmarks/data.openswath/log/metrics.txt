@@ -1,0 +1,180 @@
+--------------------------------------------
+
+TTOF5600_1ug_32w_Sample_Quant_exp
+identification: 4393
+replication: 0.0084457694850624
+accuracy: 
+  A:B 
+0.993 
+precision: 1.57903105167223
+separation: 
+                  A:B
+HUMAN-YEAST 0.6469385
+HUMAN-ECOLI 0.6441011
+YEAST-ECOLI 0.7331528
+
+--------------------------------------------
+
+TTOF5600_1ug_32w_Sample_Quant_exp_noLog
+identification: 4393
+replication: 0.0709866424846458
+accuracy: 
+  A:B 
+0.946 
+precision: 1.56364527303772
+separation: 
+                  A:B
+HUMAN-YEAST 0.6452197
+HUMAN-ECOLI 0.6426701
+YEAST-ECOLI 0.7313288
+
+--------------------------------------------
+
+TTOF5600_1ug_32w_alfq_proteininference1_output
+identification: 4068
+replication: 0.0402329075474244
+accuracy: 
+  A:B 
+0.944 
+precision: 0.641790711856118
+separation: 
+                  A:B
+HUMAN-YEAST 0.9371775
+HUMAN-ECOLI 0.9386065
+YEAST-ECOLI 0.9788801
+
+--------------------------------------------
+
+TTOF5600_1ug_64w_Sample_Quant_exp
+identification: 5142
+replication: 0.0076771449113423
+accuracy: 
+  A:B 
+0.993 
+precision: 1.56320872133856
+separation: 
+                  A:B
+HUMAN-YEAST 0.7056992
+HUMAN-ECOLI 0.7178757
+YEAST-ECOLI 0.8171861
+
+--------------------------------------------
+
+TTOF5600_1ug_64w_Sample_Quant_exp_noLog
+identification: 5142
+replication: 0.0615310053368244
+accuracy: 
+ A:B 
+0.95 
+precision: 1.44721351805193
+separation: 
+                  A:B
+HUMAN-YEAST 0.7053399
+HUMAN-ECOLI 0.7179946
+YEAST-ECOLI 0.8231123
+
+--------------------------------------------
+
+TTOF5600_1ug_64w_alfq_proteininference1_output
+identification: 4845
+replication: 0.0381764348513979
+accuracy: 
+  A:B 
+0.953 
+precision: 0.461141692322628
+separation: 
+                  A:B
+HUMAN-YEAST 0.9668604
+HUMAN-ECOLI 0.9819938
+YEAST-ECOLI 0.9907613
+
+--------------------------------------------
+
+TTOF6600_1ug_32w_Sample_Quant_exp
+identification: 4931
+replication: 0.00740105115409718
+accuracy: 
+  A:B 
+0.993 
+precision: 1.56289500680616
+separation: 
+                  A:B
+HUMAN-YEAST 0.7392982
+HUMAN-ECOLI 0.7150123
+YEAST-ECOLI 0.8346632
+
+--------------------------------------------
+
+TTOF6600_1ug_32w_Sample_Quant_exp_noLog
+identification: 4931
+replication: 0.0699552677862991
+accuracy: 
+  A:B 
+0.943 
+precision: 1.41656442374027
+separation: 
+                  A:B
+HUMAN-YEAST 0.7358956
+HUMAN-ECOLI 0.7161928
+YEAST-ECOLI 0.8338387
+
+--------------------------------------------
+
+TTOF6600_1ug_32w_alfq_proteininference1_output
+identification: 4601
+replication: 0.0711575201591159
+accuracy: 
+  A:B 
+0.942 
+precision: 0.567980816086998
+separation: 
+                  A:B
+HUMAN-YEAST 0.9534746
+HUMAN-ECOLI 0.9438737
+YEAST-ECOLI 0.9812003
+
+--------------------------------------------
+
+TTOF6600_1ug_64w_Sample_Quant_exp
+identification: 5472
+replication: 0.0059211345178729
+accuracy: 
+  A:B 
+0.995 
+precision: 1.55458044211859
+separation: 
+                  A:B
+HUMAN-YEAST 0.8224636
+HUMAN-ECOLI 0.7877797
+YEAST-ECOLI 0.8941042
+
+--------------------------------------------
+
+TTOF6600_1ug_64w_Sample_Quant_exp_noLog
+identification: 5472
+replication: 0.0531962218019389
+accuracy: 
+  A:B 
+0.962 
+precision: 1.36081257412492
+separation: 
+                  A:B
+HUMAN-YEAST 0.8181414
+HUMAN-ECOLI 0.7918320
+YEAST-ECOLI 0.8989953
+
+--------------------------------------------
+
+TTOF6600_1ug_64w_alfq_proteininference1_output
+identification: 5295
+replication: 0.0552479292187479
+accuracy: 
+  A:B 
+0.949 
+precision: 0.414223521754527
+separation: 
+                  A:B
+HUMAN-YEAST 0.9738827
+HUMAN-ECOLI 0.9701401
+YEAST-ECOLI 0.9913170
+

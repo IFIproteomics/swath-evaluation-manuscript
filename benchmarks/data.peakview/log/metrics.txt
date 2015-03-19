@@ -1,0 +1,150 @@
+--------------------------------------------
+
+TTOF5600_1ug_32w_cfg1
+identification: 4460
+replication: 0.0607607853114024
+accuracy: 
+  A:B 
+0.905 
+precision: 0.303475283209115
+separation: 
+                  A:B
+HUMAN-YEAST 0.9221152
+HUMAN-ECOLI 0.9339405
+YEAST-ECOLI 0.9715107
+
+--------------------------------------------
+
+TTOF5600_1ug_32w_standard_cfg
+identification: 4379
+replication: 0.114183491737316
+accuracy: 
+  A:B 
+0.852 
+precision: 0.422080409171382
+separation: 
+                  A:B
+HUMAN-YEAST 0.8647683
+HUMAN-ECOLI 0.9247500
+YEAST-ECOLI 0.9667464
+
+--------------------------------------------
+
+TTOF5600_1ug_64w_cfg1
+identification: 5640
+replication: 0.0617591198630447
+accuracy: 
+  A:B 
+0.899 
+precision: 0.228377302964243
+separation: 
+                  A:B
+HUMAN-YEAST 0.9235586
+HUMAN-ECOLI 0.9398657
+YEAST-ECOLI 0.9770462
+
+--------------------------------------------
+
+TTOF5600_1ug_64w_cfg2
+identification: 5578
+replication: 0.0612647419045386
+accuracy: 
+  A:B 
+0.905 
+precision: 0.235891442438619
+separation: 
+                  A:B
+HUMAN-YEAST 0.9126704
+HUMAN-ECOLI 0.9379514
+YEAST-ECOLI 0.9741291
+
+--------------------------------------------
+
+TTOF6600_1ug_32w_cfg1
+identification: 5152
+replication: 0.0816682953470793
+accuracy: 
+  A:B 
+0.913 
+precision: 0.20389187278616
+separation: 
+                  A:B
+HUMAN-YEAST 0.9305427
+HUMAN-ECOLI 0.9531304
+YEAST-ECOLI 0.9790079
+
+--------------------------------------------
+
+TTOF6600_1ug_64w_cfg1
+identification: 6227
+replication: 0.0663267980014804
+accuracy: 
+  A:B 
+0.913 
+precision: 0.166480187404632
+separation: 
+                  A:B
+HUMAN-YEAST 0.9581943
+HUMAN-ECOLI 0.9531975
+YEAST-ECOLI 0.9840402
+
+--------------------------------------------
+
+TTOF6600_1ug_64w_cfg2
+identification: 6238
+replication: 0.0653739229314442
+accuracy: 
+  A:B 
+0.914 
+precision: 0.157845405433324
+separation: 
+                  A:B
+HUMAN-YEAST 0.9560533
+HUMAN-ECOLI 0.9573953
+YEAST-ECOLI 0.9861918
+
+--------------------------------------------
+
+TTOF6600_1ug_64w_cfg3
+identification: 6243
+replication: 0.0658071642860939
+accuracy: 
+  A:B 
+0.912 
+precision: 0.130135162262545
+separation: 
+                  A:B
+HUMAN-YEAST 0.9594496
+HUMAN-ECOLI 0.9604639
+YEAST-ECOLI 0.9860890
+
+--------------------------------------------
+
+TTOF6600_3ug_32w_cfg1
+identification: 4478
+replication: 0.137611633158101
+accuracy: 
+  A:B 
+0.899 
+precision: 0.318891075561163
+separation: 
+                  A:B
+HUMAN-YEAST 0.9046277
+HUMAN-ECOLI 0.9256764
+YEAST-ECOLI 0.9690401
+
+--------------------------------------------
+
+TTOF6600_3ug_64w_cfg1
+identification: 5843
+replication: 0.112969273474671
+accuracy: 
+  A:B 
+0.878 
+precision: 0.246635349342842
+separation: 
+                  A:B
+HUMAN-YEAST 0.9233118
+HUMAN-ECOLI 0.9295948
+YEAST-ECOLI 0.9738691
+

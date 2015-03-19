@@ -1,0 +1,13 @@
+"name","HUMAN","YEAST","ECOLI","sum"
+"TTOF5600_1ug_32w_Sample_Quant_exp",3061,2278,2063,7402
+"TTOF5600_1ug_32w_Sample_Quant_exp_noLog",3061,2278,2063,7402
+"TTOF5600_1ug_32w_alfq_proteininference1_output",2972,2126,1913,7011
+"TTOF5600_1ug_64w_Sample_Quant_exp",3379,2707,2398,8484
+"TTOF5600_1ug_64w_Sample_Quant_exp_noLog",3379,2707,2398,8484
+"TTOF5600_1ug_64w_alfq_proteininference1_output",3341,2565,2248,8154
+"TTOF6600_1ug_32w_Sample_Quant_exp",3227,2553,2292,8072
+"TTOF6600_1ug_32w_Sample_Quant_exp_noLog",3227,2553,2292,8072
+"TTOF6600_1ug_32w_alfq_proteininference1_output",3185,2397,2127,7709
+"TTOF6600_1ug_64w_Sample_Quant_exp",3412,2878,2560,8850
+"TTOF6600_1ug_64w_Sample_Quant_exp_noLog",3412,2878,2560,8850
+"TTOF6600_1ug_64w_alfq_proteininference1_output",3401,2798,2465,8664
