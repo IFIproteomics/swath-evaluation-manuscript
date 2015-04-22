@@ -15,13 +15,7 @@ setwd(working_dir)
 if(!file.exists(results_dir)) { dir.create(file.path(working_dir, results_dir)) }
 
 AllInputFiles = list.files( path=working_dir, pattern="*.tsv", full.names= FALSE )
-
-quantitative.var <- "FG.NormalizedTotalPeakArea"
-protein.var <- "EG.ProteinId"
-filename.var <- "R.FileName"
-sequence.mod.var <- "EG.ModifiedSequence"
-charge.var <- "FG.Charge"
-
+#
 species <- vector(mode="list", length=3)
 names(species) <- c("HUMAN", "YEAST", "ECOLI")
 species[[1]] <- "_HUMAN"
@@ -45,10 +39,6 @@ experiments[[4]] <- c("lgillet_I150211_008", "lgillet_I150211_010", "lgillet_I15
                       "lgillet_I150211_009", "lgillet_I150211_011", "lgillet_I150211_013")   # B
 
 
-## Ops related to the quantitation variable ##
-sumquant <- paste0("sum(", quantitative.var, ")")
-medianquant <- paste0("median(", quantitative.var,")")
-####
 
 ## Select Software-depending variable names #########
 if(software_source == "Spectronaut"){
@@ -60,6 +50,12 @@ if(software_source == "Spectronaut"){
 }
 
 #####################################################
+
+## Ops related to the quantitation variable ##
+sumquant <- paste0("sum(", quantitative.var, ")")
+medianquant <- paste0("median(", quantitative.var,")")
+####
+
 
 
 substrRight <- function(x, n) { substr(x, nchar(x)-n+1, nchar(x)) }
@@ -103,10 +99,9 @@ generateReports <- function(experiment_file){
                              comment.char="", quote = "", stringsAsFactors =F)
     
     # Attach specie and remove peptides belonging to multiple species, and not considered species ("NA"s)
-    df <- df %>% 
-        rowwise() %>% 
-        mutate(specie = guessSpecie(protein.var)) %>% 
-        filter(specie != "NA", specie != "multiple")
+    df <- df %>% rowwise()
+    df <- eval( substitute(mutate(df, "specie" = guessSpecie(var)), list(var = as.name(protein.var)) ) ) 
+    df <- filter(df, specie != "NA", specie != "multiple")
     
     # Guess the experiment by the filename.var column
     injections <- distinct(select_(df, filename.var))  
@@ -134,7 +129,7 @@ generateReports <- function(experiment_file){
 
     expfile_noext <- file_path_sans_ext(basename(experiment_file))
     
-    write.table(peptides_wide, file=file.path(working_dir, results_dir ,paste(expfile_noext, "_peptides.tsv")), 
+    write.table(peptides_wide, file=file.path(working_dir, results_dir ,paste0(expfile_noext, "_peptides.tsv")), 
                 sep="\t", row.names=F, col.names=T)
 
 
@@ -151,7 +146,7 @@ generateReports <- function(experiment_file){
     # Remove "empty" proteins (all values are NAs). I wish I could find a more elegant way to do it. I am tired.
     proteins_wide <- filter(proteins_wide, !is.na(A1) | !is.na(A2) | !is.na(A3) | !is.na(B1) | !is.na(B2) | !is.na(B3))
     
-    write.table(proteins_wide, file=file.path(working_dir, results_dir ,paste(expfile_noext, "_proteins.tsv")), 
+    write.table(proteins_wide, file=file.path(working_dir, results_dir ,paste0(expfile_noext, "_proteins.tsv")), 
                 sep="\t", row.names=F, col.names=T)
     
     
