@@ -7,6 +7,8 @@ if(!require(tidyr)) { install.packages("tidyr") ;library(tidyr)}
 if(!require(tools)) { install.packages("tools") ;library(tools)}
 
 working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/Spectronaut7"
+software_source <- "Spectronaut"
+input_format <- "long"  # Options: "long", "wide"
 results_dir <- "formatted_files"
 setwd(working_dir)
 
@@ -18,6 +20,7 @@ quantitative.var <- "FG.NormalizedTotalPeakArea"
 protein.var <- "EG.ProteinId"
 filename.var <- "R.FileName"
 sequence.mod.var <- "EG.ModifiedSequence"
+charge.var <- "FG.Charge"
 
 species <- vector(mode="list", length=3)
 names(species) <- c("HUMAN", "YEAST", "ECOLI")
@@ -46,6 +49,18 @@ experiments[[4]] <- c("lgillet_I150211_008", "lgillet_I150211_010", "lgillet_I15
 sumquant <- paste0("sum(", quantitative.var, ")")
 medianquant <- paste0("median(", quantitative.var,")")
 ####
+
+## Select Software-depending variable names #########
+if(software_source == "Spectronaut"){
+    quantitative.var <- "FG.NormalizedTotalPeakArea"
+    protein.var <- "EG.ProteinId"
+    filename.var <- "R.FileName"
+    sequence.mod.var <- "EG.ModifiedSequence"
+    charge.var <- "FG.Charge"    
+}
+
+#####################################################
+
 
 substrRight <- function(x, n) { substr(x, nchar(x)-n+1, nchar(x)) }
 rmlastchars <- function(x, n) { substr(x, 1, nchar(x) - n) }
@@ -90,25 +105,31 @@ generateReports <- function(experiment_file){
     # Attach specie and remove peptides belonging to multiple species, and not considered species ("NA"s)
     df <- df %>% 
         rowwise() %>% 
-        mutate(specie = guessSpecie(EG.ProteinId)) %>% 
+        mutate(specie = guessSpecie(protein.var)) %>% 
         filter(specie != "NA", specie != "multiple")
     
-    # Guess the experiment by the "R.FileName" column
-    injections <- distinct(select(df, R.Label))  # unique(data$R.Label)
+    # Guess the experiment by the filename.var column
+    injections <- distinct(select_(df, filename.var))  
     experiment <- which(sapply(experiments, guessExperiment, injections))
     
-    # Remove any duplicate: (based on: R.Label, EG.ModifiedSequence, FG.Charge)
+    # Remove any duplicate: (based on: injectionfile, ModifiedSequence, ChargeState)
     # (These cases are likely to be due to several entries in the library)
-    data <- df %>% distinct(R.FileName, EG.ModifiedSequence, FG.Charge)  # I am not sure I removed all duplicates, or there is still one value per duplicate
+    data <- df %>% distinct_(filename.var, sequence.mod.var, charge.var)  # I am not sure I removed all duplicates, or there is still one value per duplicate
     
     # For each peptide: Sum quantitative values of charge states
     data <- data %>% group_by_(filename.var, sequence.mod.var) %>% 
         summarise_( proteinID = protein.var, specie = "specie" ,  quant_value = sumquant )  
 
-    # Case of Spectronaut: pivot filename values (and assign already samples?)
-    peptides_wide <- spread_(data, filename.var, "quant_value") 
-    experiment.order <- match(experiments[[experiment]], names(peptides_wide[-c(1:3)])) + 3
-    peptides_wide <- peptides_wide[, c(c(1:3), experiment.order)]
+    # Case of long formats: pivot filename values (and assign already samples?)
+    if(input_format == "long"){
+        peptides_wide <- spread_(data, filename.var, "quant_value") 
+        experiment.order <- match(experiments[[experiment]], names(peptides_wide[-c(1:3)])) + 3
+        peptides_wide <- peptides_wide[, c(c(1:3), experiment.order)]
+    }
+    else if(input_format == "wide"){
+        #Not yet implemented!
+    }
+    
     names(peptides_wide) <- c("sequenceID", "proteinID", "specie", "A1", "A2", "A3", "B1", "B2", "B3") #Rename the samples is unnecessary, but...
 
     expfile_noext <- file_path_sans_ext(basename(experiment_file))
@@ -124,7 +145,6 @@ generateReports <- function(experiment_file){
     proteins_wide <- peptides_wide %>% 
                         select(-sequenceID) %>% 
                         arrange(proteinID, specie) %>%
-                        #filter(proteinID == "1/sp|A0AVT1|UBA6_HUMAN") %>%
                         group_by(proteinID, specie) %>%  
                         summarise_each(funs(sum_top_n(., 3, 2)))  # , n_distinct(.) (if you want to report the num of peptides)
 
