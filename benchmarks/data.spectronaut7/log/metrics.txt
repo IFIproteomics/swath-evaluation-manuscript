@@ -1,0 +1,120 @@
+--------------------------------------------
+
+20150317_182627_TTOF5600_1ug_64w_Spectronaut7_Report _peptides.tsv
+identification: 34911
+replication: 0.0672298956312215
+accuracy: 
+  A:B 
+0.924 
+precision: 0.339274539226273
+separation: 
+                  A:B
+HUMAN-YEAST 0.9500549
+HUMAN-ECOLI 0.9613677
+YEAST-ECOLI 0.9844979
+
+--------------------------------------------
+
+20150317_182627_TTOF5600_1ug_64w_Spectronaut7_Report _proteins.tsv
+identification: 4139
+replication: 0.0402582149575536
+accuracy: 
+ A:B 
+0.95 
+precision: 0.231450333733756
+separation: 
+                  A:B
+HUMAN-YEAST 0.9644180
+HUMAN-ECOLI 0.9852670
+YEAST-ECOLI 0.9932282
+
+--------------------------------------------
+
+20150317_215925_TTOF6600_1ug_32w_Spectronaut7_Report _peptides.tsv
+identification: 39136
+replication: 0.0524976516799394
+accuracy: 
+  A:B 
+0.924 
+precision: 0.358944084659946
+separation: 
+                  A:B
+HUMAN-YEAST 0.9325219
+HUMAN-ECOLI 0.9434863
+YEAST-ECOLI 0.9692069
+
+--------------------------------------------
+
+20150317_215925_TTOF6600_1ug_32w_Spectronaut7_Report _proteins.tsv
+identification: 4512
+replication: 0.0313699603449021
+accuracy: 
+ A:B 
+0.95 
+precision: 0.235506250386707
+separation: 
+                  A:B
+HUMAN-YEAST 0.9532242
+HUMAN-ECOLI 0.9747745
+YEAST-ECOLI 0.9896875
+
+--------------------------------------------
+
+20150318_003107_TTOF6600_1ug_64w_Spectronaut7_Report _peptides.tsv
+identification: 42436
+replication: 0.0576551769742091
+accuracy: 
+  A:B 
+0.922 
+precision: 0.260993144396184
+separation: 
+                  A:B
+HUMAN-YEAST 0.9568781
+HUMAN-ECOLI 0.9600357
+YEAST-ECOLI 0.9812006
+
+--------------------------------------------
+
+20150318_003107_TTOF6600_1ug_64w_Spectronaut7_Report _proteins.tsv
+identification: 4820
+replication: 0.0317409908766746
+accuracy: 
+  A:B 
+0.956 
+precision: 0.168907186799344
+separation: 
+                  A:B
+HUMAN-YEAST 0.9672458
+HUMAN-ECOLI 0.9752114
+YEAST-ECOLI 0.9844988
+
+--------------------------------------------
+
+20150318_162129_TTOF5600_1ug_32w_Spectronaut7_Report _peptides.tsv
+identification: 30051
+replication: 0.0581282489331302
+accuracy: 
+  A:B 
+0.926 
+precision: 0.459192681874977
+separation: 
+                  A:B
+HUMAN-YEAST 0.9352189
+HUMAN-ECOLI 0.9504124
+YEAST-ECOLI 0.9735283
+
+--------------------------------------------
+
+20150318_162129_TTOF5600_1ug_32w_Spectronaut7_Report _proteins.tsv
+identification: 3685
+replication: 0.0413372514829737
+accuracy: 
+  A:B 
+0.932 
+precision: 0.300931402385173
+separation: 
+                  A:B
+HUMAN-YEAST 0.9518611
+HUMAN-ECOLI 0.9616720
+YEAST-ECOLI 0.9838505
+
