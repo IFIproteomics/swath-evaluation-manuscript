@@ -1,150 +1,120 @@
 --------------------------------------------
 
-TTOF5600_1ug_32w_cfg1
-identification: 4460
-replication: 0.0607607853114024
+TTOF5600_1ug_32w_cfg1_peptides.tsv
+identification: 8319
+replication: 0.0692651185706482
 accuracy: 
-  A:B 
-0.905 
-precision: 0.303475283209115
+ A:B 
+0.89 
+precision: 0.26258878343837
 separation: 
                   A:B
-HUMAN-YEAST 0.9221152
-HUMAN-ECOLI 0.9339405
-YEAST-ECOLI 0.9715107
+HUMAN-YEAST 0.9141953
+HUMAN-ECOLI 0.9312757
+YEAST-ECOLI 0.9741232
 
 --------------------------------------------
 
-TTOF5600_1ug_32w_standard_cfg
-identification: 4379
-replication: 0.114183491737316
+TTOF5600_1ug_32w_cfg1_proteins.tsv
+identification: 2369
+replication: 0.0505433932803312
 accuracy: 
   A:B 
-0.852 
-precision: 0.422080409171382
+0.933 
+precision: 0.258344583899835
 separation: 
                   A:B
-HUMAN-YEAST 0.8647683
-HUMAN-ECOLI 0.9247500
-YEAST-ECOLI 0.9667464
+HUMAN-YEAST 0.9677249
+HUMAN-ECOLI 0.9830219
+YEAST-ECOLI 0.9961111
 
 --------------------------------------------
 
-TTOF5600_1ug_64w_cfg1
-identification: 5640
-replication: 0.0617591198630447
+TTOF5600_1ug_64w_cfg1_peptides.tsv
+identification: 11469
+replication: 0.0722435125871053
 accuracy: 
   A:B 
-0.899 
-precision: 0.228377302964243
+0.865 
+precision: 0.208242840093086
 separation: 
                   A:B
-HUMAN-YEAST 0.9235586
-HUMAN-ECOLI 0.9398657
-YEAST-ECOLI 0.9770462
+HUMAN-YEAST 0.8922222
+HUMAN-ECOLI 0.9305346
+YEAST-ECOLI 0.9729128
 
 --------------------------------------------
 
-TTOF5600_1ug_64w_cfg2
-identification: 5578
-replication: 0.0612647419045386
+TTOF5600_1ug_64w_cfg1_proteins.tsv
+identification: 3316
+replication: 0.0516093319034867
 accuracy: 
   A:B 
-0.905 
-precision: 0.235891442438619
+0.929 
+precision: 0.204898944765834
 separation: 
                   A:B
-HUMAN-YEAST 0.9126704
-HUMAN-ECOLI 0.9379514
-YEAST-ECOLI 0.9741291
+HUMAN-YEAST 0.9647761
+HUMAN-ECOLI 0.9867152
+YEAST-ECOLI 0.9969577
 
 --------------------------------------------
 
-TTOF6600_1ug_32w_cfg1
-identification: 5152
-replication: 0.0816682953470793
+TTOF6600_1ug_32w_cfg1_peptides.tsv
+identification: 11071
+replication: 0.0865943295258395
 accuracy: 
   A:B 
-0.913 
-precision: 0.20389187278616
+0.891 
+precision: 0.152196622224262
 separation: 
                   A:B
-HUMAN-YEAST 0.9305427
-HUMAN-ECOLI 0.9531304
-YEAST-ECOLI 0.9790079
+HUMAN-YEAST 0.9345133
+HUMAN-ECOLI 0.9471581
+YEAST-ECOLI 0.9806350
 
 --------------------------------------------
 
-TTOF6600_1ug_64w_cfg1
-identification: 6227
-replication: 0.0663267980014804
+TTOF6600_1ug_32w_cfg1_proteins.tsv
+identification: 3185
+replication: 0.0743665546731042
 accuracy: 
   A:B 
-0.913 
-precision: 0.166480187404632
+0.937 
+precision: 0.182474760098935
 separation: 
                   A:B
-HUMAN-YEAST 0.9581943
-HUMAN-ECOLI 0.9531975
-YEAST-ECOLI 0.9840402
+HUMAN-YEAST 0.9683663
+HUMAN-ECOLI 0.9790230
+YEAST-ECOLI 0.9916847
 
 --------------------------------------------
 
-TTOF6600_1ug_64w_cfg2
-identification: 6238
-replication: 0.0653739229314442
+TTOF6600_1ug_64w_cfg1_peptides.tsv
+identification: 14517
+replication: 0.0731085490024137
 accuracy: 
   A:B 
-0.914 
-precision: 0.157845405433324
+0.887 
+precision: 0.143630426687385
 separation: 
                   A:B
-HUMAN-YEAST 0.9560533
-HUMAN-ECOLI 0.9573953
-YEAST-ECOLI 0.9861918
+HUMAN-YEAST 0.9440937
+HUMAN-ECOLI 0.9415683
+YEAST-ECOLI 0.9808089
 
 --------------------------------------------
 
-TTOF6600_1ug_64w_cfg3
-identification: 6243
-replication: 0.0658071642860939
+TTOF6600_1ug_64w_cfg1_proteins.tsv
+identification: 4148
+replication: 0.0621400098435275
 accuracy: 
-  A:B 
-0.912 
-precision: 0.130135162262545
+ A:B 
+0.94 
+precision: 0.148980697760167
 separation: 
                   A:B
-HUMAN-YEAST 0.9594496
-HUMAN-ECOLI 0.9604639
-YEAST-ECOLI 0.9860890
-
---------------------------------------------
-
-TTOF6600_3ug_32w_cfg1
-identification: 4478
-replication: 0.137611633158101
-accuracy: 
-  A:B 
-0.899 
-precision: 0.318891075561163
-separation: 
-                  A:B
-HUMAN-YEAST 0.9046277
-HUMAN-ECOLI 0.9256764
-YEAST-ECOLI 0.9690401
-
---------------------------------------------
-
-TTOF6600_3ug_64w_cfg1
-identification: 5843
-replication: 0.112969273474671
-accuracy: 
-  A:B 
-0.878 
-precision: 0.246635349342842
-separation: 
-                  A:B
-HUMAN-YEAST 0.9233118
-HUMAN-ECOLI 0.9295948
-YEAST-ECOLI 0.9738691
+HUMAN-YEAST 0.9755669
+HUMAN-ECOLI 0.9775166
+YEAST-ECOLI 0.9945228
 
