@@ -1,112 +1,85 @@
 rm(list=ls())
 
-if(!require(data.table)) { install.packages("data.table") ;library(data.table) }
-if(!require(reshape2)) { install.packages("reshape2") ;library(reshape2) }
-if(!require(dplyr)) { install.packages("dplyr") ;library(dplyr)}
-if(!require(tidyr)) { install.packages("tidyr") ;library(tidyr)}
-if(!require(tools)) { install.packages("tools") ;library(tools)}
-
-working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/Spectronaut7"
-software_source <- "Spectronaut"
-input_format <- "long"  # Options: "long", "wide"
-results_dir <- "formatted_files"
-setwd(working_dir)
-
-if(!file.exists(results_dir)) { dir.create(file.path(working_dir, results_dir)) }
-
-AllInputFiles = list.files( path=working_dir, pattern="*.tsv", full.names= FALSE )
-#
-species <- vector(mode="list", length=3)
-names(species) <- c("HUMAN", "YEAST", "ECOLI")
-species[[1]] <- "_HUMAN"
-species[[2]] <- "_YEAS"
-species[[3]] <- "_ECOLI"
-
-experiments <- vector(mode="list", length=4)
-names(experiments) <- c("5600-32w", "5600-64w", "6600-32w", "6600-64w")
-# for each experiment:
-#   three first ones are sample A, other three ones are sample B
-experiments[[1]] <- c("lgillet_L150206_001", "lgillet_L150206_003", "lgillet_L150206_005",   # A
-                      "lgillet_L150206_002", "lgillet_L150206_013", "lgillet_L150206_014")   # B 
-
-experiments[[2]] <- c("lgillet_L150206_007", "lgillet_L150206_009", "lgillet_L150206_011",   # A
-                      "lgillet_L150206_008", "lgillet_L150206_010", "lgillet_L150206_012")   # B
-
-experiments[[3]] <- c("lgillet_I150211_002", "lgillet_I150211_004", "lgillet_I150211_006",   # A
-                      "lgillet_I150211_003", "lgillet_I150211_005", "lgillet_I150211_007")   # B
-
-experiments[[4]] <- c("lgillet_I150211_008", "lgillet_I150211_010", "lgillet_I150211_012",   # A
-                      "lgillet_I150211_009", "lgillet_I150211_011", "lgillet_I150211_013")   # B
-
-
-
-## Select Software-depending variable names #########
-if(software_source == "Spectronaut"){
-    quantitative.var <- "FG.NormalizedTotalPeakArea"
-    protein.var <- "EG.ProteinId"
-    filename.var <- "R.FileName"
-    sequence.mod.var <- "EG.ModifiedSequence"
-    charge.var <- "FG.Charge"    
+loadLibrary <- function(lib) { 
+    if(!require(lib, character.only = T)) { 
+        install.packages(lib)
+        library(lib, character.only = T)
+    } 
 }
 
-#####################################################
+loadLibrary("data.table")
+loadLibrary("reshape2")
+loadLibrary("dplyr")
+loadLibrary("tidyr")
+loadLibrary("tools")
+
+
+
+#working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark/hye.r/data.peakview/RAW.PeakView.output"
+#working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/Skyline"
+working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark/hye.r/data.new.openswath/Raw_OpenSWATH_Output"
+#software_source <- "Spectronaut"
+#software_source <- "PeakView"
+#software_source <- "Skyline"
+software_source <- "openSWATH"
+
+input_format <- "wide"  # Options: "long", "wide"
+results_dir <- "formatted_files"
+
+source("fswe.variables.R")
+source("fswe.functions.R")
+source("fswe.datasets.R")
+
+# setwd(working_dir)  # TODO: remove this setwd, and make all paths for outputs absolute.
+
+
+if(!file.exists(file.path(working_dir, results_dir))) { dir.create(file.path(working_dir, results_dir)) }
+
+AllInputFiles = list.files( path=working_dir, pattern=input.extension, full.names= FALSE )
+#
+
 
 ## Ops related to the quantitation variable ##
 sumquant <- paste0("sum(", quantitative.var, ")")
 medianquant <- paste0("median(", quantitative.var,")")
 ####
 
-
-
-substrRight <- function(x, n) { substr(x, nchar(x)-n+1, nchar(x)) }
-rmlastchars <- function(x, n) { substr(x, 1, nchar(x) - n) }
-
-take1stentry <- function(entries){
-  first_entry <- strsplit(as.character(entries), "\\||\\/", fixed=F, perl=T)
-  first_entry <- first_entry[[1]][4]
-  if(substrRight(first_entry, 3)=="/sp") first_entry <- rmlastchars(first_entry, 3)
-  return(first_entry)
-}
-
-guessExperiment <- function(exp, injections){
-    # exp: one of the experiments: i.e. experiments[[1]]
-    # injections: list of injections (preferably a unique list!) of the experiment
-    all(sapply(injections, is.element, exp ))
-}
-
-guessSpecie <- function(proteinid){
-    sp <- names(which(sapply(species, grepl, proteinid)))
-    if(length(sp) == 0) sp <- "NA"
-    if(length(sp) > 1) sp <- "multiple"
-    sp
-}
-
-sum_top_n <- function(values, n, minimum = 1){
-    # This top N approach is INDIVIDUAL, that is, there is no consensus among replicates to 
-    # choose the top N peptides.
-    if(length(which(!is.na(values))) < minimum) {return (NA)}
-    if (n > length(values)) n <- length(values)
-    sum(sort(values, decreasing=T)[1:n], na.rm=T)
-}
-
 generateReports <- function(experiment_file){
 
     # Read file
-    #experiment_file <- "20150317_182627_TTOF5600_1ug_64w_Spectronaut7_Report.tsv"
-    print(paste0("Generating peptide report for ", experiment_file))
-    df <- read.table(experiment_file, na.strings="NaN",
-                             header=T, sep="\t",
-                             comment.char="", quote = "", stringsAsFactors =F)
+    #experiment_file <- AllInputFiles[1]
+    cat(paste0("Generating peptide report for ", experiment_file, "\n"))
+    experiment_file <- file.path(working_dir, experiment_file)
+    df <- read.table(experiment_file, na.strings= nastrings,
+                             header=T, sep=guessSep(experiment_file),
+                             , stringsAsFactors =F, fill = T)
     
     # Attach specie and remove peptides belonging to multiple species, and not considered species ("NA"s)
+    if(!is.na(q_filter_threshold)){
+        df <- eval( substitute(filter(df, var < q_filter_threshold), list( var = as.name(qvalue.var)) ) )
+    }
     df <- df %>% rowwise()
     df <- eval( substitute(mutate(df, "specie" = guessSpecie(var)), list(var = as.name(protein.var)) ) ) 
     df <- filter(df, specie != "NA", specie != "multiple")
     
-    # Guess the experiment by the filename.var column
-    injections <- distinct(select_(df, filename.var))  
-    experiment <- which(sapply(experiments, guessExperiment, injections))
-    
+    experiment <- NA
+    if(input_format == "wide"){
+        # At this point, it is better to transform the data frame into a long-format data frame, and
+        # continue the analysis commonly for wide and long inputs.
+        
+        # find the columns containing the quantitative values (pivoted values). 
+        # They will be use to gather the key-value pairs
+        experiment <- which(sapply(experiments, guessExperiment_wide, colnames(df) ))
+        
+        df <- df %>% gather_(filename.var, quantitative.var, 6:11) %>%  # TODO: change this hard-coded 6:11
+                    arrange_(protein.var, sequence.mod.var)
+        
+    }else if(input_format == "long"){
+        # Guess the experiment by the filename.var column
+        injections <- distinct(select_(df, filename.var))  
+        experiment <- which(sapply(experiments, guessExperiment, injections))
+    }
+
     # Remove any duplicate: (based on: injectionfile, ModifiedSequence, ChargeState)
     # (These cases are likely to be due to several entries in the library)
     data <- df %>% distinct_(filename.var, sequence.mod.var, charge.var)  # I am not sure I removed all duplicates, or there is still one value per duplicate
@@ -115,15 +88,18 @@ generateReports <- function(experiment_file){
     data <- data %>% group_by_(filename.var, sequence.mod.var) %>% 
         summarise_( proteinID = protein.var, specie = "specie" ,  quant_value = sumquant )  
 
-    # Case of long formats: pivot filename values (and assign already samples?)
-    if(input_format == "long"){
-        peptides_wide <- spread_(data, filename.var, "quant_value") 
-        experiment.order <- match(experiments[[experiment]], names(peptides_wide[-c(1:3)])) + 3
-        peptides_wide <- peptides_wide[, c(c(1:3), experiment.order)]
-    }
-    else if(input_format == "wide"){
-        #Not yet implemented!
-    }
+    peptides_wide <- spread_(data, filename.var, "quant_value") 
+    
+    # Change variable names of injections by their right name (removing additions from software to the name, etc)
+    common_names <- names(peptides_wide)[c(1:3)]
+    inj_names <- names(peptides_wide)[-c(1:3)]
+    inj_names <- as.character(sapply(inj_names, guessInjection, experiment))
+    names(peptides_wide) <- c( common_names, inj_names )
+    # names(peptides_wide) <- gsub("\\.[^\\.]*$","", names(peptides_wide))
+    
+    experiment.order <- match(experiments[[experiment]], names(peptides_wide[-c(1:3)])) + 3
+    peptides_wide <- peptides_wide[, c(c(1:3), experiment.order)]
+
     
     names(peptides_wide) <- c("sequenceID", "proteinID", "specie", "A1", "A2", "A3", "B1", "B2", "B3") #Rename the samples is unnecessary, but...
 
@@ -135,7 +111,7 @@ generateReports <- function(experiment_file){
 
     
     ## PROTEIN REPORT
-    print(paste0("Generating protein report for ", experiment_file))
+    cat(paste0("Generating protein report for ", experiment_file,"\n"))
     
     proteins_wide <- peptides_wide %>% 
                         select(-sequenceID) %>% 
