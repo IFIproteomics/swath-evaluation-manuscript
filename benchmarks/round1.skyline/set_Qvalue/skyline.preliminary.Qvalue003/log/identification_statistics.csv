@@ -1,0 +1,9 @@
+"name"	"HUMAN"	"YEAST"	"ECOLI"	"OTHER"	"sum"
+"TTOF5600_1ug_32w_Skyline_SWATHbenchmark_shape_long_integrated_peptides.tsv"	13221	8016	6792	0	28029
+"TTOF5600_1ug_32w_Skyline_SWATHbenchmark_shape_long_integrated_proteins.tsv"	1594	1012	842	0	3448
+"TTOF5600_1ug_64w_rep_Skyline_SWATHbenchmark_shape_long_integrated_peptides.tsv"	15604	10355	8891	0	34850
+"TTOF5600_1ug_64w_rep_Skyline_SWATHbenchmark_shape_long_integrated_proteins.tsv"	1832	1236	998	0	4066
+"TTOF6600_1ug_32w_Skyline_SWATHbenchmark_shape_long_integrated_peptides.tsv"	7357	3238	3276	0	13871
+"TTOF6600_1ug_32w_Skyline_SWATHbenchmark_shape_long_integrated_proteins.tsv"	1001	501	444	0	1946
+"TTOF6600_1ug_64w_rep_Skyline_SWATHbenchmark_shape_long_integrated_peptides.tsv"	14581	9368	8322	0	32271
+"TTOF6600_1ug_64w_rep_Skyline_SWATHbenchmark_shape_long_integrated_proteins.tsv"	1741	1156	957	0	3854

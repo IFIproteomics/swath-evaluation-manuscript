@@ -1,0 +1,13 @@
+"name"	"HUMAN"	"YEAST"	"ECOLI"	"OTHER"	"sum"
+"TTOF6600_64w_Qvalue0.02_Top1transitions_peptides.tsv"	14122	8538	7513	0	30173
+"TTOF6600_64w_Qvalue0.02_Top1transitions_proteins.tsv"	1704	1083	885	0	3672
+"TTOF6600_64w_Qvalue0.02_Top2transitions_peptides.tsv"	14122	8538	7513	0	30173
+"TTOF6600_64w_Qvalue0.02_Top2transitions_proteins.tsv"	1704	1083	885	0	3672
+"TTOF6600_64w_Qvalue0.02_Top3transitions_peptides.tsv"	14122	8538	7513	0	30173
+"TTOF6600_64w_Qvalue0.02_Top3transitions_proteins.tsv"	1704	1083	885	0	3672
+"TTOF6600_64w_Qvalue0.02_Top4transitions_peptides.tsv"	14122	8538	7513	0	30173
+"TTOF6600_64w_Qvalue0.02_Top4transitions_proteins.tsv"	1704	1083	885	0	3672
+"TTOF6600_64w_Qvalue0.02_Top5transitions_peptides.tsv"	14122	8538	7513	0	30173
+"TTOF6600_64w_Qvalue0.02_Top5transitions_proteins.tsv"	1704	1083	885	0	3672
+"TTOF6600_64w_Qvalue0.02_Top6transitions_peptides.tsv"	14122	8538	7513	0	30173
+"TTOF6600_64w_Qvalue0.02_Top6transitions_proteins.tsv"	1704	1083	885	0	3672

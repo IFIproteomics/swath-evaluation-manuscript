@@ -1,0 +1,180 @@
+--------------------------------------------
+
+TTOF6600_64w_Qvalue0.02_Top1transitions_peptides.tsv
+identification: 30173
+replication: 0.0725934971302158
+accuracy: 
+  A:B 
+0.893 
+precision: 0.212158841407537
+separation: 
+                  A:B
+HUMAN-YEAST 0.8936249
+HUMAN-ECOLI 0.8528610
+YEAST-ECOLI 0.9228402
+
+--------------------------------------------
+
+TTOF6600_64w_Qvalue0.02_Top1transitions_proteins.tsv
+identification: 3672
+replication: 0.0830174630837887
+accuracy: 
+  A:B 
+0.896 
+precision: 0.20059482962166
+separation: 
+                  A:B
+HUMAN-YEAST 0.9041533
+HUMAN-ECOLI 0.8545512
+YEAST-ECOLI 0.9266928
+
+--------------------------------------------
+
+TTOF6600_64w_Qvalue0.02_Top2transitions_peptides.tsv
+identification: 30173
+replication: 0.0703003207781629
+accuracy: 
+  A:B 
+0.899 
+precision: 0.239394316379651
+separation: 
+                  A:B
+HUMAN-YEAST 0.9059751
+HUMAN-ECOLI 0.8591203
+YEAST-ECOLI 0.9284283
+
+--------------------------------------------
+
+TTOF6600_64w_Qvalue0.02_Top2transitions_proteins.tsv
+identification: 3672
+replication: 0.0819851505627032
+accuracy: 
+  A:B 
+0.905 
+precision: 0.235597489373749
+separation: 
+                  A:B
+HUMAN-YEAST 0.9123285
+HUMAN-ECOLI 0.8648207
+YEAST-ECOLI 0.9373940
+
+--------------------------------------------
+
+TTOF6600_64w_Qvalue0.02_Top3transitions_peptides.tsv
+identification: 30173
+replication: 0.0691361052821989
+accuracy: 
+  A:B 
+0.902 
+precision: 0.260497377883318
+separation: 
+                  A:B
+HUMAN-YEAST 0.9111053
+HUMAN-ECOLI 0.8648876
+YEAST-ECOLI 0.9328068
+
+--------------------------------------------
+
+TTOF6600_64w_Qvalue0.02_Top3transitions_proteins.tsv
+identification: 3672
+replication: 0.0812213508306044
+accuracy: 
+ A:B 
+0.91 
+precision: 0.235579961550315
+separation: 
+                  A:B
+HUMAN-YEAST 0.9163858
+HUMAN-ECOLI 0.8723420
+YEAST-ECOLI 0.9433314
+
+--------------------------------------------
+
+TTOF6600_64w_Qvalue0.02_Top4transitions_peptides.tsv
+identification: 30173
+replication: 0.0695514743177821
+accuracy: 
+  A:B 
+0.904 
+precision: 0.267681188542842
+separation: 
+                  A:B
+HUMAN-YEAST 0.9139676
+HUMAN-ECOLI 0.8683656
+YEAST-ECOLI 0.9357397
+
+--------------------------------------------
+
+TTOF6600_64w_Qvalue0.02_Top4transitions_proteins.tsv
+identification: 3672
+replication: 0.0794057003836763
+accuracy: 
+  A:B 
+0.913 
+precision: 0.237159807334983
+separation: 
+                  A:B
+HUMAN-YEAST 0.9209585
+HUMAN-ECOLI 0.8777954
+YEAST-ECOLI 0.9472843
+
+--------------------------------------------
+
+TTOF6600_64w_Qvalue0.02_Top5transitions_peptides.tsv
+identification: 30173
+replication: 0.069361045663966
+accuracy: 
+  A:B 
+0.905 
+precision: 0.272709538177563
+separation: 
+                  A:B
+HUMAN-YEAST 0.9160087
+HUMAN-ECOLI 0.8705153
+YEAST-ECOLI 0.9381503
+
+--------------------------------------------
+
+TTOF6600_64w_Qvalue0.02_Top5transitions_proteins.tsv
+identification: 3672
+replication: 0.078887853847178
+accuracy: 
+  A:B 
+0.915 
+precision: 0.230584432725767
+separation: 
+                  A:B
+HUMAN-YEAST 0.9245203
+HUMAN-ECOLI 0.8826936
+YEAST-ECOLI 0.9497655
+
+--------------------------------------------
+
+TTOF6600_64w_Qvalue0.02_Top6transitions_peptides.tsv
+identification: 30173
+replication: 0.0695888415360833
+accuracy: 
+  A:B 
+0.905 
+precision: 0.277312844305636
+separation: 
+                  A:B
+HUMAN-YEAST 0.9175902
+HUMAN-ECOLI 0.8722112
+YEAST-ECOLI 0.9400408
+
+--------------------------------------------
+
+TTOF6600_64w_Qvalue0.02_Top6transitions_proteins.tsv
+identification: 3672
+replication: 0.0787102125431259
+accuracy: 
+  A:B 
+0.916 
+precision: 0.223031640110493
+separation: 
+                  A:B
+HUMAN-YEAST 0.9265765
+HUMAN-ECOLI 0.8862867
+YEAST-ECOLI 0.9518286
+

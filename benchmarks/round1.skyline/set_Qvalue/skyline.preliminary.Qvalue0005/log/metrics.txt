@@ -1,0 +1,120 @@
+--------------------------------------------
+
+TTOF5600_1ug_32w_Skyline_SWATHbenchmark_shape_long_integrated_peptides.tsv
+identification: 20209
+replication: 0.0647903246003583
+accuracy: 
+A:B 
+0.9 
+precision: 0.462865830759713
+separation: 
+                  A:B
+HUMAN-YEAST 0.8952242
+HUMAN-ECOLI 0.8926067
+YEAST-ECOLI 0.9546500
+
+--------------------------------------------
+
+TTOF5600_1ug_32w_Skyline_SWATHbenchmark_shape_long_integrated_proteins.tsv
+identification: 2660
+replication: 0.0694218732835764
+accuracy: 
+  A:B 
+0.897 
+precision: 0.341393159203916
+separation: 
+                  A:B
+HUMAN-YEAST 0.8730377
+HUMAN-ECOLI 0.9307364
+YEAST-ECOLI 0.9612254
+
+--------------------------------------------
+
+TTOF5600_1ug_64w_rep_Skyline_SWATHbenchmark_shape_long_integrated_peptides.tsv
+identification: 27668
+replication: 0.0574048685789425
+accuracy: 
+  A:B 
+0.915 
+precision: 0.331127559863163
+separation: 
+                  A:B
+HUMAN-YEAST 0.9363976
+HUMAN-ECOLI 0.9277334
+YEAST-ECOLI 0.9649194
+
+--------------------------------------------
+
+TTOF5600_1ug_64w_rep_Skyline_SWATHbenchmark_shape_long_integrated_proteins.tsv
+identification: 3392
+replication: 0.0532967117351924
+accuracy: 
+  A:B 
+0.916 
+precision: 0.231429845401018
+separation: 
+                  A:B
+HUMAN-YEAST 0.9458190
+HUMAN-ECOLI 0.9542808
+YEAST-ECOLI 0.9849212
+
+--------------------------------------------
+
+TTOF6600_1ug_32w_Skyline_SWATHbenchmark_shape_long_integrated_peptides.tsv
+identification: 9345
+replication: 0.0709423079678306
+accuracy: 
+  A:B 
+0.926 
+precision: 0.0990605643380905
+separation: 
+                  A:B
+HUMAN-YEAST 0.9763434
+HUMAN-ECOLI 0.9506549
+YEAST-ECOLI 0.9822209
+
+--------------------------------------------
+
+TTOF6600_1ug_32w_Skyline_SWATHbenchmark_shape_long_integrated_proteins.tsv
+identification: 1404
+replication: 0.107288917422032
+accuracy: 
+  A:B 
+0.889 
+precision: 0.175390933809724
+separation: 
+                  A:B
+HUMAN-YEAST 0.9738465
+HUMAN-ECOLI 0.9986917
+YEAST-ECOLI 0.9988553
+
+--------------------------------------------
+
+TTOF6600_1ug_64w_rep_Skyline_SWATHbenchmark_shape_long_integrated_peptides.tsv
+identification: 25162
+replication: 0.0648327729457243
+accuracy: 
+  A:B 
+0.919 
+precision: 0.140151598538382
+separation: 
+                  A:B
+HUMAN-YEAST 0.9639312
+HUMAN-ECOLI 0.9396886
+YEAST-ECOLI 0.9795528
+
+--------------------------------------------
+
+TTOF6600_1ug_64w_rep_Skyline_SWATHbenchmark_shape_long_integrated_proteins.tsv
+identification: 3199
+replication: 0.0783801432940233
+accuracy: 
+  A:B 
+0.919 
+precision: 0.0433064600310439
+separation: 
+                  A:B
+HUMAN-YEAST 0.9576936
+HUMAN-ECOLI 0.9574269
+YEAST-ECOLI 0.9881011
+
