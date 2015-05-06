@@ -1,0 +1,78 @@
+--------------------------------------------
+
+ Metrics description: 
+	identification:
+		identification rate,
+		the number of identified proteins for benchmark species
+	replication:
+		replication variance,
+		the median CV for the background species
+	accuracy:
+		accuracy of relative quantification,
+		the area under quantification curve for background species
+	precision deviation:
+		deviation of precision of quantification,
+		the root mean square of ( medianLR - expectation ) for regulated species
+	separation:
+		species separation ability,
+		the area under ROC curve between a species pair
+--------------------------------------------
+
+TTOF5600_1ug_32w_cfg1
+identification: 4460
+replication: 0.0607607853114024
+accuracy: 
+  A:B 
+0.905 
+precision deviation: 0.303475283209115
+separation: 
+                  A:B
+HUMAN-YEAST 0.9221152
+HUMAN-ECOLI 0.9339405
+YEAST-ECOLI 0.9715107
+
+--------------------------------------------
+
+TTOF5600_1ug_64w_cfg1
+identification: 5640
+replication: 0.0617591198630447
+accuracy: 
+  A:B 
+0.899 
+precision deviation: 0.228377302964243
+separation: 
+                  A:B
+HUMAN-YEAST 0.9235586
+HUMAN-ECOLI 0.9398657
+YEAST-ECOLI 0.9770462
+
+--------------------------------------------
+
+TTOF6600_1ug_32w_cfg1
+identification: 5152
+replication: 0.0816682953470793
+accuracy: 
+  A:B 
+0.913 
+precision deviation: 0.20389187278616
+separation: 
+                  A:B
+HUMAN-YEAST 0.9305427
+HUMAN-ECOLI 0.9531304
+YEAST-ECOLI 0.9790079
+
+--------------------------------------------
+
+TTOF6600_1ug_64w_cfg1
+identification: 6227
+replication: 0.0663267980014804
+accuracy: 
+  A:B 
+0.913 
+precision deviation: 0.166480187404632
+separation: 
+                  A:B
+HUMAN-YEAST 0.9581943
+HUMAN-ECOLI 0.9531975
+YEAST-ECOLI 0.9840402
+
