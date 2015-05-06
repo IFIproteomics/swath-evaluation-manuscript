@@ -1,5 +1,6 @@
 ## Select Software-depending variable names #########
 quantitative.var <- NA
+quantitative.var.tag <- NA
 protein.var <- NA
 filename.var <- NA
 sequence.mod.var <- NA
@@ -61,11 +62,12 @@ if(software_source == "PeakView"){
 if(software_source == "openSWATH"){
     #q_filter_threshold <- 0.05
     #qvalue.var <- "score"
+    quantitative.var.tag <- "Intensity_"
     quantitative.var <- "Intensity"
     protein.var <- "Protein"
     filename.var <- "FileName"
     sequence.mod.var <- "Peptide"
-    charge.var <- "PrecursorCharge"  
+    charge.var <- "Charge"  
     decoy.var <- "IsDecoy"
     input.extension <- "*.tsv$"
 }

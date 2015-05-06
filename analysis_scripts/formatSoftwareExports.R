@@ -17,13 +17,12 @@ loadLibrary("tools")
 
 #working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark/hye.r/data.peakview/RAW.PeakView.output"
 #working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/Skyline"
-#working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark/hye.r/data.new.openswath/Raw_OpenSWATH_Output"
-#working_dir <-"/Users/napedro/Dropbox/PAPER_SWATHbenchmark/hye.r/data.new.openswath/Raw_OpenSWATH_Output"
+working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark/hye.r/data.new.openswath/Raw_OpenSWATH_Output"
 #working_dir <-"/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/Skyline/transitions/Qvalue0.02_top_ranked_transitions"
-working_dir <-"/Users/napedro/Dropbox/tmp_wrk_home2/SWATHbenchmark/DIA-umpire/round1/peptides"
+#working_dir <-"/Users/napedro/Dropbox/tmp_wrk_home2/SWATHbenchmark/DIA-umpire/round1/peptides"
 
 
-software_source <- "DIAumpire"    # Options: "Spectronaut", "PeakView", "Skyline", "openSWATH", "DIAumpire"
+software_source <- "openSWATH"    # Options: "Spectronaut", "PeakView", "Skyline", "openSWATH", "DIAumpire"
 input_format <- "wide"          # Options: "long", "wide"
 
 results_dir <- "formatted_files"
@@ -64,12 +63,24 @@ generateReports <- function(experiment_file){
     if(input_format == "wide"){
         # At this point, it is better to transform the data frame into a long-format data frame, and
         # continue the analysis commonly for wide and long inputs.
-        
+                
         # find the columns containing the quantitative values (pivoted values). 
         # They will be use to gather the key-value pairs
         experiment <- which(sapply(experiments, guessExperiment_wide, colnames(df) ))
+
+        # WARNING: the quantitative variables should be the only ones containing the injection names at this point.
+        # We filter by the quantitative.var.tag in order to remove any other columns like score, ret time...
+        tmp1 <- df[, grepl(protein.var, colnames(df))]
+        tmp1 <- cbind( tmp1, df[, grepl(sequence.mod.var, colnames(df))] )
+        tmp1 <- cbind( tmp1, df[, grepl(charge.var, colnames(df))] )
+        tmp1 <- cbind( tmp1, df[, grepl("specie", colnames(df))])
+        tmp1 <- cbind( tmp1, df[, grepl(quantitative.var.tag, colnames(df))])
+        df <- tmp1
+        rm(tmp1)
         
-        df <- df %>% gather_(filename.var, quantitative.var, 4:9) %>%  # TODO: change this hard-coded 6:11
+        quantvar.range <- which(grepl(quantitative.var.tag, colnames(df)))
+
+        df <- df %>% gather_(filename.var, quantitative.var, quantvar.range) %>%  
                     arrange_(protein.var, sequence.mod.var)
         
     }else if(input_format == "long"){
