@@ -1,0 +1,120 @@
+--------------------------------------------
+
+TTOF5600_32_peptides.tsv
+identification: 15725
+replication: 0.107944776375868
+accuracy: 
+  A:B 
+0.872 
+precision: 0.270428837869403
+separation: 
+                  A:B
+HUMAN-YEAST 0.9129514
+HUMAN-ECOLI 0.9342157
+YEAST-ECOLI 0.9876180
+
+--------------------------------------------
+
+TTOF5600_32_proteins.tsv
+identification: 1998
+replication: 0.131381560070933
+accuracy: 
+  A:B 
+0.852 
+precision: 0.077079756062351
+separation: 
+                  A:B
+HUMAN-YEAST 0.9631325
+HUMAN-ECOLI 0.9967316
+YEAST-ECOLI 0.9998880
+
+--------------------------------------------
+
+TTOF5600_64_peptides.tsv
+identification: 18802
+replication: 0.13763917919273
+accuracy: 
+  A:B 
+0.895 
+precision: 0.55309891861623
+separation: 
+                  A:B
+HUMAN-YEAST 0.8534722
+HUMAN-ECOLI 0.8220687
+YEAST-ECOLI 0.9525003
+
+--------------------------------------------
+
+TTOF5600_64_proteins.tsv
+identification: 2215
+replication: 0.139554418965794
+accuracy: 
+  A:B 
+0.853 
+precision: 0.160830044223112
+separation: 
+                  A:B
+HUMAN-YEAST 0.9379117
+HUMAN-ECOLI 0.9580682
+YEAST-ECOLI 0.9935484
+
+--------------------------------------------
+
+TTOF6600_32_peptides.tsv
+identification: 26392
+replication: 0.117186829092306
+accuracy: 
+  A:B 
+0.855 
+precision: 0.233544486650594
+separation: 
+                  A:B
+HUMAN-YEAST 0.8941419
+HUMAN-ECOLI 0.9244636
+YEAST-ECOLI 0.9815711
+
+--------------------------------------------
+
+TTOF6600_32_proteins.tsv
+identification: 3064
+replication: 0.175069126796979
+accuracy: 
+  A:B 
+0.836 
+precision: 0.123106005985356
+separation: 
+                  A:B
+HUMAN-YEAST 0.9506830
+HUMAN-ECOLI 0.9878932
+YEAST-ECOLI 0.9995496
+
+--------------------------------------------
+
+TTOF6600_64_peptides.tsv
+identification: 36462
+replication: 0.11807481692713
+accuracy: 
+  A:B 
+0.872 
+precision: 0.318028479649861
+separation: 
+                  A:B
+HUMAN-YEAST 0.8894610
+HUMAN-ECOLI 0.9093135
+YEAST-ECOLI 0.9793591
+
+--------------------------------------------
+
+TTOF6600_64_proteins.tsv
+identification: 3892
+replication: 0.176045994979532
+accuracy: 
+  A:B 
+0.836 
+precision: 0.0543637127097563
+separation: 
+                  A:B
+HUMAN-YEAST 0.9547771
+HUMAN-ECOLI 0.9874269
+YEAST-ECOLI 0.9961176
+
