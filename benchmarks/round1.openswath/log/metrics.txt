@@ -1,0 +1,138 @@
+--------------------------------------------
+
+ Metrics description: 
+	identification:
+		identification rate,
+		the number of identified proteins for benchmark species
+	replication:
+		replication variance,
+		the median CV for the background species
+	accuracy:
+		accuracy of relative quantification,
+		the area under quantification curve for background species
+	precision deviation:
+		deviation of precision of quantification,
+		the root mean square of ( medianLR - expectation ) for regulated species
+	separation:
+		species separation ability,
+		the area under ROC curve between a species pair
+--------------------------------------------
+
+TTOF5600_32w_peptides
+identification: 26652
+replication: 0.051926891846145
+accuracy: 
+  A:B 
+0.926 
+precision deviation: 0.582945837686958
+separation: 
+                  A:B
+HUMAN-YEAST 0.9360769
+HUMAN-ECOLI 0.9631709
+YEAST-ECOLI 0.9885927
+
+--------------------------------------------
+
+TTOF5600_32w_proteins
+identification: 3480
+replication: 0.0433199685112234
+accuracy: 
+ A:B 
+0.93 
+precision deviation: 0.397144162109427
+separation: 
+                  A:B
+HUMAN-YEAST 0.9369312
+HUMAN-ECOLI 0.9678259
+YEAST-ECOLI 0.9894852
+
+--------------------------------------------
+
+TTOF5600_64w_peptides
+identification: 34961
+replication: 0.0507301995089185
+accuracy: 
+ A:B 
+0.93 
+precision deviation: 0.440711557968483
+separation: 
+                  A:B
+HUMAN-YEAST 0.9575834
+HUMAN-ECOLI 0.9795824
+YEAST-ECOLI 0.9926746
+
+--------------------------------------------
+
+TTOF5600_64w_proteins
+identification: 4273
+replication: 0.037233487064878
+accuracy: 
+  A:B 
+0.945 
+precision deviation: 0.318367948070833
+separation: 
+                  A:B
+HUMAN-YEAST 0.9764150
+HUMAN-ECOLI 0.9897903
+YEAST-ECOLI 0.9986421
+
+--------------------------------------------
+
+TTOF6600_32w_peptides
+identification: 32356
+replication: 0.075550334155714
+accuracy: 
+  A:B 
+0.918 
+precision deviation: 0.506159089790317
+separation: 
+                  A:B
+HUMAN-YEAST 0.9436533
+HUMAN-ECOLI 0.9623800
+YEAST-ECOLI 0.9877101
+
+--------------------------------------------
+
+TTOF6600_32w_proteins
+identification: 4036
+replication: 0.0785316382420662
+accuracy: 
+  A:B 
+0.932 
+precision deviation: 0.320052727878557
+separation: 
+                  A:B
+HUMAN-YEAST 0.9592190
+HUMAN-ECOLI 0.9718404
+YEAST-ECOLI 0.9919837
+
+--------------------------------------------
+
+TTOF6600_64w_peptides
+identification: 38845
+replication: 0.0595894669593475
+accuracy: 
+  A:B 
+0.926 
+precision deviation: 0.377768151927093
+separation: 
+                  A:B
+HUMAN-YEAST 0.9660115
+HUMAN-ECOLI 0.9770403
+YEAST-ECOLI 0.9952176
+
+--------------------------------------------
+
+TTOF6600_64w_proteins
+identification: 4589
+replication: 0.0556326221504593
+accuracy: 
+ A:B 
+0.95 
+precision deviation: 0.250324055314263
+separation: 
+                  A:B
+HUMAN-YEAST 0.9826362
+HUMAN-ECOLI 0.9922089
+YEAST-ECOLI 0.9986250
+
