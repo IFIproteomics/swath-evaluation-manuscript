@@ -18,8 +18,29 @@ if(software_source == "Spectronaut"){
     nastrings <- "NaN"
     input.extension <- "*.tsv$"
 }
+
+if(software_source == "test"){
+    quantitative.var <- "sumArea"
+    protein.var <- "ProteinName"
+    filename.var <- "ReplicateName"
+    sequence.mod.var <- "PeptideSequence"
+    charge.var <- "PrecursorCharge" 
+    nastrings <- "NA"
+    input.extension <- "*.tsv$"
+}
+
+if(software_source == "DIAumpire"){
+    quantitative.var <- "area"
+    protein.var <- "Protein"
+    filename.var <- "ReplicateName"
+    sequence.mod.var <- "ModSeq"
+    charge.var <- "Charge" 
+    nastrings <- "NA"
+    input.extension <- "*.csv$"
+}
+
 if(software_source == "Skyline"){
-    q_filter_threshold <- 0.05
+    q_filter_threshold <- 0.15
     qvalue.var <- "annotation_QValue"
     quantitative.var <- "TotalArea"
     protein.var <- "ProteinName"
@@ -38,10 +59,10 @@ if(software_source == "PeakView"){
     input.extension <- "*.tsv$"
 }
 if(software_source == "openSWATH"){
-    q_filter_threshold <- 0.05
-    qvalue.var <- "score"
+    #q_filter_threshold <- 0.05
+    #qvalue.var <- "score"
     quantitative.var <- "Intensity"
-    protein.var <- "ProteinName"
+    protein.var <- "Protein"
     filename.var <- "FileName"
     sequence.mod.var <- "Peptide"
     charge.var <- "PrecursorCharge"  

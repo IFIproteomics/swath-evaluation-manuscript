@@ -17,26 +17,24 @@ loadLibrary("tools")
 
 #working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark/hye.r/data.peakview/RAW.PeakView.output"
 #working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/Skyline"
-working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark/hye.r/data.new.openswath/Raw_OpenSWATH_Output"
-#software_source <- "Spectronaut"
-#software_source <- "PeakView"
-#software_source <- "Skyline"
-software_source <- "openSWATH"
+#working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark/hye.r/data.new.openswath/Raw_OpenSWATH_Output"
+#working_dir <-"/Users/napedro/Dropbox/PAPER_SWATHbenchmark/hye.r/data.new.openswath/Raw_OpenSWATH_Output"
+#working_dir <-"/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/Skyline/transitions/Qvalue0.02_top_ranked_transitions"
+working_dir <-"/Users/napedro/Dropbox/tmp_wrk_home2/SWATHbenchmark/DIA-umpire/round1/peptides"
 
-input_format <- "wide"  # Options: "long", "wide"
+
+software_source <- "DIAumpire"    # Options: "Spectronaut", "PeakView", "Skyline", "openSWATH", "DIAumpire"
+input_format <- "wide"          # Options: "long", "wide"
+
 results_dir <- "formatted_files"
 
 source("fswe.variables.R")
+#q_filter_threshold <- 0.005
 source("fswe.functions.R")
 source("fswe.datasets.R")
 
-# setwd(working_dir)  # TODO: remove this setwd, and make all paths for outputs absolute.
-
-
 if(!file.exists(file.path(working_dir, results_dir))) { dir.create(file.path(working_dir, results_dir)) }
-
 AllInputFiles = list.files( path=working_dir, pattern=input.extension, full.names= FALSE )
-#
 
 
 ## Ops related to the quantitation variable ##
@@ -47,7 +45,7 @@ medianquant <- paste0("median(", quantitative.var,")")
 generateReports <- function(experiment_file){
 
     # Read file
-    #experiment_file <- AllInputFiles[1]
+    #  experiment_file <- AllInputFiles[1]
     cat(paste0("Generating peptide report for ", experiment_file, "\n"))
     experiment_file <- file.path(working_dir, experiment_file)
     df <- read.table(experiment_file, na.strings= nastrings,
@@ -71,7 +69,7 @@ generateReports <- function(experiment_file){
         # They will be use to gather the key-value pairs
         experiment <- which(sapply(experiments, guessExperiment_wide, colnames(df) ))
         
-        df <- df %>% gather_(filename.var, quantitative.var, 6:11) %>%  # TODO: change this hard-coded 6:11
+        df <- df %>% gather_(filename.var, quantitative.var, 4:9) %>%  # TODO: change this hard-coded 6:11
                     arrange_(protein.var, sequence.mod.var)
         
     }else if(input_format == "long"){
@@ -84,10 +82,13 @@ generateReports <- function(experiment_file){
     # (These cases are likely to be due to several entries in the library)
     data <- df %>% distinct_(filename.var, sequence.mod.var, charge.var)  # I am not sure I removed all duplicates, or there is still one value per duplicate
     
+    #Remove NAs of the quant variable
+    data <- data %>% na.omit() 
+    
     # For each peptide: Sum quantitative values of charge states
-    data <- data %>% group_by_(filename.var, sequence.mod.var) %>% 
-        summarise_( proteinID = protein.var, specie = "specie" ,  quant_value = sumquant )  
-
+    data <- data %>% group_by_(filename.var, sequence.mod.var, protein.var , "specie") %>% 
+        summarise_(  quant_value = sumquant ) # proteinID = protein.var, specie = "specie" , 
+    
     peptides_wide <- spread_(data, filename.var, "quant_value") 
     
     # Change variable names of injections by their right name (removing additions from software to the name, etc)
