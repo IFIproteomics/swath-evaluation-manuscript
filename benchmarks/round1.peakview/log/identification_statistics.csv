@@ -1,9 +1,0 @@
-"name"	"HUMAN"	"YEAST"	"ECOLI"	"OTHER"	"sum"
-"TTOF5600_1ug_32w_cfg1_peptides.tsv"	4926	2010	1383	0	8319
-"TTOF5600_1ug_32w_cfg1_proteins.tsv"	1394	584	391	0	2369
-"TTOF5600_1ug_64w_cfg1_peptides.tsv"	6493	3059	1917	0	11469
-"TTOF5600_1ug_64w_cfg1_proteins.tsv"	1814	934	568	0	3316
-"TTOF6600_1ug_32w_cfg1_peptides.tsv"	5871	2802	2398	0	11071
-"TTOF6600_1ug_32w_cfg1_proteins.tsv"	1618	840	727	0	3185
-"TTOF6600_1ug_64w_cfg1_peptides.tsv"	6950	4128	3439	0	14517
-"TTOF6600_1ug_64w_cfg1_proteins.tsv"	1858	1245	1045	0	4148
