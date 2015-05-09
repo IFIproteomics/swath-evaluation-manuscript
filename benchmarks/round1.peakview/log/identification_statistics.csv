@@ -1,0 +1,9 @@
+"name"	"HUMAN"	"YEAST"	"ECOLI"	"OTHER"	"sum"
+"TTOF5600_1ug_32w_cfg1_allPeptides_peptides"	8083	3387	2953	0	14423
+"TTOF5600_1ug_32w_cfg1_allPeptides_proteins"	1255	606	503	0	2364
+"TTOF5600_1ug_64w_cfg1_allPeptides_peptides"	11213	5678	4509	0	21400
+"TTOF5600_1ug_64w_cfg1_allPeptides_proteins"	1621	908	702	0	3231
+"TTOF6600_1ug_32w_cfg1_AllPeptides_peptides"	10381	5102	5309	0	20792
+"TTOF6600_1ug_32w_cfg1_AllPeptides_proteins"	1534	849	759	0	3142
+"TTOF6600_1ug_64w_cfg1_allPeptides_peptides"	12623	7857	7590	0	28070
+"TTOF6600_1ug_64w_cfg1_allPeptides_proteins"	1755	1186	989	0	3930
