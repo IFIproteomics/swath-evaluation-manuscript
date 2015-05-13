@@ -1,9 +1,9 @@
 "name"	"HUMAN"	"YEAST"	"ECOLI"	"OTHER"	"sum"
-"TTOF5600_32_peptides.tsv"	9232	3679	2814	0	15725
-"TTOF5600_32_proteins.tsv"	1173	457	368	0	1998
-"TTOF5600_64_peptides.tsv"	11181	4393	3228	0	18802
-"TTOF5600_64_proteins.tsv"	1280	542	393	0	2215
-"TTOF6600_32_peptides.tsv"	15686	6168	4538	0	26392
-"TTOF6600_32_proteins.tsv"	1803	736	525	0	3064
-"TTOF6600_64_peptides.tsv"	22031	8377	6054	0	36462
-"TTOF6600_64_proteins.tsv"	2335	910	647	0	3892
+"5600_32_DIAumpire_round1_PeptideSummary_peptides"	7172	2894	2253	0	12319
+"5600_32_DIAumpire_round1_PeptideSummary_proteins"	1017	406	332	0	1755
+"5600_64_DIAumpire_round1_PeptideSummary_peptides"	9343	3704	2772	0	15819
+"5600_64_DIAumpire_round1_PeptideSummary_proteins"	1138	473	355	0	1966
+"6600_32_DIAumpire_round1_PeptideSummary_peptides"	12710	5088	3768	0	21566
+"6600_32_DIAumpire_round1_PeptideSummary_proteins"	1624	653	480	0	2757
+"6600_64_DIAumpire_round1_PeptideSummary_peptides"	19212	7321	5319	0	31852
+"6600_64_DIAumpire_round1_PeptideSummary_proteins"	2192	851	611	0	3654

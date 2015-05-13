@@ -1,120 +1,253 @@
 --------------------------------------------
 
-TTOF5600_32_peptides.tsv
-identification: 15725
-replication: 0.107944776375868
+ Metrics description: 
+	identification:
+		identification rate,
+		the number of identified proteins for benchmark species
+	replication:
+		replication variance,
+		the median CV for the background species
+	accuracy:
+		accuracy of relative quantification,
+		the area under quantification curve for background species
+	precision deviation:
+		deviation of precision of quantification,
+		the root mean square of ( medianLR - expectation ) for regulated species
+	separation:
+		species separation ability,
+		the area under ROC curve between a species pair
+	separation by range:
+		species separation ability for predefined log2-intensity ranges,
+		the area under ROC curve between a species pair
+--------------------------------------------
+
+5600_32_DIAumpire_round1_PeptideSummary_peptides
+identification: 12319
+replication: 0.0794817646527812
 accuracy: 
   A:B 
-0.872 
-precision: 0.270428837869403
+0.902 
+precision deviation: 0.442373239179431
 separation: 
                   A:B
-HUMAN-YEAST 0.9129514
-HUMAN-ECOLI 0.9342157
-YEAST-ECOLI 0.9876180
+HUMAN-YEAST 0.9441271
+HUMAN-ECOLI 0.9821866
+YEAST-ECOLI 0.9928215
+separation by range: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2   0.8911046   0.6953405   0.8121212
+<3   0.8948264   0.8697778   0.9835938
+<4   0.9420308   0.9688023   0.9969618
+<5   0.9404342   0.9863268   0.9970792
+<6   0.9382478   0.9751134   0.9894518
+<7   0.9544309   0.9850020   0.9939371
+<8   0.9607465   0.9941456   0.9993247
+<9   0.9507260   0.9914223   0.9842910
+>9   0.9534013   0.9917532   0.9732643
+
 
 --------------------------------------------
 
-TTOF5600_32_proteins.tsv
-identification: 1998
-replication: 0.131381560070933
+5600_32_DIAumpire_round1_PeptideSummary_proteins
+identification: 1755
+replication: 0.0659795310761862
 accuracy: 
   A:B 
-0.852 
-precision: 0.077079756062351
+0.909 
+precision deviation: 0.209712248936818
 separation: 
                   A:B
-HUMAN-YEAST 0.9631325
-HUMAN-ECOLI 0.9967316
-YEAST-ECOLI 0.9998880
+HUMAN-YEAST 0.9655325
+HUMAN-ECOLI 0.9979860
+YEAST-ECOLI 0.9968493
+separation by range: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2         NaN         NaN         NaN
+<3         NaN         NaN         NaN
+<4         NaN         NaN         NaN
+<5   0.8333333         NaN         NaN
+<6   0.9734748         NaN         NaN
+<7   0.9380645   0.9983333   1.0000000
+<8   0.9663857   0.9890021   0.9995693
+<9   0.9774836   0.9972143   1.0000000
+>9   0.9744023   1.0000000   0.9900781
+
 
 --------------------------------------------
 
-TTOF5600_64_peptides.tsv
-identification: 18802
-replication: 0.13763917919273
+5600_64_DIAumpire_round1_PeptideSummary_peptides
+identification: 15819
+replication: 0.0951410954782757
 accuracy: 
   A:B 
-0.895 
-precision: 0.55309891861623
+0.888 
+precision deviation: 0.407561539618203
 separation: 
                   A:B
-HUMAN-YEAST 0.8534722
-HUMAN-ECOLI 0.8220687
-YEAST-ECOLI 0.9525003
+HUMAN-YEAST 0.9430837
+HUMAN-ECOLI 0.9821388
+YEAST-ECOLI 0.9925024
+separation by range: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2   0.8240666   0.9393939   0.9895833
+<3   0.8602643   0.9776358   0.9851695
+<4   0.8953715   0.9228803   0.9812463
+<5   0.9561028   0.9608028   0.9793700
+<6   0.9493701   0.9799077   0.9938897
+<7   0.9619406   0.9869484   0.9951308
+<8   0.9720730   0.9976921   0.9951686
+<9   0.9584224   0.9850427   0.9938889
+>9   0.8889850   1.0000000   0.9705882
+
 
 --------------------------------------------
 
-TTOF5600_64_proteins.tsv
-identification: 2215
-replication: 0.139554418965794
+5600_64_DIAumpire_round1_PeptideSummary_proteins
+identification: 1966
+replication: 0.0820411769499032
 accuracy: 
   A:B 
-0.853 
-precision: 0.160830044223112
+0.896 
+precision deviation: 0.141287818159884
 separation: 
                   A:B
-HUMAN-YEAST 0.9379117
-HUMAN-ECOLI 0.9580682
-YEAST-ECOLI 0.9935484
+HUMAN-YEAST 0.9705778
+HUMAN-ECOLI 0.9822281
+YEAST-ECOLI 0.9956508
+separation by range: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2         NaN         NaN         NaN
+<3         NaN         NaN         NaN
+<4         NaN         NaN         NaN
+<5         NaN         NaN         NaN
+<6   0.9392789   1.0000000   1.0000000
+<7   0.9661538   0.7666667   1.0000000
+<8   0.9776116   0.9990438   0.9994527
+<9   0.9640000   0.9560851   0.9803393
+>9   0.9875120   0.9911106   0.9999325
+
 
 --------------------------------------------
 
-TTOF6600_32_peptides.tsv
-identification: 26392
-replication: 0.117186829092306
+6600_32_DIAumpire_round1_PeptideSummary_peptides
+identification: 21566
+replication: 0.106465809001939
 accuracy: 
   A:B 
-0.855 
-precision: 0.233544486650594
+0.885 
+precision deviation: 0.303548020721041
 separation: 
                   A:B
-HUMAN-YEAST 0.8941419
-HUMAN-ECOLI 0.9244636
-YEAST-ECOLI 0.9815711
+HUMAN-YEAST 0.9353161
+HUMAN-ECOLI 0.9631720
+YEAST-ECOLI 0.9812972
+separation by range: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1   0.8578898   0.7390007   0.8027562
+<2   0.9243768   0.8857920   0.9378525
+<3   0.9224141   0.9341417   0.9667130
+<4   0.9314724   0.9507712   0.9777470
+<5   0.9325975   0.9463942   0.9769392
+<6   0.9388462   0.9628754   0.9780707
+<7   0.9352948   0.9784379   0.9851213
+<8   0.9673979   0.9931945   0.9874625
+<9   0.9515889   0.9873010   0.9849402
+>9   0.9984923   0.9997368   1.0000000
+
 
 --------------------------------------------
 
-TTOF6600_32_proteins.tsv
-identification: 3064
-replication: 0.175069126796979
+6600_32_DIAumpire_round1_PeptideSummary_proteins
+identification: 2757
+replication: 0.121196511002237
 accuracy: 
   A:B 
-0.836 
-precision: 0.123106005985356
+0.884 
+precision deviation: 0.055751665685582
 separation: 
                   A:B
-HUMAN-YEAST 0.9506830
-HUMAN-ECOLI 0.9878932
-YEAST-ECOLI 0.9995496
+HUMAN-YEAST 0.9669981
+HUMAN-ECOLI 0.9901998
+YEAST-ECOLI 0.9971141
+separation by range: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2         NaN         NaN         NaN
+<3         NaN         NaN         NaN
+<4   0.9451754         NaN         NaN
+<5   0.9373563         NaN         NaN
+<6   0.9505824   0.9364017   0.9981982
+<7   0.9753319   0.9829060   0.9997384
+<8   0.9695452   0.9887243   0.9995037
+<9   0.9558019   0.9859930   0.9805195
+>9   0.9941998   0.9997459   1.0000000
+
 
 --------------------------------------------
 
-TTOF6600_64_peptides.tsv
-identification: 36462
-replication: 0.11807481692713
+6600_64_DIAumpire_round1_PeptideSummary_peptides
+identification: 31852
+replication: 0.109097362782767
 accuracy: 
   A:B 
-0.872 
-precision: 0.318028479649861
+0.871 
+precision deviation: 0.268508981637802
 separation: 
                   A:B
-HUMAN-YEAST 0.8894610
-HUMAN-ECOLI 0.9093135
-YEAST-ECOLI 0.9793591
+HUMAN-YEAST 0.9309881
+HUMAN-ECOLI 0.9628706
+YEAST-ECOLI 0.9828917
+separation by range: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1   0.8392561   0.7098954   0.8552576
+<2   0.9211578   0.9068338   0.9678477
+<3   0.9362301   0.8844838   0.9461596
+<4   0.9238580   0.9600512   0.9789066
+<5   0.9259943   0.9563539   0.9801917
+<6   0.9298449   0.9672674   0.9838633
+<7   0.9601649   0.9924588   0.9892105
+<8   0.9688853   0.9930951   0.9947227
+<9   0.9721934   0.9848313   0.9958058
+>9         NaN         NaN         NaN
+
 
 --------------------------------------------
 
-TTOF6600_64_proteins.tsv
-identification: 3892
-replication: 0.176045994979532
+6600_64_DIAumpire_round1_PeptideSummary_proteins
+identification: 3654
+replication: 0.120869284773474
 accuracy: 
   A:B 
-0.836 
-precision: 0.0543637127097563
+0.883 
+precision deviation: 0.0313935504318075
 separation: 
                   A:B
-HUMAN-YEAST 0.9547771
-HUMAN-ECOLI 0.9874269
-YEAST-ECOLI 0.9961176
+HUMAN-YEAST 0.9672036
+HUMAN-ECOLI 0.9759857
+YEAST-ECOLI 0.9931850
+separation by range: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2         NaN         NaN         NaN
+<3         NaN         NaN         NaN
+<4   0.9461806         NaN         NaN
+<5   0.9542036   0.9585799   0.8333333
+<6   0.9812633   0.9203704   0.9973461
+<7   0.9466446   0.9478791   0.9906442
+<8   0.9714800   0.9756363   0.9835711
+<9   0.9626252   0.9790982   0.9861111
+>9   0.9879202   0.9983124   1.0000000
+
 

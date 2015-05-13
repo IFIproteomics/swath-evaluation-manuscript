@@ -1,0 +1,137 @@
+--------------------------------------------
+
+ Metrics description: 
+	identification:
+		identification rate,
+		the number of identified proteins for benchmark species
+	replication:
+		replication variance,
+		the median CV for the background species
+	accuracy:
+		accuracy of relative quantification,
+		the area under quantification curve for background species
+	precision deviation:
+		deviation of precision of quantification,
+		the root mean square of ( medianLR - expectation ) for regulated species
+	separation:
+		species separation ability,
+		the area under ROC curve between a species pair
+	separation by range:
+		species separation ability for predefined log2-intensity ranges,
+		the area under ROC curve between a species pair
+--------------------------------------------
+
+5600_32_DIAumpire_round1_ProteinSummary_mod
+identification: 2330
+replication: 0.0821577592670104
+accuracy: 
+A:B 
+0.9 
+precision deviation: 0.212440472329036
+separation: 
+                  A:B
+HUMAN-YEAST 0.9450865
+HUMAN-ECOLI 0.9853280
+YEAST-ECOLI 0.9964839
+separation by range: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2         NaN         NaN         NaN
+<3   0.9310345         NaN         NaN
+<4   0.9376781   0.9742063   1.0000000
+<5   0.9476679   0.9950249   1.0000000
+<6   0.9253768   0.9166667   0.9791667
+<7   0.9416043   0.9898852   0.9979323
+<8   0.9579969   0.9838737   0.9985868
+<9   0.9516206   0.9996957   1.0000000
+>9   0.9450433   0.9998240   0.9985682
+
+
+--------------------------------------------
+
+5600_64_DIAumpire_round1_ProteinSummary_mod
+identification: 2534
+replication: 0.0965358388386942
+accuracy: 
+  A:B 
+0.884 
+precision deviation: 0.142142416522703
+separation: 
+                  A:B
+HUMAN-YEAST 0.9395482
+HUMAN-ECOLI 0.9804470
+YEAST-ECOLI 0.9951042
+separation by range: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2   0.9107143   1.0000000   1.0000000
+<3   0.7760417         NaN         NaN
+<4   0.8946441   0.8430233   0.9797980
+<5   0.9458812   0.8266667   0.9356322
+<6   0.9310839   0.9486166   0.9943182
+<7   0.9522177   0.9625000   0.9968750
+<8   0.9450862   0.9998644   0.9997463
+<9   0.9514333   0.9972499   0.9997342
+>9   0.9728314   0.9999695   1.0000000
+
+
+--------------------------------------------
+
+6600_32_DIAumpire_round1_ProteinSummary_mod
+identification: 3507
+replication: 0.129507679093693
+accuracy: 
+  A:B 
+0.882 
+precision deviation: 0.0594152062788511
+separation: 
+                  A:B
+HUMAN-YEAST 0.9458582
+HUMAN-ECOLI 0.9805045
+YEAST-ECOLI 0.9932003
+separation by range: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1   0.8428030   0.7575758   1.0000000
+<2   0.9453735   0.9871795   1.0000000
+<3   0.8875868   0.9139660   0.9701389
+<4   0.9376837   0.9215304   0.9568160
+<5   0.9320740   0.9580824   0.9950000
+<6   0.9571572   0.9644907   0.9843027
+<7   0.9424174   0.9992987   1.0000000
+<8   0.9605537   0.9913528   0.9941365
+<9   0.9998882   0.9993739   1.0000000
+>9   0.9694949   1.0000000   1.0000000
+
+
+--------------------------------------------
+
+6600_64_DIAumpire_round1_ProteinSummary_mod
+identification: 4351
+replication: 0.133882112380306
+accuracy: 
+  A:B 
+0.872 
+precision deviation: 0.0288785306913863
+separation: 
+                  A:B
+HUMAN-YEAST 0.9449551
+HUMAN-ECOLI 0.9761045
+YEAST-ECOLI 0.9939586
+separation by range: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1   0.9629630         NaN         NaN
+<2   0.9439051   0.9902913   1.0000000
+<3   0.9466016   0.9117647   0.9963235
+<4   0.9121580   0.9239611   0.9568345
+<5   0.9049385   0.9438553   0.9867647
+<6   0.9554596   0.9746539   0.9970682
+<7   0.9429363   0.9900739   0.9987037
+<8   0.9730224   0.9986350   1.0000000
+<9   0.9922481   0.9788336   0.9936343
+>9   0.9777716   0.9999085   1.0000000
+
+
