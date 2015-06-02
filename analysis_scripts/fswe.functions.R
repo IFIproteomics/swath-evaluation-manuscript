@@ -49,7 +49,7 @@ sum_top_n <- function(values, n, minimum = 1){
 single_hits <- function(values){
     # choose single hit proteins.
     if(length(which(!is.na(values))) > 1) {return (NA)}
-    sum(values, na.rm=T)
+    sum(values)
 }
 
 guessSep <- function(filename){

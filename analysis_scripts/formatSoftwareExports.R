@@ -32,10 +32,11 @@ working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.soft
 working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/Spectronaut_round1"
 working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/round1/DIA.Umpire/SummaryResult_20150510/peptidesSummaries"
 working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/round1/DIA.Umpire/SummaryResult_20150510/proteinSummaries"
+working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/Spectronaut_round2"
 
 
-software_source <- "DIAumpire"    # Options: "Spectronaut", "PeakView", "Skyline", "openSWATH", "DIAumpire"
-input_format <- "wide"              # Options: "long", "wide"
+software_source <- "Spectronaut"    # Options: "Spectronaut", "PeakView", "Skyline", "openSWATH", "DIAumpire"
+input_format <- "long"              # Options: "long", "wide"
 
 results_dir <- "input"
 supplementary <- "supplementary"
@@ -222,8 +223,8 @@ generateReports <- function(experiment_file,
                         select(-sequenceID) %>% 
                         arrange(proteinID, specie) %>%
                         group_by(proteinID, specie) %>%  
-                        summarise_each(funs(sum_top_n(., 3, 2)))  # , n_distinct(.) (if you want to report the num of peptides)
-                        #summarise_each(funs(single_hits(.)))  # , n_distinct(.) (if you want to report the num of peptides)
+                        #summarise_each(funs(sum_top_n(., 3, 2)))  # , n_distinct(.) (if you want to report the num of peptides)
+                        summarise_each(funs(single_hits(.)))  # , n_distinct(.) (if you want to report the num of peptides)
     
     
     # Remove "empty" proteins (all values are NAs). I wish I could find a more elegant way to do it. I am tired.
