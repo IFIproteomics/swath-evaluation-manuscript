@@ -223,8 +223,8 @@ generateReports <- function(experiment_file,
                         select(-sequenceID) %>% 
                         arrange(proteinID, specie) %>%
                         group_by(proteinID, specie) %>%  
-                        #summarise_each(funs(sum_top_n(., 3, 2)))  # , n_distinct(.) (if you want to report the num of peptides)
-                        summarise_each(funs(single_hits(.)))  # , n_distinct(.) (if you want to report the num of peptides)
+                        summarise_each(funs(sum_top_n(., 3, 2)))  # , n_distinct(.) (if you want to report the num of peptides)
+                        #summarise_each(funs(single_hits(.)))  # , n_distinct(.) (if you want to report the num of peptides)
     
     
     # Remove "empty" proteins (all values are NAs). I wish I could find a more elegant way to do it. I am tired.
