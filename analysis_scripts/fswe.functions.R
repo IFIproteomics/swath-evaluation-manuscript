@@ -22,13 +22,13 @@ guessExperiment <- function(exp, injections){
 
 guessInjection <- function(varname, exp){
     injections <- experiments[[exp]]
-    as.character(names(which(sapply(injections,  grepl, varname))))
+    as.character(names(which(sapply(injections,  grepl, varname, ignore.case = T))))
 }
 
 guessExperiment_wide <- function(exp, varnames){
     # exp: one of the experiments: i.e. experiments[[1]]
     # varnames: column names of the data frame
-    any(sapply(exp, grepl, varnames))
+    any(sapply(exp, grepl, varnames, ignore.case = T))
 }
 
 guessSpecie <- function(proteinid){
@@ -46,10 +46,18 @@ sum_top_n <- function(values, n, minimum = 1){
     sum(sort(values, decreasing=T)[1:n], na.rm=T)
 }
 
+single_hits <- function(values){
+    # choose single hit proteins.
+    if(length(which(!is.na(values))) > 1) {return (NA)}
+    sum(values, na.rm=T)
+}
+
 guessSep <- function(filename){
+    filename <- gsub(".gz$", "", filename)
     extension <- file_ext(filename)
     if(extension == "tsv") return ("\t")
     else if(extension == "csv") return (",")
+    else if(extension == "txt") return ("\t")
     else return(NA)
 }
 
