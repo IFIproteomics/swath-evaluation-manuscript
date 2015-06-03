@@ -45,6 +45,11 @@ supplementary <- "supplementary"
 #sequencelist <- read.csv("/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/common_peptides/commonPeptides.csv", stringsAsFactors=F)$V1
 sequencelist <- NULL
 
+plotHistogram = T 
+plotHistNAs = T 
+reportSequences = F
+singleHits = T
+
 
 source("fswe.variables.R")
 #q_filter_threshold <- 0.00164
@@ -219,13 +224,22 @@ generateReports <- function(experiment_file,
     ## PROTEIN REPORT
     cat(paste0("Generating protein report for ", experiment_file,"\n"))
     
-    proteins_wide <- peptides_wide %>% 
-                        select(-sequenceID) %>% 
-                        arrange(proteinID, specie) %>%
-                        group_by(proteinID, specie) %>%  
-                        summarise_each(funs(sum_top_n(., 3, 2)))  # , n_distinct(.) (if you want to report the num of peptides)
-                        #summarise_each(funs(single_hits(.)))  # , n_distinct(.) (if you want to report the num of peptides)
-    
+    if(singleHits){
+        print("Summarising protein single hits...")
+        proteins_wide <- peptides_wide %>% 
+            arrange(proteinID, specie) %>%
+            group_by(proteinID, specie) %>%
+            filter(n_distinct(sequenceID) == 1) %>%
+            select(-sequenceID) %>% 
+            summarise_each(funs(single_hits(.))) 
+    }else{
+        print("Summarising proteins...")
+        proteins_wide <- peptides_wide %>% 
+            select(-sequenceID) %>% 
+            arrange(proteinID, specie) %>%
+            group_by(proteinID, specie) %>%  
+            summarise_each(funs(sum_top_n(., 3, 2)))  
+    }  
     
     # Remove "empty" proteins (all values are NAs). I wish I could find a more elegant way to do it. I am tired.
     proteins_wide <- filter(proteins_wide, !is.na(A1) | !is.na(A2) | !is.na(A3) | !is.na(B1) | !is.na(B2) | !is.na(B3))
@@ -271,6 +285,10 @@ generateReports <- function(experiment_file,
 }
 
 
-nix <- sapply(AllInputFiles, generateReports, plotHistogram = T, plotHistNAs = T, reportSequences = F, sequence.list = sequencelist)
-
+nix <- sapply(AllInputFiles, generateReports, 
+              plotHistogram = plotHistogram, 
+              plotHistNAs = plotHistNAs, 
+              reportSequences = reportSequences, 
+              sequence.list = sequencelist,
+              singleHits = singleHits)
 
