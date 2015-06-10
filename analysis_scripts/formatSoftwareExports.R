@@ -33,9 +33,9 @@ working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.soft
 working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/round1/DIA.Umpire/SummaryResult_20150510/peptidesSummaries"
 working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/round1/DIA.Umpire/SummaryResult_20150510/proteinSummaries"
 working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/Spectronaut_round2"
+working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/openSWATH_round2"
 
-
-software_source <- "Spectronaut"    # Options: "Spectronaut", "PeakView", "Skyline", "openSWATH", "DIAumpire"
+software_source <- "openSWATH"    # Options: "Spectronaut", "PeakView", "Skyline", "openSWATH", "DIAumpire"
 input_format <- "long"              # Options: "long", "wide"
 
 results_dir <- "input"
@@ -71,7 +71,8 @@ generateReports <- function(experiment_file,
                             plotHistogram = F, 
                             plotHistNAs = F, 
                             reportSequences = F, 
-                            sequence.list = NULL){
+                            sequence.list = NULL,
+                            singleHits = F){
 
     qvalue.filtered = FALSE
     # Read file
