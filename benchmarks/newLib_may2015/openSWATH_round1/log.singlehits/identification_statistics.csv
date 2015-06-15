@@ -1,9 +1,5 @@
 "name"	"HUMAN"	"YEAST"	"ECOLI"	"OTHER"	"sum"
-"5600SW32_E1505221521_feature_alignment.tsv_peptides"	13689	7176	6475	0	27340
-"5600SW32_E1505221521_feature_alignment.tsv_proteins"	1771	1192	1055	0	4018
-"5600SW64v_E1505221523_feature_alignment.tsv_peptides"	16277	10376	9175	0	35828
-"5600SW64v_E1505221523_feature_alignment.tsv_proteins"	1920	1398	1198	0	4516
-"6600SW32_E1505221524-0_feature_alignment.tsv_peptides"	15852	10542	9634	0	36028
-"6600SW32_E1505221524-0_feature_alignment.tsv_proteins"	1996	1486	1279	0	4761
-"6600SW64v_E1505221524_feature_alignment.tsv_peptides"	17576	13589	12294	0	43459
-"6600SW64v_E1505221524_feature_alignment.tsv_proteins"	2029	1492	1344	0	4865
+"5600SW32_E1505221521_feature_alignment.tsv_proteins"	1009	436	307	0	1752
+"5600SW64v_E1505221523_feature_alignment.tsv_proteins"	1076	486	297	0	1859
+"6600SW32_E1505221524-0_feature_alignment.tsv_proteins"	1065	482	295	0	1842
+"6600SW64v_E1505221524_feature_alignment.tsv_proteins"	1065	500	291	0	1856

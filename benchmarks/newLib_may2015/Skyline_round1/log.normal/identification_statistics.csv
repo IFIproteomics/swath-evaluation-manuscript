@@ -1,9 +1,9 @@
 "name"	"HUMAN"	"YEAST"	"ECOLI"	"OTHER"	"sum"
-"TTOF5600_32w_newLib_libRetTimes_peptides"	8418	3597	3448	0	15463
-"TTOF5600_32w_newLib_libRetTimes_proteins"	1177	545	476	0	2198
-"TTOF5600_64w_newLib_libRetTimes_peptides"	13730	7113	6481	0	27324
-"TTOF5600_64w_newLib_libRetTimes_proteins"	1772	964	765	0	3501
-"TTOF6600_32w_newLib_libRetTimes_peptides"	7708	3142	3139	0	13989
-"TTOF6600_32w_newLib_libRetTimes_proteins"	1093	497	430	0	2020
-"TTOF6600_64w_newLib_10min_libRetTimes_peptides"	13565	7219	6388	0	27172
-"TTOF6600_64w_newLib_10min_libRetTimes_proteins"	1742	967	762	0	3471
+"TTOF5600_32w_newLib_libRetTimes_peptides"	8402	3593	3443	0	15438
+"TTOF5600_32w_newLib_libRetTimes_proteins"	1176	545	475	0	2196
+"TTOF5600_64w_newLib_libRetTimes_peptides"	13701	7104	6476	0	27281
+"TTOF5600_64w_newLib_libRetTimes_proteins"	1771	964	764	0	3499
+"TTOF6600_32w_newLib_libRetTimes_peptides"	7697	3138	3135	0	13970
+"TTOF6600_32w_newLib_libRetTimes_proteins"	1093	497	429	0	2019
+"TTOF6600_64w_newLib_10min_libRetTimes_peptides"	13532	7209	6380	0	27121
+"TTOF6600_64w_newLib_10min_libRetTimes_proteins"	1741	966	761	0	3468
