@@ -4,6 +4,12 @@
 substrRight <- function(x, n) { substr(x, nchar(x)-n+1, nchar(x)) }
 rmlastchars <- function(x, n) { substr(x, 1, nchar(x) - n) }
 
+stopHere = function() {
+    opt <- options(show.error.messages=FALSE) 
+    on.exit(options(opt))
+    stop()
+}
+
 take1stentry <- function(entries){
     first_entry <- strsplit(as.character(entries), "\\||\\/", fixed=F, perl=T)
     first_entry <- first_entry[[1]][4]

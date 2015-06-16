@@ -8,8 +8,10 @@ charge.var <- NA
 q_filter_threshold <- NA
 decoy.var <- NA
 sheet.fdr <- NULL
+protein_input <- F
 input.extension <- "*.csv$"
 nastrings = "NA"
+decoy.tags <- c("DECOY_","reverse")
 
 if(software_source == "Spectronaut"){
     qvalue.var <- "EG.Qvalue"
@@ -20,16 +22,8 @@ if(software_source == "Spectronaut"){
     charge.var <- "FG.Charge" 
     nastrings <- "NaN"
     input.extension <- "*.tsv$"
-}
-
-if(software_source == "test"){
-    quantitative.var <- "sumArea"
-    protein.var <- "ProteinName"
-    filename.var <- "ReplicateName"
-    sequence.mod.var <- "PeptideSequence"
-    charge.var <- "PrecursorCharge" 
-    nastrings <- "NA"
-    input.extension <- "*.tsv$"
+    input_format <- "long"  # Options: "long", "wide"
+    
 }
 
 if(software_source == "DIAumpire"){
@@ -40,7 +34,9 @@ if(software_source == "DIAumpire"){
     sequence.mod.var <- "ModSeq"
     charge.var <- "Charge" 
     nastrings <- "NA"
-    input.extension <- "*.txt$"
+    input.extension <- "*.tsv$"
+    input_format <- "wide"  # Options: "long", "wide"
+
 }
 
 if(software_source == "Skyline"){
@@ -54,8 +50,12 @@ if(software_source == "Skyline"){
     decoy.var <- "IsDecoy"
     nastrings <- "#N/A"
     input.extension <- "*.tsv$"
+    input_format <- "long"  # Options: "long", "wide"
+        
 }
+
 if(software_source == "PeakView"){
+    q_filter_threshold <- 0.01
     quantitative.var.tag <- "Sample"
     fdr.var.tag <- "FDR"
     quantitative.var <- "TotalAreaFragment"
@@ -67,7 +67,9 @@ if(software_source == "PeakView"){
     input.extension <- "*.xls*"
     sheet.data <- "Area - peptides"
     sheet.fdr <- "FDR"
+    input_format <- "wide"  # Options: "long", "wide"        
 }
+
 if(software_source == "openSWATH"){
     q_filter_threshold <- 0.01
     qvalue.var <- "m_score"
@@ -78,6 +80,7 @@ if(software_source == "openSWATH"){
     charge.var <- "Charge"  
     decoy.var <- "decoy"
     input.extension <- "*.tsv.gz$"
+    input_format <- "long"  # Options: "long", "wide"
     
     ### Wide format
     # q_filter_threshold <- 0.05
@@ -90,6 +93,42 @@ if(software_source == "openSWATH"){
     # charge.var <- "Charge"  
     # decoy.var <- "IsDecoy"
     # input.extension <- "*.tsv$"
+}
+
+if(software_source == "test"){
+    quantitative.var <- "sumArea"
+    protein.var <- "ProteinName"
+    filename.var <- "ReplicateName"
+    sequence.mod.var <- "PeptideSequence"
+    charge.var <- "PrecursorCharge" 
+    nastrings <- "NA"
+    input.extension <- "*.tsv$"
+    input_format <- "long"  # Options: "long", "wide"
+    
+}
+
+if(software_source == "PeakView_builtin_proteins"){
+    quantitative.var.tag <- "Sample"
+    quantitative.var <- "TotalAreaFragment"
+    sheet.data <- "Area - proteins"
+    protein.var <- "Protein"
+    filename.var <- "R.FileName"
+    input.extension <- "*.xls*"
+    input_format <- "wide"  # Options: "long", "wide"
+    protein_input <- T
+}
+
+if(software_source == "DIAumpire_builtin_proteins"){
+    quantitative.var.tag <- "Top6Top6Freq"
+    quantitative.var <- "top6Area"
+    protein.var <- "Protein.Key"
+    filename.var <- "ReplicateName"
+    sequence.mod.var <- "ModSeq"
+    charge.var <- "Charge" 
+    nastrings <- "NA"
+    input.extension <- "*.tsv$"
+    input_format <- "wide"  # Options: "long", "wide"
+    protein_input <- T
 }
 
 quantitative.var <- gsub(" ", ".", quantitative.var)
