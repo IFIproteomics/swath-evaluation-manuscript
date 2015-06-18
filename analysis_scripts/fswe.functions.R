@@ -52,6 +52,7 @@ sum_top_n <- function(values, n, minimum = 1){
     sum(sort(values, decreasing=T)[1:n], na.rm=T)
 }
 
+
 single_hits <- function(values){
     # choose single hit proteins.
     if(length(which(!is.na(values))) > 1) {return (NA)}

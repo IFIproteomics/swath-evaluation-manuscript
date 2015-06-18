@@ -16,19 +16,19 @@ loadLibrary("ggplot2")
 loadLibrary("readxl")
 
 
-working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/Peakview_round1"
+#working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/Peakview_round1"
 #working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/Skyline_round1"
 #working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/openSWATH_round1"
 #working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/openSWATH_round2"
 #working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/Spectronaut_round1"
-#working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/Spectronaut_round2"
-working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/round1/DIA.Umpire/SummaryResult_20150510/peptidesSummaries"
+working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/Spectronaut_round2"
+#working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/round1/DIA.Umpire/SummaryResult_20150510/peptidesSummaries"
 #working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/round1/DIA.Umpire/SummaryResult_20150510/proteinSummaries"
 
 # Options: "Spectronaut", "PeakView", "Skyline", "openSWATH", "DIAumpire", "PeakView_builtin_proteins", "DIAumpire_builtin_proteins"
-software_source <- "DIAumpire"    
+software_source <- "Spectronaut"    
 
-suffix <- "r1_singleHits"
+suffix <- "r2_top3pepConsensus_min3"
 
 results_dir <- "input"
 supplementary <- "supplementary"
@@ -40,10 +40,12 @@ sequencelist <- NULL
 plotHistogram = T 
 plotHistNAs = T 
 reportSequences = F
-singleHits = T
+singleHits = F
+topNindividual = F
+restrictNA = F
 
 top.N = 3 
-top.N.min = 2
+top.N.min = 3
 
 source("fswe.variables.R")
 source("fswe.functions.R")
@@ -243,6 +245,8 @@ generateReports <- function(experiment_file,
     ## PROTEIN REPORT
     cat(paste0("Generating protein report for ", experiment_file,"\n"))
     
+    sumNA <- function(values){ sum(values, na.rm=T)}
+    
     if(singleHits){
         print("Summarising protein single hits...")
         proteins_wide <- peptides_wide %>% 
@@ -253,14 +257,35 @@ generateReports <- function(experiment_file,
             summarise_each(funs(single_hits(.))) 
     }else{
         print("Summarising proteins...")
-        proteins_wide <- peptides_wide %>% 
-            select(-sequenceID) %>% 
-            arrange(proteinID, specie) %>%
-            group_by(proteinID, specie) %>%  
-            summarise_each(funs(sum_top_n(., top.N, top.N.min)))  
+        if(topNindividual){
+            print("using TOP3 individual for each run")
+            proteins_wide <- peptides_wide %>% 
+                select(-sequenceID) %>% 
+                arrange(proteinID, specie) %>%
+                group_by(proteinID, specie) %>%  
+                summarise_each(funs(sum_top_n(., top.N, top.N.min))) 
+        }else{
+            print("using consensus TOP3")
+            proteins_wide <- peptides_wide %>% ungroup() %>%
+                mutate(totalIntensity = rowSums(.[4:9], na.rm=T))  %>% #TODO: This 4:9 is a work-around I need to remove somehow
+                group_by(proteinID) %>%
+                arrange(desc(totalIntensity)) %>%
+                filter(row_number() <= top.N & n() >= top.N.min) %>%
+                select(-sequenceID, -totalIntensity) %>%
+                group_by(proteinID, specie)
+            
+            if(restrictNA){
+                proteins_wide <- proteins_wide %>%
+                    summarise_each(funs(sum))
+            }else{
+                proteins_wide <- proteins_wide %>%
+                    summarise_each(funs(sumNA))
+            }
+                
+        }
     }  
     
-    # Remove "empty" proteins (all values are NAs). I wish I could find a more elegant way to do it. I am tired.
+    # Remove "empty" proteins (all values are NAs). TODO: I wish I could find a more elegant way to do it. I am tired.
     proteins_wide <- filter(proteins_wide, !is.na(A1) | !is.na(A2) | !is.na(A3) | !is.na(B1) | !is.na(B2) | !is.na(B3))
     
     write.table(proteins_wide, file=file.path(working_dir, results_dir ,
