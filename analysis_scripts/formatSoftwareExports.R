@@ -28,7 +28,7 @@ working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.soft
 # Options: "Spectronaut", "PeakView", "Skyline", "openSWATH", "DIAumpire", "PeakView_builtin_proteins", "DIAumpire_builtin_proteins"
 software_source <- "Spectronaut"    
 
-suffix <- "r2_top3pepConsensus_min3"
+suffix <- "r2_top3pepConsensus_min2"
 
 results_dir <- "input"
 supplementary <- "supplementary"
@@ -45,7 +45,7 @@ topNindividual = F
 restrictNA = F
 
 top.N = 3 
-top.N.min = 3
+top.N.min = 2
 
 source("fswe.variables.R")
 source("fswe.functions.R")
@@ -245,7 +245,11 @@ generateReports <- function(experiment_file,
     ## PROTEIN REPORT
     cat(paste0("Generating protein report for ", experiment_file,"\n"))
     
-    sumNA <- function(values){ sum(values, na.rm=T)}
+    sumNA <- function(values){ 
+        sumv <- sum(values, na.rm=T)
+        if(sumv == 0) sumv <- NA
+        sumv
+    }
     
     if(singleHits){
         print("Summarising protein single hits...")
