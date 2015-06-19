@@ -1,0 +1,13 @@
+"name"	"HUMAN"	"YEAST"	"ECOLI"	"OTHER"	"sum"
+"AVGSort_top_2_to_3_allowNA"	2956	1742	1342	0	6040
+"AVGSort_top_2_to_3_NoNA"	2956	1742	1342	0	6040
+"AVGSort_top_3_to_3_allowNA"	2956	1742	1342	0	6040
+"AVGSort_top_3_to_3_NoNA"	2956	1742	1342	0	6040
+"EvidenceAVGSort_top_2_to_3_allowNA"	2956	1742	1342	0	6040
+"EvidenceAVGSort_top_2_to_3_NoNA"	2956	1742	1342	0	6040
+"EvidenceAVGSort_top_3_to_3_allowNA"	2956	1742	1342	0	6040
+"EvidenceAVGSort_top_3_to_3_NoNA"	2956	1742	1342	0	6040
+"SUMSort_top_2_to_3_allowNA"	2956	1742	1342	0	6040
+"SUMSort_top_2_to_3_NoNA"	2956	1742	1342	0	6040
+"SUMSort_top_3_to_3_allowNA"	2956	1742	1342	0	6040
+"SUMSort_top_3_to_3_NoNA"	2956	1742	1342	0	6040
