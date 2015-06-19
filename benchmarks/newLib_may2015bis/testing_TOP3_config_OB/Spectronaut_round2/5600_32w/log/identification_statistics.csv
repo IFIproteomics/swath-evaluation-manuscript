@@ -1,0 +1,14 @@
+"name"	"HUMAN"	"YEAST"	"ECOLI"	"OTHER"	"sum"
+"AVGSort_top_2_to_3_allowNA"	2882	1554	1158	0	5594
+"AVGSort_top_2_to_3_NoNA"	2882	1554	1158	0	5594
+"AVGSort_top_3_to_3_allowNA"	2882	1554	1158	0	5594
+"AVGSort_top_3_to_3_NoNA"	2882	1554	1158	0	5594
+"EvidenceAVGSort_top_2_to_3_allowNA"	2882	1554	1158	0	5594
+"EvidenceAVGSort_top_2_to_3_NoNA"	2882	1554	1158	0	5594
+"EvidenceAVGSort_top_3_to_3_allowNA"	2882	1554	1158	0	5594
+"EvidenceAVGSort_top_3_to_3_NoNA"	2882	1554	1158	0	5594
+"Spectronaut_5600-32w_r2_peptides"	14517	8377	7158	0	30052
+"SUMSort_top_2_to_3_allowNA"	2882	1554	1158	0	5594
+"SUMSort_top_2_to_3_NoNA"	2882	1554	1158	0	5594
+"SUMSort_top_3_to_3_allowNA"	2882	1554	1158	0	5594
+"SUMSort_top_3_to_3_NoNA"	2882	1554	1158	0	5594

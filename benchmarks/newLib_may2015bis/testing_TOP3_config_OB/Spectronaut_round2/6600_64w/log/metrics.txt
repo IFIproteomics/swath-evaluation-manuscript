@@ -1,0 +1,372 @@
+--------------------------------------------
+
+ Metrics description: 
+	identification:
+		identification rate,
+		the number of identified proteins for benchmark species
+	replication:
+		replication variance,
+		the median CV for the background species
+	accuracy:
+		accuracy of relative quantification,
+		the area under quantification curve for background species
+	precision deviation:
+		deviation of precision of quantification,
+		the root mean square of ( medianLR - expectation ) for regulated species
+	separation:
+		species separation ability,
+		the area under ROC curve between a species pair
+	separation by range:
+		species separation ability for predefined log2-intensity ranges,
+		the area under ROC curve between a species pair
+--------------------------------------------
+
+AVGSort_top_2_to_3_allowNA
+identification: 6695
+replication: 0.0335524379688759
+accuracy: 
+  A:B 
+0.953 
+precision deviation: 0.167680347928583
+separation: 
+                  A:B
+HUMAN-YEAST 0.9672971
+HUMAN-ECOLI 0.9503618
+YEAST-ECOLI 0.9756197
+separation by range: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<6    0.9933775   0.6111111   0.7721854
+<7    0.9596421   0.9037433   0.9480435
+<8    0.9307053   0.9275760   0.9674717
+<9    0.9696788   0.9740581   0.9864830
+<10   0.9606635   0.9725120   0.9872702
+<11   0.9638950   0.9685476   0.9963084
+<12   0.9711735   0.9733333   0.9855238
+>12   0.9764683   1.0000000   0.9999164
+
+
+--------------------------------------------
+
+AVGSort_top_2_to_3_NoNA
+identification: 6695
+replication: 0.0335427408492258
+accuracy: 
+  A:B 
+0.953 
+precision deviation: 0.124282491079866
+separation: 
+                  A:B
+HUMAN-YEAST 0.9685097
+HUMAN-ECOLI 0.9610818
+YEAST-ECOLI 0.9810604
+separation by range: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<6    0.9925373   0.5500000   0.7029851
+<7    0.9580809   0.9149616   0.9346382
+<8    0.9406546   0.9314252   0.9767387
+<9    0.9692060   0.9727299   0.9890058
+<10   0.9660144   0.9823173   0.9925714
+<11   0.9639954   0.9677052   0.9967150
+<12   0.9850315   0.9866071   0.9996025
+>12   0.9659687   1.0000000   0.9965261
+
+
+--------------------------------------------
+
+AVGSort_top_3_to_3_allowNA
+identification: 6695
+replication: 0.0303089248002335
+accuracy: 
+  A:B 
+0.959 
+precision deviation: 0.1543657257196
+separation: 
+                  A:B
+HUMAN-YEAST 0.9766630
+HUMAN-ECOLI 0.9608279
+YEAST-ECOLI 0.9858917
+separation by range: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<6          NaN         NaN   0.9158752
+<7    0.9659864   0.9233449   0.9675325
+<8    0.9603851   0.9246289   0.9714427
+<9    0.9819357   0.9776522   0.9938588
+<10   0.9693996   0.9727315   0.9873873
+<11   0.9614352   0.9682901   0.9963672
+<12   0.9702243   0.9714286   0.9844350
+>12   0.9873424   1.0000000   1.0000000
+
+
+--------------------------------------------
+
+AVGSort_top_3_to_3_NoNA
+identification: 6695
+replication: 0.0296936467112145
+accuracy: 
+  A:B 
+0.961 
+precision deviation: 0.0446901448809957
+separation: 
+                  A:B
+HUMAN-YEAST 0.9850988
+HUMAN-ECOLI 0.9948491
+YEAST-ECOLI 0.9965882
+separation by range: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<6          NaN         NaN         NaN
+<7    0.9884868         NaN         NaN
+<8    0.9943366   1.0000000   1.0000000
+<9    0.9894430   0.9999395   0.9997741
+<10   0.9780713   0.9834835   0.9905093
+<11   0.9889040   0.9935150   0.9996568
+<12   0.9265449   0.9999246   0.9837577
+>12   0.9861889   1.0000000   1.0000000
+
+
+--------------------------------------------
+
+EvidenceAVGSort_top_2_to_3_allowNA
+identification: 6695
+replication: 0.0333908252306276
+accuracy: 
+  A:B 
+0.953 
+precision deviation: 0.112273019766106
+separation: 
+                  A:B
+HUMAN-YEAST 0.9734027
+HUMAN-ECOLI 0.9614212
+YEAST-ECOLI 0.9815748
+separation by range: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<6    0.9942857   0.6444444   0.8036190
+<7    0.9651445   0.9284656   0.9625720
+<8    0.9323295   0.9528420   0.9808413
+<9    0.9662759   0.9823156   0.9834395
+<10   0.9820497   0.9919028   0.9932036
+<11   0.9898291   0.9700486   0.9986508
+<12   0.9854592   0.9733929   0.9980952
+>12   0.9755582   1.0000000   0.9999112
+
+
+--------------------------------------------
+
+EvidenceAVGSort_top_2_to_3_NoNA
+identification: 6695
+replication: 0.0333861763110326
+accuracy: 
+  A:B 
+0.953 
+precision deviation: 0.0906766382970846
+separation: 
+                  A:B
+HUMAN-YEAST 0.9742816
+HUMAN-ECOLI 0.9695232
+YEAST-ECOLI 0.9845764
+separation by range: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<6    0.9937888   0.5500000   0.7024845
+<7    0.9637297   0.9287846   0.9542408
+<8    0.9420195   0.9628109   0.9857715
+<9    0.9685895   0.9822323   0.9869201
+<10   0.9821350   0.9984785   0.9996850
+<11   0.9899278   0.9694887   0.9987297
+<12   0.9852484   0.9883929   0.9996135
+>12   0.9755582   1.0000000   0.9999112
+
+
+--------------------------------------------
+
+EvidenceAVGSort_top_3_to_3_allowNA
+identification: 6695
+replication: 0.0301244605836153
+accuracy: 
+ A:B 
+0.96 
+precision deviation: 0.0970840534845137
+separation: 
+                  A:B
+HUMAN-YEAST 0.9837614
+HUMAN-ECOLI 0.9727763
+YEAST-ECOLI 0.9921442
+separation by range: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<6          NaN         NaN   1.0000000
+<7    0.9738593   0.9509346   0.9813795
+<8    0.9624656   0.9542886   0.9861325
+<9    0.9780876   0.9859846   0.9906980
+<10   0.9932732   0.9927167   0.9932921
+<11   0.9892208   0.9700256   0.9985380
+<12   0.9851496   0.9714286   0.9978678
+>12   0.9867467   1.0000000   1.0000000
+
+
+--------------------------------------------
+
+EvidenceAVGSort_top_3_to_3_NoNA
+identification: 6695
+replication: 0.0297319389187183
+accuracy: 
+  A:B 
+0.962 
+precision deviation: 0.0563916397988628
+separation: 
+                  A:B
+HUMAN-YEAST 0.9929672
+HUMAN-ECOLI 0.9874282
+YEAST-ECOLI 0.9981595
+separation by range: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<6          NaN         NaN         NaN
+<7    0.9939394   1.0000000   1.0000000
+<8    0.9952966   0.9613930   0.9994958
+<9    0.9913107   0.9819769   0.9932883
+<10   0.9931937   0.9994295   0.9999098
+<11   0.9892020   0.9759471   0.9986702
+<12   0.9849250   0.9979076   0.9997835
+>12   0.9866375   1.0000000   1.0000000
+
+
+--------------------------------------------
+
+Spectronaut_6600-64w_r2_peptides
+identification: 42325
+replication: 0.0616053705281533
+accuracy: 
+  A:B 
+0.914 
+precision deviation: 0.0836552534054602
+separation: 
+                  A:B
+HUMAN-YEAST 0.9709349
+HUMAN-ECOLI 0.9784118
+YEAST-ECOLI 0.9908938
+separation by range: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<6    0.8979810   0.8533173   0.9417513
+<7    0.9504357   0.9392555   0.9802596
+<8    0.9565958   0.9790311   0.9915019
+<9    0.9732176   0.9859603   0.9929972
+<10   0.9731787   0.9888504   0.9918993
+<11   0.9787698   0.9945888   0.9939205
+<12   0.9794201   0.9952786   0.9963416
+>12   0.9734491   0.9959420   0.9910234
+
+
+--------------------------------------------
+
+SUMSort_top_2_to_3_allowNA
+identification: 6695
+replication: 0.0334619754103855
+accuracy: 
+  A:B 
+0.953 
+precision deviation: 0.119192706846072
+separation: 
+                  A:B
+HUMAN-YEAST 0.9689470
+HUMAN-ECOLI 0.9557388
+YEAST-ECOLI 0.9784086
+separation by range: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<6    0.9939394   0.6444444   0.8046465
+<7    0.9629116   0.8932556   0.9402245
+<8    0.9308190   0.9409840   0.9743080
+<9    0.9661354   0.9833881   0.9875889
+<10   0.9666690   0.9828629   0.9887305
+<11   0.9705126   0.9712271   0.9981633
+<12   0.9715795   0.9740260   0.9976221
+>12   0.9762869   1.0000000   0.9999148
+
+
+--------------------------------------------
+
+SUMSort_top_2_to_3_NoNA
+identification: 6695
+replication: 0.0334520254220943
+accuracy: 
+  A:B 
+0.953 
+precision deviation: 0.0957252423709488
+separation: 
+                  A:B
+HUMAN-YEAST 0.9703171
+HUMAN-ECOLI 0.9667930
+YEAST-ECOLI 0.9833060
+separation by range: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<6    0.9932886   0.5500000   0.7033557
+<7    0.9621581   0.9275599   0.9444444
+<8    0.9425960   0.9482097   0.9811493
+<9    0.9658817   0.9854801   0.9904016
+<10   0.9710432   0.9878490   0.9936490
+<11   0.9706135   0.9704424   0.9981990
+<12   0.9711735   0.9741999   0.9988868
+>12   0.9762869   1.0000000   0.9999148
+
+
+--------------------------------------------
+
+SUMSort_top_3_to_3_allowNA
+identification: 6695
+replication: 0.0302627690758225
+accuracy: 
+ A:B 
+0.96 
+precision deviation: 0.104865104097352
+separation: 
+                  A:B
+HUMAN-YEAST 0.9785272
+HUMAN-ECOLI 0.9665017
+YEAST-ECOLI 0.9886953
+separation by range: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<6          NaN         NaN   1.0000000
+<7    0.9696429   0.9074675   0.9564394
+<8    0.9605111   0.9406643   0.9788727
+<9    0.9777821   0.9873563   0.9948675
+<10   0.9761241   0.9834115   0.9888231
+<11   0.9685746   0.9712302   0.9980159
+<12   0.9706621   0.9722222   0.9973448
+>12   0.9871985   1.0000000   1.0000000
+
+
+--------------------------------------------
+
+SUMSort_top_3_to_3_NoNA
+identification: 6695
+replication: 0.0297280028558896
+accuracy: 
+  A:B 
+0.962 
+precision deviation: 0.0509966582165284
+separation: 
+                  A:B
+HUMAN-YEAST 0.9860138
+HUMAN-ECOLI 0.9888476
+YEAST-ECOLI 0.9969303
+separation by range: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<6          NaN         NaN         NaN
+<7    0.9923077         NaN         NaN
+<8    0.9941437   0.9641944   0.9998076
+<9    0.9858427   0.9897992   0.9992511
+<10   0.9839502   0.9871108   0.9928017
+<11   0.9883075   0.9753219   0.9991574
+<12   0.9276094   1.0000000   0.9850872
+>12   0.9863476   1.0000000   1.0000000
+
+
