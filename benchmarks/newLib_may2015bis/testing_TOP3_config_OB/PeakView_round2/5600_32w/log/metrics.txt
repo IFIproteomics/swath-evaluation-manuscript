@@ -9,337 +9,766 @@
 		the median CV for the background species
 	accuracy:
 		accuracy of relative quantification,
-		the area under quantification curve for background species
-	precision deviation:
-		deviation of precision of quantification,
-		the root mean square of ( medianLR - expectation ) for regulated species
+		the median deviation of log-ratios to the expected value
+	precision:
+		precision of quantification,
+		the standard deviation of log-ratios
 	separation:
 		species separation ability,
 		the area under ROC curve between a species pair
-	separation by range:
-		species separation ability for predefined log2-intensity ranges,
-		the area under ROC curve between a species pair
---------------------------------------------
-
-AVGSort_top_2_to_3_allowNA
-identification: 4164
-replication: 0.0698176927263304
-accuracy: 
-  A:B 
-0.896 
-precision deviation: 0.338551124928633
-separation: 
-                  A:B
-HUMAN-YEAST 0.8994107
-HUMAN-ECOLI 0.9350627
-YEAST-ECOLI 0.9473307
-separation by range: 
-$`A:B`
-    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
-<6          NaN         NaN         NaN
-<7          NaN         NaN         NaN
-<8          NaN         NaN         NaN
-<9          NaN         NaN         NaN
-<10         NaN         NaN         NaN
-<11         NaN         NaN         NaN
-<12         NaN         NaN         NaN
->12   0.8994107   0.9350627   0.9473307
-
-
 --------------------------------------------
 
 AVGSort_top_2_to_3_NoNA
+name: AVGSort_top_2_to_3_NoNA
 identification: 4164
-replication: 0.0520153516342903
+replication: 0.05563852
 accuracy: 
-  A:B 
-0.905 
-precision deviation: 0.259799615020267
-separation: 
-                  A:B
-HUMAN-YEAST 0.9295176
-HUMAN-ECOLI 0.9625782
-YEAST-ECOLI 0.9761322
-separation by range: 
 $`A:B`
-    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
-<6          NaN         NaN         NaN
-<7          NaN         NaN         NaN
-<8          NaN         NaN         NaN
-<9          NaN         NaN         NaN
-<10         NaN         NaN         NaN
-<11         NaN         NaN         NaN
-<12         NaN         NaN         NaN
->12   0.9295176   0.9625782   0.9761322
+          HUMAN        YEAST      ECOLI
+<1           NA           NA         NA
+<2           NA           NA         NA
+<3           NA           NA         NA
+<4           NA           NA         NA
+<5  1.024588207  0.062625539  3.5399487
+<6  0.098060918 -0.002088878 -0.1480701
+<7  0.020183270 -0.174517042  0.3365670
+<8 -0.010346146 -0.158401493  0.3380860
+<9 -0.019884438 -0.092525814  0.3819970
+>9 -0.003658546 -0.146935350  0.3306457
+
+
+precision: 
+$`A:B`
+          HUMAN        YEAST      ECOLI
+<1           NA           NA         NA
+<2           NA           NA         NA
+<3           NA           NA         NA
+<4           NA           NA         NA
+<5  1.024588207  0.062625539  3.5399487
+<6  0.098060918 -0.002088878 -0.1480701
+<7  0.020183270 -0.174517042  0.3365670
+<8 -0.010346146 -0.158401493  0.3380860
+<9 -0.019884438 -0.092525814  0.3819970
+>9 -0.003658546 -0.146935350  0.3306457
+
+
+separation: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2         NaN         NaN         NaN
+<3         NaN         NaN         NaN
+<4         NaN         NaN         NaN
+<5   0.5833333   0.5555556   0.5000000
+<6   0.8758170   1.0000000   1.0000000
+<7   0.8989845   0.9686610   0.9714640
+<8   0.9697359   0.9442889   0.9915306
+<9   0.9097802   0.9502747   0.9735700
+>9   0.9352371   0.9865588   0.9863946
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  1061   654   636
+invalid, out of validity range     0     0     0
+invalid, missing value          1061   654   636
+valid ratios                    1273   366   174
+in plot range                   1273   363   174
+out of plot range                  0     3     0
+
 
 
 --------------------------------------------
 
-AVGSort_top_3_to_3_allowNA
+AVGSort_top_2_to_3_allowNA
+name: AVGSort_top_2_to_3_allowNA
 identification: 4164
-replication: 0.0640549387718464
+replication: 0.06910168
 accuracy: 
- A:B 
-0.91 
-precision deviation: 0.331089602223054
-separation: 
-                  A:B
-HUMAN-YEAST 0.9218778
-HUMAN-ECOLI 0.9429833
-YEAST-ECOLI 0.9561035
-separation by range: 
 $`A:B`
-    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
-<6          NaN         NaN         NaN
-<7          NaN         NaN         NaN
-<8          NaN         NaN         NaN
-<9          NaN         NaN         NaN
-<10         NaN         NaN         NaN
-<11         NaN         NaN         NaN
-<12         NaN         NaN         NaN
->12   0.9218778   0.9429833   0.9561035
+          HUMAN      YEAST     ECOLI
+<1           NA         NA        NA
+<2           NA         NA        NA
+<3           NA         NA        NA
+<4           NA         NA        NA
+<5  1.022921823  0.4905911 3.5104458
+<6  0.095296027 -0.0484697 0.1365981
+<7  0.015270980 -0.2367709 0.5818246
+<8 -0.008647156 -0.2222687 0.5440684
+<9 -0.018686981 -0.1764216 0.4824581
+>9 -0.008803682 -0.1845113 0.3699672
+
+
+precision: 
+$`A:B`
+          HUMAN      YEAST     ECOLI
+<1           NA         NA        NA
+<2           NA         NA        NA
+<3           NA         NA        NA
+<4           NA         NA        NA
+<5  1.022921823  0.4905911 3.5104458
+<6  0.095296027 -0.0484697 0.1365981
+<7  0.015270980 -0.2367709 0.5818246
+<8 -0.008647156 -0.2222687 0.5440684
+<9 -0.018686981 -0.1764216 0.4824581
+>9 -0.008803682 -0.1845113 0.3699672
+
+
+separation: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2         NaN         NaN         NaN
+<3         NaN         NaN         NaN
+<4         NaN         NaN         NaN
+<5   0.6516517   0.5185185   0.5675676
+<6   0.9192875   0.8455285   0.9517544
+<7   0.8776477   0.8967620   0.9193548
+<8   0.9236508   0.8855461   0.9263144
+<9   0.8662687   0.9451618   0.9403745
+>9   0.8619188   0.9876143   0.9442609
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   955   491   491
+invalid, out of validity range     0     0     0
+invalid, missing value           955   491   491
+valid ratios                    1379   529   319
+in plot range                   1379   526   318
+out of plot range                  0     3     1
+
 
 
 --------------------------------------------
 
 AVGSort_top_3_to_3_NoNA
+name: AVGSort_top_3_to_3_NoNA
 identification: 4164
-replication: 0.0233588117184267
+replication: 0.03426195
 accuracy: 
- A:B 
-0.96 
-precision deviation: 0.18742749555228
-separation: 
-                  A:B
-HUMAN-YEAST 0.9974792
-HUMAN-ECOLI 0.9979955
-YEAST-ECOLI 1.0000000
-separation by range: 
 $`A:B`
-    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
-<6          NaN         NaN         NaN
-<7          NaN         NaN         NaN
-<8          NaN         NaN         NaN
-<9          NaN         NaN         NaN
-<10         NaN         NaN         NaN
-<11         NaN         NaN         NaN
-<12         NaN         NaN         NaN
->12   0.9974792   0.9979955           1
+          HUMAN       YEAST     ECOLI
+<1           NA          NA        NA
+<2           NA          NA        NA
+<3           NA          NA        NA
+<4           NA          NA        NA
+<5           NA          NA        NA
+<6           NA          NA        NA
+<7           NA          NA        NA
+<8  0.010805210 -0.10819077        NA
+<9  0.003059424 -0.04033976 0.3305084
+>9 -0.003013167 -0.08134972 0.2257850
+
+
+precision: 
+$`A:B`
+          HUMAN       YEAST     ECOLI
+<1           NA          NA        NA
+<2           NA          NA        NA
+<3           NA          NA        NA
+<4           NA          NA        NA
+<5           NA          NA        NA
+<6           NA          NA        NA
+<7           NA          NA        NA
+<8  0.010805210 -0.10819077        NA
+<9  0.003059424 -0.04033976 0.3305084
+>9 -0.003013167 -0.08134972 0.2257850
+
+
+separation: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2         NaN         NaN         NaN
+<3         NaN         NaN         NaN
+<4         NaN         NaN         NaN
+<5         NaN         NaN         NaN
+<6         NaN         NaN         NaN
+<7         NaN         NaN         NaN
+<8   1.0000000         NaN         NaN
+<9   0.9919355   1.0000000           1
+>9   0.9997214   0.9969417           1
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  1847   897   768
+invalid, out of validity range     0     0     0
+invalid, missing value          1847   897   768
+valid ratios                     487   123    42
+in plot range                    487   123    42
+out of plot range                  0     0     0
+
 
 
 --------------------------------------------
 
-EvidenceAVGSort_top_2_to_3_allowNA
+AVGSort_top_3_to_3_allowNA
+name: AVGSort_top_3_to_3_allowNA
 identification: 4164
-replication: 0.0545541951222029
+replication: 0.06423066
 accuracy: 
-  A:B 
-0.903 
-precision deviation: 0.245292370226482
-separation: 
-                  A:B
-HUMAN-YEAST 0.9077360
-HUMAN-ECOLI 0.9529854
-YEAST-ECOLI 0.9636304
-separation by range: 
 $`A:B`
-    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
-<6          NaN         NaN         NaN
-<7          NaN         NaN         NaN
-<8          NaN         NaN         NaN
-<9          NaN         NaN         NaN
-<10         NaN         NaN         NaN
-<11         NaN         NaN         NaN
-<12         NaN         NaN         NaN
->12    0.907736   0.9529854   0.9636304
+           HUMAN        YEAST     ECOLI
+<1            NA           NA        NA
+<2            NA           NA        NA
+<3            NA           NA        NA
+<4            NA           NA        NA
+<5  1.5550641438  0.712023078        NA
+<6  0.2427871426  0.008359276 1.3387344
+<7  0.0654706189 -0.226634699 0.5990135
+<8 -0.0018485102 -0.244835594 0.5523238
+<9 -0.0236897952 -0.140252189 0.4330364
+>9 -0.0005919936 -0.182861298 0.3741630
+
+
+precision: 
+$`A:B`
+           HUMAN        YEAST     ECOLI
+<1            NA           NA        NA
+<2            NA           NA        NA
+<3            NA           NA        NA
+<4            NA           NA        NA
+<5  1.5550641438  0.712023078        NA
+<6  0.2427871426  0.008359276 1.3387344
+<7  0.0654706189 -0.226634699 0.5990135
+<8 -0.0018485102 -0.244835594 0.5523238
+<9 -0.0236897952 -0.140252189 0.4330364
+>9 -0.0005919936 -0.182861298 0.3741630
+
+
+separation: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2         NaN         NaN         NaN
+<3         NaN         NaN         NaN
+<4         NaN         NaN         NaN
+<5   0.5555556         NaN         NaN
+<6   0.8503119   0.6153846   0.9054054
+<7   0.8965873   0.8172549   0.8529412
+<8   0.9219159   0.8868347   0.9203646
+<9   0.9025689   0.9313440   0.9550347
+>9   0.9169103   0.9945078   0.9613715
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  1323   587   532
+invalid, out of validity range     0     0     0
+invalid, missing value          1323   587   532
+valid ratios                    1011   433   278
+in plot range                   1011   433   277
+out of plot range                  0     0     1
+
 
 
 --------------------------------------------
 
 EvidenceAVGSort_top_2_to_3_NoNA
+name: EvidenceAVGSort_top_2_to_3_NoNA
 identification: 4164
-replication: 0.0451176347032688
+replication: 0.04561355
 accuracy: 
-  A:B 
-0.911 
-precision deviation: 0.223860121898712
-separation: 
-                  A:B
-HUMAN-YEAST 0.9288814
-HUMAN-ECOLI 0.9709362
-YEAST-ECOLI 0.9756053
-separation by range: 
 $`A:B`
-    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
-<6          NaN         NaN         NaN
-<7          NaN         NaN         NaN
-<8          NaN         NaN         NaN
-<9          NaN         NaN         NaN
-<10         NaN         NaN         NaN
-<11         NaN         NaN         NaN
-<12         NaN         NaN         NaN
->12   0.9288814   0.9709362   0.9756053
+          HUMAN       YEAST       ECOLI
+<1           NA          NA          NA
+<2           NA          NA          NA
+<3           NA          NA          NA
+<4           NA          NA          NA
+<5  1.787085059  0.23868154  1.67752779
+<6  0.121860637 -0.01084042 -0.05864356
+<7  0.024429059 -0.18673554  0.47972559
+<8 -0.015578729 -0.16741716  0.30427571
+<9 -0.009358323 -0.08743559  0.33504127
+>9 -0.003237131 -0.14438797  0.25599284
+
+
+precision: 
+$`A:B`
+          HUMAN       YEAST       ECOLI
+<1           NA          NA          NA
+<2           NA          NA          NA
+<3           NA          NA          NA
+<4           NA          NA          NA
+<5  1.787085059  0.23868154  1.67752779
+<6  0.121860637 -0.01084042 -0.05864356
+<7  0.024429059 -0.18673554  0.47972559
+<8 -0.015578729 -0.16741716  0.30427571
+<9 -0.009358323 -0.08743559  0.33504127
+>9 -0.003237131 -0.14438797  0.25599284
+
+
+separation: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2         NaN         NaN         NaN
+<3         NaN         NaN         NaN
+<4         NaN         NaN         NaN
+<5   0.6176471   0.8750000   0.6470588
+<6   0.8533043   0.6732026   0.6728395
+<7   0.9258812   0.9159743   0.9220238
+<8   0.9698548   0.9781039   0.9952312
+<9   0.8843444   0.9776648   0.9634231
+>9   0.9305392   0.9873277   0.9868578
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  1016   591   565
+invalid, out of validity range     0     0     0
+invalid, missing value          1016   591   565
+valid ratios                    1318   429   245
+in plot range                   1318   426   245
+out of plot range                  0     3     0
+
 
 
 --------------------------------------------
 
-EvidenceAVGSort_top_3_to_3_allowNA
+EvidenceAVGSort_top_2_to_3_allowNA
+name: EvidenceAVGSort_top_2_to_3_allowNA
 identification: 4164
-replication: 0.0465827843928142
+replication: 0.05553792
 accuracy: 
-  A:B 
-0.919 
-precision deviation: 0.229685744228504
-separation: 
-                  A:B
-HUMAN-YEAST 0.9309406
-HUMAN-ECOLI 0.9624079
-YEAST-ECOLI 0.9739174
-separation by range: 
 $`A:B`
-    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
-<6          NaN         NaN         NaN
-<7          NaN         NaN         NaN
-<8          NaN         NaN         NaN
-<9          NaN         NaN         NaN
-<10         NaN         NaN         NaN
-<11         NaN         NaN         NaN
-<12         NaN         NaN         NaN
->12   0.9309406   0.9624079   0.9739174
+          HUMAN        YEAST     ECOLI
+<1           NA           NA        NA
+<2           NA           NA        NA
+<3           NA           NA        NA
+<4           NA           NA        NA
+<5  1.025296366  0.621246063 3.5099232
+<6  0.120164416  0.003915572 0.1906947
+<7  0.021587670 -0.237173520 0.5408171
+<8 -0.015530795 -0.197933899 0.3461684
+<9 -0.014413264 -0.117745919 0.3501328
+>9 -0.006767415 -0.150368146 0.2571226
+
+
+precision: 
+$`A:B`
+          HUMAN        YEAST     ECOLI
+<1           NA           NA        NA
+<2           NA           NA        NA
+<3           NA           NA        NA
+<4           NA           NA        NA
+<5  1.025296366  0.621246063 3.5099232
+<6  0.120164416  0.003915572 0.1906947
+<7  0.021587670 -0.237173520 0.5408171
+<8 -0.015530795 -0.197933899 0.3461684
+<9 -0.014413264 -0.117745919 0.3501328
+>9 -0.006767415 -0.150368146 0.2571226
+
+
+separation: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2         NaN         NaN         NaN
+<3         NaN         NaN         NaN
+<4         NaN         NaN         NaN
+<5   0.6347518   0.5555556   0.6028369
+<6   0.8915904   0.8721805   0.9658385
+<7   0.8834483   0.9014595   0.9136552
+<8   0.9245209   0.9624858   0.9830097
+<9   0.8449265   0.9536211   0.9415205
+>9   0.9014405   0.9871566   0.9744388
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   954   468   468
+invalid, out of validity range     0     0     0
+invalid, missing value           954   468   468
+valid ratios                    1380   552   342
+in plot range                   1380   549   342
+out of plot range                  0     3     0
+
 
 
 --------------------------------------------
 
 EvidenceAVGSort_top_3_to_3_NoNA
+name: EvidenceAVGSort_top_3_to_3_NoNA
 identification: 4164
-replication: 0.0264624254203138
+replication: 0.02602482
 accuracy: 
-  A:B 
-0.962 
-precision deviation: 0.181642312506909
-separation: 
-                  A:B
-HUMAN-YEAST 0.9993631
-HUMAN-ECOLI 0.9986130
-YEAST-ECOLI 1.0000000
-separation by range: 
 $`A:B`
-    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
-<6          NaN         NaN         NaN
-<7          NaN         NaN         NaN
-<8          NaN         NaN         NaN
-<9          NaN         NaN         NaN
-<10         NaN         NaN         NaN
-<11         NaN         NaN         NaN
-<12         NaN         NaN         NaN
->12   0.9993631    0.998613           1
+           HUMAN       YEAST     ECOLI
+<1            NA          NA        NA
+<2            NA          NA        NA
+<3            NA          NA        NA
+<4            NA          NA        NA
+<5            NA          NA        NA
+<6            NA          NA        NA
+<7  0.0157939773 -0.08993306        NA
+<8 -0.0004939106 -0.09450154 0.2057211
+<9 -0.0076073148 -0.06637428 0.2861559
+>9  0.0014450229 -0.07783230 0.2306286
+
+
+precision: 
+$`A:B`
+           HUMAN       YEAST     ECOLI
+<1            NA          NA        NA
+<2            NA          NA        NA
+<3            NA          NA        NA
+<4            NA          NA        NA
+<5            NA          NA        NA
+<6            NA          NA        NA
+<7  0.0157939773 -0.08993306        NA
+<8 -0.0004939106 -0.09450154 0.2057211
+<9 -0.0076073148 -0.06637428 0.2861559
+>9  0.0014450229 -0.07783230 0.2306286
+
+
+separation: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2         NaN         NaN         NaN
+<3         NaN         NaN         NaN
+<4         NaN         NaN         NaN
+<5         NaN         NaN         NaN
+<6         NaN         NaN         NaN
+<7   1.0000000         NaN         NaN
+<8   0.9994064   1.0000000           1
+<9   0.9986514   1.0000000           1
+>9   0.9999647   0.9966448           1
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  1613   787   681
+invalid, out of validity range     0     0     0
+invalid, missing value          1613   787   681
+valid ratios                     721   233   129
+in plot range                    721   233   129
+out of plot range                  0     0     0
+
 
 
 --------------------------------------------
 
-SUMSort_top_2_to_3_allowNA
+EvidenceAVGSort_top_3_to_3_allowNA
+name: EvidenceAVGSort_top_3_to_3_allowNA
 identification: 4164
-replication: 0.0610866591246652
+replication: 0.04510091
 accuracy: 
-  A:B 
-0.899 
-precision deviation: 0.263980185965698
-separation: 
-                  A:B
-HUMAN-YEAST 0.9051897
-HUMAN-ECOLI 0.9448313
-YEAST-ECOLI 0.9591955
-separation by range: 
 $`A:B`
-    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
-<6          NaN         NaN         NaN
-<7          NaN         NaN         NaN
-<8          NaN         NaN         NaN
-<9          NaN         NaN         NaN
-<10         NaN         NaN         NaN
-<11         NaN         NaN         NaN
-<12         NaN         NaN         NaN
->12   0.9051897   0.9448313   0.9591955
+          HUMAN       YEAST     ECOLI
+<1           NA          NA        NA
+<2           NA          NA        NA
+<3           NA          NA        NA
+<4           NA          NA        NA
+<5           NA  0.78785440        NA
+<6  0.327246109  0.06046211 1.3419044
+<7  0.049383296 -0.15578029 0.5190547
+<8 -0.003457351 -0.21646234 0.3350197
+<9 -0.013102912 -0.12492989 0.3552207
+>9 -0.002752441 -0.13709084 0.2536261
+
+
+precision: 
+$`A:B`
+          HUMAN       YEAST     ECOLI
+<1           NA          NA        NA
+<2           NA          NA        NA
+<3           NA          NA        NA
+<4           NA          NA        NA
+<5           NA  0.78785440        NA
+<6  0.327246109  0.06046211 1.3419044
+<7  0.049383296 -0.15578029 0.5190547
+<8 -0.003457351 -0.21646234 0.3350197
+<9 -0.013102912 -0.12492989 0.3552207
+>9 -0.002752441 -0.13709084 0.2536261
+
+
+separation: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2         NaN         NaN         NaN
+<3         NaN         NaN         NaN
+<4         NaN         NaN         NaN
+<5         NaN         NaN         NaN
+<6   0.7978723   0.6250000   0.9042553
+<7   0.9146632   0.8308967   0.8499228
+<8   0.9145623   0.9604070   0.9792614
+<9   0.8792610   0.9838710   0.9665472
+>9   0.9501164   0.9790246   0.9841309
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  1322   564   509
+invalid, out of validity range     0     0     0
+invalid, missing value          1322   564   509
+valid ratios                    1012   456   301
+in plot range                   1012   456   301
+out of plot range                  0     0     0
+
 
 
 --------------------------------------------
 
 SUMSort_top_2_to_3_NoNA
+name: SUMSort_top_2_to_3_NoNA
 identification: 4164
-replication: 0.0506868287923898
+replication: 0.05103742
 accuracy: 
-  A:B 
-0.908 
-precision deviation: 0.24759397390112
-separation: 
-                  A:B
-HUMAN-YEAST 0.9289697
-HUMAN-ECOLI 0.9696319
-YEAST-ECOLI 0.9791304
-separation by range: 
 $`A:B`
-    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
-<6          NaN         NaN         NaN
-<7          NaN         NaN         NaN
-<8          NaN         NaN         NaN
-<9          NaN         NaN         NaN
-<10         NaN         NaN         NaN
-<11         NaN         NaN         NaN
-<12         NaN         NaN         NaN
->12   0.9289697   0.9696319   0.9791304
+         HUMAN       YEAST      ECOLI
+<1          NA          NA         NA
+<2          NA          NA         NA
+<3          NA          NA         NA
+<4          NA          NA         NA
+<5  1.01618440  0.06767745  3.5269723
+<6  0.11805040  0.01937015 -0.1418387
+<7  0.01720432 -0.14014895  0.4138097
+<8 -0.01244519 -0.16208302  0.4148703
+<9 -0.01615520 -0.07295478  0.3644936
+>9 -0.00235739 -0.14423233  0.2649219
+
+
+precision: 
+$`A:B`
+         HUMAN       YEAST      ECOLI
+<1          NA          NA         NA
+<2          NA          NA         NA
+<3          NA          NA         NA
+<4          NA          NA         NA
+<5  1.01618440  0.06767745  3.5269723
+<6  0.11805040  0.01937015 -0.1418387
+<7  0.01720432 -0.14014895  0.4138097
+<8 -0.01244519 -0.16208302  0.4148703
+<9 -0.01615520 -0.07295478  0.3644936
+>9 -0.00235739 -0.14423233  0.2649219
+
+
+separation: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2         NaN         NaN         NaN
+<3         NaN         NaN         NaN
+<4         NaN         NaN         NaN
+<5   0.5833333   0.5555556   0.5000000
+<6   0.8923023   1.0000000   1.0000000
+<7   0.9237096   0.9735875   0.9819549
+<8   0.9676189   0.9633838   0.9937500
+<9   0.8756263   0.9643238   0.9654477
+>9   0.9354019   0.9879551   0.9868659
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  1018   606   585
+invalid, out of validity range     0     0     0
+invalid, missing value          1018   606   585
+valid ratios                    1316   414   225
+in plot range                   1316   411   225
+out of plot range                  0     3     0
+
 
 
 --------------------------------------------
 
-SUMSort_top_3_to_3_allowNA
+SUMSort_top_2_to_3_allowNA
+name: SUMSort_top_2_to_3_allowNA
 identification: 4164
-replication: 0.05496665975422
+replication: 0.06338856
 accuracy: 
-  A:B 
-0.913 
-precision deviation: 0.252853840527392
-separation: 
-                  A:B
-HUMAN-YEAST 0.9282869
-HUMAN-ECOLI 0.9531461
-YEAST-ECOLI 0.9690871
-separation by range: 
 $`A:B`
-    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
-<6          NaN         NaN         NaN
-<7          NaN         NaN         NaN
-<8          NaN         NaN         NaN
-<9          NaN         NaN         NaN
-<10         NaN         NaN         NaN
-<11         NaN         NaN         NaN
-<12         NaN         NaN         NaN
->12   0.9282869   0.9531461   0.9690871
+          HUMAN        YEAST     ECOLI
+<1           NA           NA        NA
+<2           NA           NA        NA
+<3           NA           NA        NA
+<4           NA           NA        NA
+<5  1.291610784  0.510038294 3.5098406
+<6  0.106491277 -0.004763493 0.3146174
+<7  0.017788970 -0.225806015 0.4959471
+<8 -0.014825411 -0.214568462 0.4014123
+<9 -0.016185820 -0.077405379 0.3599009
+>9 -0.003135774 -0.157257236 0.2888104
+
+
+precision: 
+$`A:B`
+          HUMAN        YEAST     ECOLI
+<1           NA           NA        NA
+<2           NA           NA        NA
+<3           NA           NA        NA
+<4           NA           NA        NA
+<5  1.291610784  0.510038294 3.5098406
+<6  0.106491277 -0.004763493 0.3146174
+<7  0.017788970 -0.225806015 0.4959471
+<8 -0.014825411 -0.214568462 0.4014123
+<9 -0.016185820 -0.077405379 0.3599009
+>9 -0.003135774 -0.157257236 0.2888104
+
+
+separation: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2         NaN         NaN         NaN
+<3         NaN         NaN         NaN
+<4         NaN         NaN         NaN
+<5   0.6250000   0.5416667   0.5916667
+<6   0.9200438   0.8674699   0.9659091
+<7   0.8836542   0.9146312   0.9303069
+<8   0.9119960   0.9257908   0.9465526
+<9   0.8563267   0.9436483   0.9541883
+>9   0.8934708   0.9877163   0.9643619
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   954   476   471
+invalid, out of validity range     0     0     0
+invalid, missing value           954   476   471
+valid ratios                    1380   544   339
+in plot range                   1380   540   338
+out of plot range                  0     4     1
+
 
 
 --------------------------------------------
 
 SUMSort_top_3_to_3_NoNA
+name: SUMSort_top_3_to_3_NoNA
 identification: 4164
-replication: 0.0254880052598975
+replication: 0.02962126
 accuracy: 
-  A:B 
-0.961 
-precision deviation: 0.164844451754297
-separation: 
-                  A:B
-HUMAN-YEAST 0.9978980
-HUMAN-ECOLI 0.9985362
-YEAST-ECOLI 1.0000000
-separation by range: 
 $`A:B`
-    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
-<6          NaN         NaN         NaN
-<7          NaN         NaN         NaN
-<8          NaN         NaN         NaN
-<9          NaN         NaN         NaN
-<10         NaN         NaN         NaN
-<11         NaN         NaN         NaN
-<12         NaN         NaN         NaN
->12    0.997898   0.9985362           1
+          HUMAN       YEAST     ECOLI
+<1           NA          NA        NA
+<2           NA          NA        NA
+<3           NA          NA        NA
+<4           NA          NA        NA
+<5           NA          NA        NA
+<6           NA          NA        NA
+<7  0.086550072 -0.06549920        NA
+<8  0.015777216 -0.07980215        NA
+<9 -0.010229261 -0.05774703 0.1597468
+>9  0.002381265 -0.07644842 0.2161460
+
+
+precision: 
+$`A:B`
+          HUMAN       YEAST     ECOLI
+<1           NA          NA        NA
+<2           NA          NA        NA
+<3           NA          NA        NA
+<4           NA          NA        NA
+<5           NA          NA        NA
+<6           NA          NA        NA
+<7  0.086550072 -0.06549920        NA
+<8  0.015777216 -0.07980215        NA
+<9 -0.010229261 -0.05774703 0.1597468
+>9  0.002381265 -0.07644842 0.2161460
+
+
+separation: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2         NaN         NaN         NaN
+<3         NaN         NaN         NaN
+<4         NaN         NaN         NaN
+<5         NaN         NaN         NaN
+<6         NaN         NaN         NaN
+<7   1.0000000         NaN         NaN
+<8   0.9921875         NaN         NaN
+<9   0.9984466   1.0000000           1
+>9   0.9998985   0.9967938           1
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  1659   829   726
+invalid, out of validity range     0     0     0
+invalid, missing value          1659   829   726
+valid ratios                     675   191    84
+in plot range                    675   191    84
+out of plot range                  0     0     0
+
+
+
+--------------------------------------------
+
+SUMSort_top_3_to_3_allowNA
+name: SUMSort_top_3_to_3_allowNA
+identification: 4164
+replication: 0.05357702
+accuracy: 
+$`A:B`
+           HUMAN       YEAST     ECOLI
+<1            NA          NA        NA
+<2            NA          NA        NA
+<3            NA          NA        NA
+<4            NA          NA        NA
+<5            NA  0.71152076        NA
+<6  0.2956038254  0.01605994 0.5476385
+<7  0.0641985514 -0.08906777 0.4205528
+<8 -0.0005563349 -0.23639491 0.4516874
+<9 -0.0233087887 -0.06642877 0.3497973
+>9 -0.0001073180 -0.16341644 0.2667615
+
+
+precision: 
+$`A:B`
+           HUMAN       YEAST     ECOLI
+<1            NA          NA        NA
+<2            NA          NA        NA
+<3            NA          NA        NA
+<4            NA          NA        NA
+<5            NA  0.71152076        NA
+<6  0.2956038254  0.01605994 0.5476385
+<7  0.0641985514 -0.08906777 0.4205528
+<8 -0.0005563349 -0.23639491 0.4516874
+<9 -0.0233087887 -0.06642877 0.3497973
+>9 -0.0001073180 -0.16341644 0.2667615
+
+
+separation: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2         NaN         NaN         NaN
+<3         NaN         NaN         NaN
+<4         NaN         NaN         NaN
+<5         NaN         NaN         NaN
+<6   0.8232143   0.7619048   0.9416667
+<7   0.9034174   0.8326797   0.8650794
+<8   0.9047565   0.9254981   0.9407430
+<9   0.9188399   0.9448250   0.9775704
+>9   0.9383063   0.9949394   0.9786139
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  1322   572   512
+invalid, out of validity range     0     0     0
+invalid, missing value          1322   572   512
+valid ratios                    1012   448   298
+in plot range                   1012   447   297
+out of plot range                  0     1     1
+
 
 
