@@ -52,6 +52,25 @@ sum_top_n <- function(values, n, minimum = 1){
     sum(sort(values, decreasing=T)[1:n], na.rm=T)
 }
 
+avg_top_n <- function(values, n, minimum = 1){
+    # This top N approach is INDIVIDUAL, that is, there is no consensus among replicates to 
+    # choose the top N peptides.
+    if(length(which(!is.na(values))) < minimum) {return (NA)}
+    if (n > length(values)) n <- length(values)
+    mean(sort(values, decreasing=T)[1:n], na.rm=T)
+}
+
+sumNA <- function(values){ 
+    sumv <- sum(values, na.rm=T)
+    if(sumv == 0) sumv <- NA
+    sumv
+}
+
+avgNA <- function(values){ 
+    avgv <- mean(values, na.rm=T)
+    if(avgv == 0) avgv <- NA
+    avgv
+}
 
 single_hits <- function(values){
     # choose single hit proteins.

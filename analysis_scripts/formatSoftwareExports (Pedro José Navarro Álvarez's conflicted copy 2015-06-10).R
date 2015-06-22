@@ -16,19 +16,28 @@ loadLibrary("ggplot2")
 loadLibrary("readxl")
 
 
+
+working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/Spectronaut7/FDRtest"
+working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/Spectronaut7/round2"
+working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/round1/Skyline"
+#working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/round1/Spectronaut7"
+working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/round1/PeakView/RAW.PeakView.output.AllPeptides"
+working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/round1/DIA.Umpire/SummaryResult_0510/proteinSummaries"
+working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/testing.newlib.spectronaut"
+working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/round1/PeakView/RAW.PeakView.output.AllPeptides"
+working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/openSWATH_round1"
 working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/Peakview_round1"
-#working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/Skyline_round1"
-#working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/openSWATH_round1"
-#working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/openSWATH_round2"
-#working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/Spectronaut_round1"
-#working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/Spectronaut_round2"
-#working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/round1/DIA.Umpire/SummaryResult_20150510/peptidesSummaries"
-#working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/round1/DIA.Umpire/SummaryResult_20150510/proteinSummaries"
+working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/Skyline_round1"
+working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/Spectronaut_round2"
+working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/Spectronaut_round1"
+working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/round1/DIA.Umpire/SummaryResult_20150510/peptidesSummaries"
+working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/round1/DIA.Umpire/SummaryResult_20150510/proteinSummaries"
+working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/Spectronaut_round2"
+working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.softwares/newLib_may2015/openSWATH_round2"
 
-# Options: "Spectronaut", "PeakView", "Skyline", "openSWATH", "DIAumpire", "PeakView_builtin_proteins", "DIAumpire_builtin_proteins"
-software_source <- "PeakView"    
 
-suffix <- "r2"
+software_source <- "openSWATH"    # Options: "Spectronaut", "PeakView", "Skyline", "openSWATH", "DIAumpire"
+input_format <- "long"              # Options: "long", "wide"
 
 results_dir <- "input"
 supplementary <- "supplementary"
@@ -43,16 +52,9 @@ reportSequences = F
 singleHits = F
 
 
-
-topN.sort_method = "sum"  # "sum", "mean", "idrate_mean"  ## TODO: NOT YET IMPLEMENTED 
-topNindividual = T
-restrictNA = F
-#topN.allowNAs = T  ## Redundant
-top.N = 3 
-top.N.min = 2
-##
-
 source("fswe.variables.R")
+#q_filter_threshold <- 0.00164
+#q_filter_threshold <- 0.01
 source("fswe.functions.R")
 source("fswe.datasets.R")
 
@@ -111,32 +113,19 @@ generateReports <- function(experiment_file,
             
             qvalue.filtered = TRUE
         }
-    }else{
+    }
+    else{
         df <- read.table(experiment_file, na.strings= nastrings, header=T, 
                          sep=guessSep(experiment_file), stringsAsFactors =F, fill = T)
-    }
-    
-    if(protein_input){
-        # If the input is already a peptide report, we need to "fake" some columns as a temporary solution 
-        # to process the files
-        df <- df %>% 
-                mutate_( sequence = protein.var, charge = 1)
-        sequence.mod.var = "sequence"
-        charge.var = "charge"
+
     }
     
     if(!is.na(q_filter_threshold) & !qvalue.filtered){
         df <- eval( substitute(filter(df, var < q_filter_threshold), list( var = as.name(qvalue.var)) ) )
         qvalue.filtered = TRUE
     }    
-
-    # Remove rows containing decoy tags
-    for(dectag in decoy.tags){
-        df <- df[!grepl(dectag, df[[protein.var]], ignore.case = T),]
-    }
-        
-    
     # Attach specie and remove peptides belonging to multiple species, and not considered species ("NA"s)
+
     df <- df %>% rowwise()
     df <- eval( substitute(mutate(df, "specie" = guessSpecie(var)), list(var = as.name(protein.var)) ) ) 
     df <- filter(df, specie != "NA", specie != "multiple")
@@ -211,8 +200,7 @@ generateReports <- function(experiment_file,
     peptides_wide$sequence <- gsub( "*\\(.*?\\)", "", peptides_wide$sequence )
     
     
-    #expfile_noext <- file_path_sans_ext(basename(experiment_file))
-    expfile_noext <- paste(software_source, names(experiment)[1], suffix,  sep="_")
+    expfile_noext <- file_path_sans_ext(basename(experiment_file))
     if(reportSequences){
         sequence_list <- as.data.frame(unique(peptides_wide$sequence))
         write.table(sequence_list, 
@@ -228,28 +216,16 @@ generateReports <- function(experiment_file,
     peptides_wide <- peptides_wide %>% select(-sequence) 
     # Remove "empty" proteins (all values are NAs). I wish I could find a more elegant way to do it. I am tired.
     peptides_wide <- filter(peptides_wide, !is.na(A1) | !is.na(A2) | !is.na(A3) | !is.na(B1) | !is.na(B2) | !is.na(B3))
-    
-    if(protein_input){
-        # If the input was already a protein report, we can finish here
-        protein_report <- peptides_wide %>% select(-sequenceID)
-        write.table(protein_report, file=file.path(working_dir, results_dir ,paste0(expfile_noext, "_proteins.tsv")), 
-                    sep="\t", row.names=F, col.names=T)
-        
-        cat("Protein report as input -- No peptide report generated.\n")
-        
-        return(NA)
-        
-    }
-        
     write.table(peptides_wide, file=file.path(working_dir, results_dir ,paste0(expfile_noext, "_peptides.tsv")), 
                 sep="\t", row.names=F, col.names=T)
+    
     
     
 
     
     ## PROTEIN REPORT
     cat(paste0("Generating protein report for ", experiment_file,"\n"))
-
+    
     if(singleHits){
         print("Summarising protein single hits...")
         proteins_wide <- peptides_wide %>% 
@@ -260,35 +236,14 @@ generateReports <- function(experiment_file,
             summarise_each(funs(single_hits(.))) 
     }else{
         print("Summarising proteins...")
-        if(topNindividual){
-            print("using TOP3 individual for each run")
-            proteins_wide <- peptides_wide %>% 
-                select(-sequenceID) %>% 
-                arrange(proteinID, specie) %>%
-                group_by(proteinID, specie) %>%  
-                summarise_each(funs(avg_top_n(., top.N, top.N.min))) 
-        }else{
-            print("using consensus TOP3")
-            proteins_wide <- peptides_wide %>% ungroup() %>%
-                mutate(totalIntensity = rowSums(.[4:9], na.rm=T))  %>% #TODO: This 4:9 is a work-around I need to remove somehow
-                group_by(proteinID) %>%
-                arrange(desc(totalIntensity)) %>%
-                filter(row_number() <= top.N & n() >= top.N.min) %>%
-                select(-sequenceID, -totalIntensity) %>%
-                group_by(proteinID, specie)
-            
-            if(restrictNA){
-                proteins_wide <- proteins_wide %>%
-                    summarise_each(funs(mean))
-            }else{
-                proteins_wide <- proteins_wide %>%
-                    summarise_each(funs(avgNA))
-            }
-                
-        }
+        proteins_wide <- peptides_wide %>% 
+            select(-sequenceID) %>% 
+            arrange(proteinID, specie) %>%
+            group_by(proteinID, specie) %>%  
+            summarise_each(funs(sum_top_n(., 3, 2)))  
     }  
     
-    # Remove "empty" proteins (all values are NAs). TODO: I wish I could find a more elegant way to do it. I am tired.
+    # Remove "empty" proteins (all values are NAs). I wish I could find a more elegant way to do it. I am tired.
     proteins_wide <- filter(proteins_wide, !is.na(A1) | !is.na(A2) | !is.na(A3) | !is.na(B1) | !is.na(B2) | !is.na(B3))
     
     write.table(proteins_wide, file=file.path(working_dir, results_dir ,
