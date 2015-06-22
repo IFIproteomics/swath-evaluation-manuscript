@@ -1,0 +1,226 @@
+--------------------------------------------
+
+ Metrics description: 
+	identification:
+		identification rate,
+		the number of identified proteins for benchmark species
+	replication:
+		replication variance,
+		the median CV for the background species
+	accuracy:
+		accuracy of relative quantification,
+		the median deviation of log-ratios to the expected value
+	precision:
+		precision of quantification,
+		the standard deviation of log-ratios
+	separation:
+		species separation ability,
+		the area under ROC curve between a species pair
+--------------------------------------------
+
+DIAumpire_5600-32w_r1_singleHits_proteins
+name: DIAumpire_5600-32w_r1_singleHits_proteins
+identification: 754
+replication: 0.09749902
+accuracy: 
+$`A:B`
+           HUMAN      YEAST     ECOLI
+<1            NA         NA        NA
+<2            NA         NA        NA
+<3            NA         NA        NA
+<4            NA         NA        NA
+<5            NA         NA        NA
+<6            NA         NA        NA
+<7  0.0195501797 -0.2140118        NA
+<8 -0.0142994235 -0.3461487 0.8306539
+<9 -0.0001311326 -0.2047144 0.6183077
+>9 -0.0005645337 -0.2687802 0.6775376
+
+
+precision: 
+$`A:B`
+           HUMAN      YEAST     ECOLI
+<1            NA         NA        NA
+<2            NA         NA        NA
+<3            NA         NA        NA
+<4            NA         NA        NA
+<5            NA         NA        NA
+<6            NA         NA        NA
+<7  0.0195501797 -0.2140118        NA
+<8 -0.0142994235 -0.3461487 0.8306539
+<9 -0.0001311326 -0.2047144 0.6183077
+>9 -0.0005645337 -0.2687802 0.6775376
+
+
+separation: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2         NaN         NaN         NaN
+<3         NaN         NaN         NaN
+<4         NaN         NaN         NaN
+<5         NaN         NaN         NaN
+<6         NaN         NaN         NaN
+<7   0.8571429         NaN         NaN
+<8   0.9281250   1.0000000   1.0000000
+<9   0.9272446   0.9842105   1.0000000
+>9   0.8958055   0.9615052   0.9625668
+
+
+
+--------------------------------------------
+
+DIAumpire_5600-64w_r1_singleHits_proteins
+name: DIAumpire_5600-64w_r1_singleHits_proteins
+identification: 796
+replication: 0.09642778
+accuracy: 
+$`A:B`
+          HUMAN      YEAST     ECOLI
+<1           NA         NA        NA
+<2           NA         NA        NA
+<3           NA         NA        NA
+<4           NA         NA        NA
+<5           NA         NA        NA
+<6           NA         NA        NA
+<7  0.007664967 -0.2176044        NA
+<8  0.059881426 -0.1577844        NA
+<9 -0.040662415 -0.1722592 0.6041629
+>9  0.007284124 -0.2966118 0.7633026
+
+
+precision: 
+$`A:B`
+          HUMAN      YEAST     ECOLI
+<1           NA         NA        NA
+<2           NA         NA        NA
+<3           NA         NA        NA
+<4           NA         NA        NA
+<5           NA         NA        NA
+<6           NA         NA        NA
+<7  0.007664967 -0.2176044        NA
+<8  0.059881426 -0.1577844        NA
+<9 -0.040662415 -0.1722592 0.6041629
+>9  0.007284124 -0.2966118 0.7633026
+
+
+separation: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2         NaN         NaN         NaN
+<3         NaN         NaN         NaN
+<4         NaN         NaN         NaN
+<5         NaN         NaN         NaN
+<6         NaN         NaN         NaN
+<7   0.7192982         NaN         NaN
+<8   0.9261084         NaN         NaN
+<9   0.8817391   0.9888889   0.9855072
+>9   0.9311536   0.8929924   0.9335840
+
+
+
+--------------------------------------------
+
+DIAumpire_6600-32w_r1_singleHits_proteins
+name: DIAumpire_6600-32w_r1_singleHits_proteins
+identification: 1074
+replication: 0.1196067
+accuracy: 
+$`A:B`
+         HUMAN       YEAST     ECOLI
+<1          NA          NA        NA
+<2          NA          NA        NA
+<3          NA          NA        NA
+<4          NA          NA        NA
+<5  0.42637836 -0.16346891        NA
+<6  0.07434982 -0.08079238 1.8779127
+<7  0.12997802 -0.12101418 0.7350833
+<8  0.05328248 -0.18985123 0.6361287
+<9 -0.03440800 -0.31612199 0.4563376
+>9 -0.01197595 -0.30180047 0.4652309
+
+
+precision: 
+$`A:B`
+         HUMAN       YEAST     ECOLI
+<1          NA          NA        NA
+<2          NA          NA        NA
+<3          NA          NA        NA
+<4          NA          NA        NA
+<5  0.42637836 -0.16346891        NA
+<6  0.07434982 -0.08079238 1.8779127
+<7  0.12997802 -0.12101418 0.7350833
+<8  0.05328248 -0.18985123 0.6361287
+<9 -0.03440800 -0.31612199 0.4563376
+>9 -0.01197595 -0.30180047 0.4652309
+
+
+separation: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2         NaN         NaN         NaN
+<3         NaN         NaN         NaN
+<4         NaN         NaN         NaN
+<5   0.5416667         NaN         NaN
+<6   0.9305556   0.7222222   1.0000000
+<7   0.9380165   0.9848485   1.0000000
+<8   0.8900344   0.9033505   0.9535256
+<9   0.8807024   0.9814032   1.0000000
+>9   0.7819320   0.9750733   0.9528302
+
+
+
+--------------------------------------------
+
+DIAumpire_6600-64w_r1_singleHits_proteins
+name: DIAumpire_6600-64w_r1_singleHits_proteins
+identification: 1119
+replication: 0.1254645
+accuracy: 
+$`A:B`
+          HUMAN       YEAST     ECOLI
+<1           NA          NA        NA
+<2           NA          NA        NA
+<3           NA          NA        NA
+<4           NA          NA        NA
+<5  0.229925569  0.36175185        NA
+<6  0.161494595 -0.01235915        NA
+<7  0.025270836 -0.01465355 1.0247593
+<8 -0.008658725 -0.10243971 0.3809153
+<9 -0.031780262 -0.15386789 0.5499171
+>9  0.005367264 -0.35088298 0.4894238
+
+
+precision: 
+$`A:B`
+          HUMAN       YEAST     ECOLI
+<1           NA          NA        NA
+<2           NA          NA        NA
+<3           NA          NA        NA
+<4           NA          NA        NA
+<5  0.229925569  0.36175185        NA
+<6  0.161494595 -0.01235915        NA
+<7  0.025270836 -0.01465355 1.0247593
+<8 -0.008658725 -0.10243971 0.3809153
+<9 -0.031780262 -0.15386789 0.5499171
+>9  0.005367264 -0.35088298 0.4894238
+
+
+separation: 
+$`A:B`
+   HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<1         NaN         NaN         NaN
+<2         NaN         NaN         NaN
+<3         NaN         NaN         NaN
+<4         NaN         NaN         NaN
+<5   0.8888889         NaN         NaN
+<6   0.9285714         NaN         NaN
+<7   0.8994032   0.9492754   1.0000000
+<8   0.9456522   1.0000000   1.0000000
+<9   0.9364657   0.9144504   0.9531250
+>9   0.8348446   0.8512953   0.8989583
+
+
+

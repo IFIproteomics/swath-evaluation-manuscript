@@ -1,0 +1,9 @@
+"name"	"HUMAN"	"YEAST"	"ECOLI"	"OTHER"	"sum"
+"Spectronaut_5600-32w_r1_peptides"	14548	8571	7242	0	30361
+"Spectronaut_5600-32w_r1_proteins"	1831	1040	816	0	3687
+"Spectronaut_5600-64w_r1_peptides"	15723	10095	8517	0	34335
+"Spectronaut_5600-64w_r1_proteins"	1942	1209	933	0	4084
+"Spectronaut_6600-32w_r1_peptides"	16012	12119	10843	0	38974
+"Spectronaut_6600-32w_r1_proteins"	1968	1407	1128	0	4503
+"Spectronaut_6600-64w_r1_peptides"	16574	13533	12332	0	42439
+"Spectronaut_6600-64w_r1_proteins"	2025	1539	1246	0	4810

@@ -1,0 +1,9 @@
+"name"	"HUMAN"	"YEAST"	"ECOLI"	"OTHER"	"sum"
+"Skyline_5600-32w_r1_peptides"	8402	3593	3443	0	15438
+"Skyline_5600-32w_r1_proteins"	1176	545	475	0	2196
+"Skyline_5600-64w_r1_peptides"	13701	7104	6476	0	27281
+"Skyline_5600-64w_r1_proteins"	1771	964	764	0	3499
+"Skyline_6600-32w_r1_peptides"	7697	3138	3135	0	13970
+"Skyline_6600-32w_r1_proteins"	1093	497	429	0	2019
+"Skyline_6600-64w_r1_peptides"	13532	7209	6380	0	27121
+"Skyline_6600-64w_r1_proteins"	1741	966	761	0	3468
