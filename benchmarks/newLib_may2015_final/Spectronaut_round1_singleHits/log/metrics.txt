@@ -1,0 +1,222 @@
+--------------------------------------------
+
+ Metrics description: 
+	identification:
+		identification rate,
+		the number of identified proteins for benchmark species
+	replication:
+		replication variance,
+		the median CV for the background species
+	accuracy:
+		accuracy of relative quantification,
+		the median deviation of log-ratios to the expected value
+	precision:
+		precision of quantification,
+		the standard deviation of log-ratios
+	separation:
+		species separation ability,
+		the area under ROC curve between a species pair
+--------------------------------------------
+
+Spectronaut_5600-32w_r1_singleHits_proteins
+name: Spectronaut_5600-32w_r1_singleHits_proteins
+identification: 1817
+replication: 0.0609407
+accuracy: 
+$`A:B`
+           HUMAN       YEAST     ECOLI
+<2            NA          NA        NA
+<4            NA          NA        NA
+<6  -0.021830795  0.03511628        NA
+<8   0.011582491 -0.38793508 1.3415727
+<10 -0.012330918 -0.44947818 1.8372878
+>10 -0.005932596 -0.17575185 0.3662559
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6  0.3755073 0.7250974        NA
+<8  0.2941467 0.5324560 0.9739794
+<10 0.2994058 0.7962671 0.9086509
+>10 0.2232483 1.1854056 0.8254567
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6    0.9015152         NaN         NaN
+<8    0.8372836   0.7257183   0.7749709
+<10   0.7579391   0.6052857   0.7704918
+>10   0.8378665   0.8873975   0.8654971
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   164   300   242
+invalid, out of validity range     0     0     0
+invalid, missing value           164   300   242
+valid ratios                     877   174    60
+in plot range                    877   174    60
+out of plot range                  0     0     0
+
+
+
+--------------------------------------------
+
+Spectronaut_5600-64w_r1_singleHits_proteins
+name: Spectronaut_5600-64w_r1_singleHits_proteins
+identification: 1878
+replication: 0.06847317
+accuracy: 
+$`A:B`
+          HUMAN       YEAST     ECOLI
+<2           NA          NA        NA
+<4           NA          NA        NA
+<6   0.19837450  0.03587509 1.7337312
+<8   0.02482776 -0.29169810 1.3223135
+<10 -0.01241226 -0.25352092 0.7251182
+>10 -0.02483098 -0.21844062 0.2974390
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6  0.4642815 0.4427148 0.5471052
+<8  0.2954415 0.4672906 1.0325822
+<10 0.2423382 0.4725317 0.8171029
+>10 0.1764882 0.6593206 0.1030422
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6    0.8758621   0.7750000   1.0000000
+<8    0.8821789   0.7442013   0.7995902
+<10   0.8613691   0.7431917   0.9276316
+>10   0.9252654   1.0000000   0.9466667
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   116   316   258
+invalid, out of validity range     0     0     0
+invalid, missing value           116   316   258
+valid ratios                     940   204    44
+in plot range                    940   204    44
+out of plot range                  0     0     0
+
+
+
+--------------------------------------------
+
+Spectronaut_6600-32w_r1_singleHits_proteins
+name: Spectronaut_6600-32w_r1_singleHits_proteins
+identification: 1855
+replication: 0.06240544
+accuracy: 
+$`A:B`
+           HUMAN      YEAST     ECOLI
+<2            NA         NA        NA
+<4   0.046618009 -0.0179333 3.1973905
+<6   0.073511088 -0.3009067 1.0548057
+<8   0.002880982 -0.3523406 1.0540987
+<10 -0.009346341 -0.1024663 1.5717880
+>10 -0.013577774 -0.1122095 0.1775608
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4  0.2028154 0.4896272        NA
+<6  0.2985345 0.5587533 1.0598623
+<8  0.3071951 0.6822422 1.0852397
+<10 0.3013082 0.7449842 0.9459173
+>10 0.5500689 1.1497510 0.6176594
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4    1.0000000   1.0000000   0.6923077
+<6    0.8857597   0.7870027   0.8446851
+<8    0.7963316   0.6296296   0.7907268
+<10   0.8073133   0.6497234   0.8593750
+>10   0.6991963   0.9841418   0.9134615
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                    46   187   198
+invalid, out of validity range     0     0     0
+invalid, missing value            46   187   198
+valid ratios                    1052   284    88
+in plot range                   1050   283    88
+out of plot range                  2     1     0
+
+
+
+--------------------------------------------
+
+Spectronaut_6600-64w_r1_singleHits_proteins
+name: Spectronaut_6600-64w_r1_singleHits_proteins
+identification: 1885
+replication: 0.06566964
+accuracy: 
+$`A:B`
+           HUMAN       YEAST      ECOLI
+<2            NA          NA         NA
+<4   0.039226361 -0.17914397  1.4319475
+<6   0.030987845 -0.22422910  1.0116918
+<8   0.002707681 -0.17848585  0.4422852
+<10  0.005105216 -0.02995662  0.2504306
+>10 -0.029358225 -0.01968052 -0.1290905
+
+
+precision: 
+$`A:B`
+        HUMAN      YEAST     ECOLI
+<2         NA         NA        NA
+<4  0.3488263 0.63325684 1.2333927
+<6  0.4205919 0.44194777 0.7275793
+<8  0.3599742 0.89983504 1.0562746
+<10 0.3022399 0.33061305 0.2776907
+>10 0.1989095 0.04492543 0.1878220
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4    0.9059233   0.7500000   0.7682927
+<6    0.8978955   0.9056425   0.9405034
+<8    0.8205763   0.8209609   0.8760752
+<10   0.9734848   1.0000000   1.0000000
+>10   1.0000000   1.0000000   1.0000000
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                    21   100   174
+invalid, out of validity range     0     0     0
+invalid, missing value            21   100   174
+valid ratios                    1074   401   115
+in plot range                   1073   401   115
+out of plot range                  1     0     0
+
+
+

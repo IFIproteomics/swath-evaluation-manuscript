@@ -1,0 +1,9 @@
+"name"	"HUMAN"	"YEAST"	"ECOLI"	"OTHER"	"sum"
+"DIAumpire_5600-32w_r1_peptides"	7027	2845	2218	0	12090
+"DIAumpire_5600-32w_r1_proteins"	1017	406	332	0	1755
+"DIAumpire_5600-64w_r1_peptides"	9095	3594	2692	0	15381
+"DIAumpire_5600-64w_r1_proteins"	1138	473	355	0	1966
+"DIAumpire_6600-32w_r1_peptides"	12509	5012	3723	0	21244
+"DIAumpire_6600-32w_r1_proteins"	1624	653	480	0	2757
+"DIAumpire_6600-64w_r1_peptides"	18832	7201	5223	0	31256
+"DIAumpire_6600-64w_r1_proteins"	2192	851	611	0	3654
