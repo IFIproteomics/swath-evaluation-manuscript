@@ -1,0 +1,426 @@
+--------------------------------------------
+
+ Metrics description: 
+	identification:
+		identification rate,
+		the number of identified proteins for benchmark species
+	replication:
+		replication variance,
+		the median CV for the background species
+	accuracy:
+		accuracy of relative quantification,
+		the median deviation of log-ratios to the expected value
+	precision:
+		precision of quantification,
+		the standard deviation of log-ratios
+	separation:
+		species separation ability,
+		the area under ROC curve between a species pair
+--------------------------------------------
+
+Skyline_5600-32w_r1_commonPeptides_peptides
+name: Skyline_5600-32w_r1_commonPeptides_peptides
+identification: 10201
+replication: 0.0768871
+accuracy: 
+$`A:B`
+          HUMAN      YEAST     ECOLI
+<2           NA         NA        NA
+<4   0.13613002 -0.2171207 1.5861976
+<6   0.06389499 -0.1697905 0.6234278
+<8  -0.05584429 -0.1641862 0.4683232
+<10 -0.11055203 -0.2465847 0.3552063
+>10 -0.13971937 -0.5529945 0.4783155
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4  0.4072980 0.3644021 1.0766504
+<6  0.3779600 0.3668009 0.8152829
+<8  0.3100820 0.3201183 0.5359098
+<10 0.2486208 0.3062707 0.3231352
+>10 0.7605522 0.4166967 0.3256871
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4    0.9002965   0.6719298   0.8281690
+<6    0.9341244   0.9093292   0.9686055
+<8    0.9682848   0.9698383   0.9906097
+<10   0.9715788   0.9967732   0.9999611
+>10   0.8292683   0.9724626   1.0000000
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  1338   864  1287
+invalid, out of validity range     0     0     0
+invalid, missing value          1338   864  1287
+valid ratios                    4721  1144   847
+in plot range                   4720  1144   847
+out of plot range                  1     0     0
+
+
+
+--------------------------------------------
+
+Skyline_5600-32w_r1_commonPeptides_proteins
+name: Skyline_5600-32w_r1_commonPeptides_proteins
+identification: 1644
+replication: 0.08430213
+accuracy: 
+$`A:B`
+           HUMAN       YEAST     ECOLI
+<2            NA          NA        NA
+<4            NA          NA        NA
+<6            NA          NA        NA
+<8   0.060329589  0.05739606 0.5256236
+<10  0.003299847 -0.10815729 0.3237470
+>10 -0.045537713 -0.28777881 0.3675481
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8  0.3078749 0.4169459        NA
+<10 0.2679965 0.2902847 0.5099341
+>10 0.2939660 0.2237164 0.3617612
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8    0.9869989   1.0000000           1
+<10   0.9725846   0.9988775           1
+>10   0.9936766   0.9940201           1
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   150   131   199
+invalid, out of validity range     0     0     0
+invalid, missing value           150   131   199
+valid ratios                     791   230   143
+in plot range                    791   230   143
+out of plot range                  0     0     0
+
+
+
+--------------------------------------------
+
+Skyline_5600-64w_r1_commonPeptides_peptides
+name: Skyline_5600-64w_r1_commonPeptides_peptides
+identification: 14476
+replication: 0.05584965
+accuracy: 
+$`A:B`
+           HUMAN      YEAST     ECOLI
+<2            NA         NA        NA
+<4   0.027416832 -0.1646284 1.0242807
+<6   0.003003895 -0.1735545 0.4644082
+<8  -0.007461533 -0.1373835 0.3238793
+<10 -0.008926691 -0.1906957 0.3449449
+>10           NA         NA        NA
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4  0.3101264 0.2988247 0.8473236
+<6  0.2490250 0.2599496 0.5956717
+<8  0.2105601 0.2613984 0.3071479
+<10 0.2812734 0.1983270 0.2234859
+>10        NA        NA        NA
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4    0.9594679   0.8410360   0.9329411
+<6    0.9752670   0.9616521   0.9838796
+<8    0.9865019   0.9918292   0.9960251
+<10   0.9788299   0.9916667   1.0000000
+>10         NaN         NaN         NaN
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   732   682  1344
+invalid, out of validity range     0     0     0
+invalid, missing value           732   682  1344
+valid ratios                    7761  2284  1673
+in plot range                   7761  2284  1673
+out of plot range                  0     0     0
+
+
+
+--------------------------------------------
+
+Skyline_5600-64w_r1_commonPeptides_proteins
+name: Skyline_5600-64w_r1_commonPeptides_proteins
+identification: 2292
+replication: 0.04187453
+accuracy: 
+$`A:B`
+            HUMAN      YEAST     ECOLI
+<2             NA         NA        NA
+<4             NA         NA        NA
+<6   0.1648846522 -0.1168939        NA
+<8  -0.0004071757 -0.1441717 0.4809352
+<10 -0.0007493400 -0.1452786 0.3283550
+>10  0.0018043151 -0.1991273 0.3459340
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6  0.2080964 0.3575728        NA
+<8  0.2192096 0.3067062 0.5908244
+<10 0.1649945 0.2752784 0.3728427
+>10 0.2125553 0.2696896 0.1655961
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6    1.0000000         NaN         NaN
+<8    0.9766524   0.9652261   0.9958304
+<10   0.9851442   0.9874716   0.9921428
+>10   0.9679757   0.9928724   1.0000000
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                    86   107   187
+invalid, out of validity range     0     0     0
+invalid, missing value            86   107   187
+valid ratios                    1219   418   275
+in plot range                   1219   418   275
+out of plot range                  0     0     0
+
+
+
+--------------------------------------------
+
+Skyline_6600-32w_r1_commonPeptides_peptides
+name: Skyline_6600-32w_r1_commonPeptides_peptides
+identification: 9724
+replication: 0.05306991
+accuracy: 
+$`A:B`
+           HUMAN        YEAST      ECOLI
+<2            NA           NA         NA
+<4   0.003795361 -0.054765485 0.98601591
+<6  -0.002528598 -0.088697916 0.29221971
+<8   0.001427240 -0.036393243 0.21214170
+<10 -0.001980417  0.007501103 0.12372535
+>10 -0.001879041 -0.016435234 0.03280142
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST      ECOLI
+<2         NA        NA         NA
+<4  0.3769188 0.2972144 1.28574655
+<6  0.2726831 0.2425675 0.53968592
+<8  0.2628243 0.3187193 0.45213752
+<10 0.3412472 0.5846847 0.44831884
+>10 0.9029158 0.4591167 0.09931216
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4    0.9737346   0.7182282   0.8530220
+<6    0.9852220   0.9695657   0.9974782
+<8    0.9766541   0.9850745   0.9941865
+<10   0.9772618   0.9895180   0.9845085
+>10   0.8742424   0.9818182   1.0000000
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  1158   817  1284
+invalid, out of validity range     0     0     0
+invalid, missing value          1158   817  1284
+valid ratios                    4622  1059   784
+in plot range                   4620  1058   783
+out of plot range                  2     1     1
+
+
+
+--------------------------------------------
+
+Skyline_6600-32w_r1_commonPeptides_proteins
+name: Skyline_6600-32w_r1_commonPeptides_proteins
+identification: 1575
+replication: 0.06240239
+accuracy: 
+$`A:B`
+           HUMAN        YEAST        ECOLI
+<2            NA           NA           NA
+<4            NA           NA           NA
+<6  -0.088939696  0.109638080           NA
+<8   0.011504506  0.030902488 -0.117559936
+<10 -0.006807476 -0.031563050 -0.008531354
+>10  0.001742416  0.005973979  0.089517371
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6  0.4304771 0.6668535        NA
+<8  0.2762471 0.3972104 0.2856483
+<10 0.1909733 0.2408286 0.5442368
+>10 0.5605789 0.2149643 0.4613738
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6    1.0000000         NaN         NaN
+<8    0.9888664   1.0000000   1.0000000
+<10   0.9958798   0.9999572   1.0000000
+>10   0.9956190   0.9699435   0.9975787
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   134   141   193
+invalid, out of validity range     0     0     0
+invalid, missing value           134   141   193
+valid ratios                     758   214   135
+in plot range                    756   214   135
+out of plot range                  2     0     0
+
+
+
+--------------------------------------------
+
+Skyline_6600-64w_r1_commonPeptides_peptides
+name: Skyline_6600-64w_r1_commonPeptides_peptides
+identification: 15158
+replication: 0.04860031
+accuracy: 
+$`A:B`
+          HUMAN       YEAST      ECOLI
+<2           NA          NA         NA
+<4  -0.01057763 -0.07326748 0.59604028
+<6  -0.00285001 -0.01553982 0.25204176
+<8   0.01031428  0.03006272 0.09576584
+<10  0.01032591  0.05279053 0.02233597
+>10          NA          NA         NA
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4  0.3132782 0.2568671 0.9078883
+<6  0.2582017 0.2913635 0.4708612
+<8  0.2181665 0.3472915 0.3464945
+<10 0.1969073 0.3421087 0.2025019
+>10        NA        NA        NA
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4    0.9873286   0.8762410   0.9608174
+<6    0.9834345   0.9810414   0.9955193
+<8    0.9773259   0.9939975   0.9947482
+<10   0.9735116   0.9996977   0.9999490
+>10         NaN         NaN         NaN
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   665   843  1418
+invalid, out of validity range     0     0     0
+invalid, missing value           665   843  1418
+valid ratios                    8111  2355  1766
+in plot range                   8111  2355  1765
+out of plot range                  0     0     1
+
+
+
+--------------------------------------------
+
+Skyline_6600-64w_r1_commonPeptides_proteins
+name: Skyline_6600-64w_r1_commonPeptides_proteins
+identification: 2381
+replication: 0.0402245
+accuracy: 
+$`A:B`
+           HUMAN        YEAST      ECOLI
+<2            NA           NA         NA
+<4            NA           NA         NA
+<6   0.009757513 -0.045200411 0.63582451
+<8  -0.014233711  0.001347333 0.28604503
+<10  0.010775826  0.020588568 0.13467124
+>10  0.010703793  0.068077144 0.02451433
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST      ECOLI
+<2         NA        NA         NA
+<4         NA        NA         NA
+<6  0.2456146 0.2989480         NA
+<8  0.1842365 0.2808044 0.59186524
+<10 0.1587338 0.1987238 0.31154701
+>10 0.1165817 0.2769512 0.09719089
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6    0.9875454   1.0000000    1.000000
+<8    0.9836925   0.9773908    0.988961
+<10   0.9908697   0.9998780    1.000000
+>10   0.9641975   1.0000000    1.000000
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                    74   125   214
+invalid, out of validity range     0     0     0
+invalid, missing value            74   125   214
+valid ratios                    1258   431   279
+in plot range                   1258   431   279
+out of plot range                  0     0     0
+
+
+

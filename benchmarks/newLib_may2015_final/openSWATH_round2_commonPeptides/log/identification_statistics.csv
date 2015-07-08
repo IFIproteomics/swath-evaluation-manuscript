@@ -1,0 +1,9 @@
+"name"	"HUMAN"	"YEAST"	"ECOLI"	"OTHER"	"sum"
+"openSWATH_5600-32w_r2_commonPeptides_peptides"	8232	2901	2935	0	14068
+"openSWATH_5600-32w_r2_commonPeptides_proteins"	1259	518	458	0	2235
+"openSWATH_5600-64w_r2_commonPeptides_peptides"	8866	3249	3270	0	15385
+"openSWATH_5600-64w_r2_commonPeptides_proteins"	1347	568	501	0	2416
+"openSWATH_6600-32w_r2_commonPeptides_peptides"	8695	3203	3254	0	15152
+"openSWATH_6600-32w_r2_commonPeptides_proteins"	1320	562	496	0	2378
+"openSWATH_6600-64w_r2_commonPeptides_peptides"	8968	3345	3380	0	15693
+"openSWATH_6600-64w_r2_commonPeptides_proteins"	1359	581	509	0	2449
