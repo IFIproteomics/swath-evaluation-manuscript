@@ -1,0 +1,222 @@
+--------------------------------------------
+
+ Metrics description: 
+	identification:
+		identification rate,
+		the number of identified proteins for benchmark species
+	replication:
+		replication variance,
+		the median CV for the background species
+	accuracy:
+		accuracy of relative quantification,
+		the median deviation of log-ratios to the expected value
+	precision:
+		precision of quantification,
+		the standard deviation of log-ratios
+	separation:
+		species separation ability,
+		the area under ROC curve between a species pair
+--------------------------------------------
+
+PeakView_builtin_proteins_5600-32w_r1_builtin_proteins
+name: PeakView_builtin_proteins_5600-32w_r1_builtin_proteins
+identification: 4164
+replication: 0.04713374
+accuracy: 
+$`A:B`
+    HUMAN      YEAST     ECOLI
+<2     NA         NA        NA
+<4     NA         NA        NA
+<6     NA         NA        NA
+<8     NA         NA        NA
+<10    NA         NA        NA
+>10     0 -0.1067424 0.3840392
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.3129469 0.5060486 0.6565546
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9369621   0.9537587   0.9824764
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                     0     0     0
+invalid, out of validity range     0     0     0
+invalid, missing value             0     0     0
+valid ratios                    2334  1020   810
+in plot range                   2333  1020   810
+out of plot range                  1     0     0
+
+
+
+--------------------------------------------
+
+PeakView_builtin_proteins_5600-64w_r1_builtin_proteins
+name: PeakView_builtin_proteins_5600-64w_r1_builtin_proteins
+identification: 5422
+replication: 0.04712912
+accuracy: 
+$`A:B`
+    HUMAN       YEAST     ECOLI
+<2     NA          NA        NA
+<4     NA          NA        NA
+<6     NA          NA        NA
+<8     NA          NA        NA
+<10    NA          NA        NA
+>10     0 -0.06823217 0.3077174
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.2765539 0.4826052 0.7599618
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10    0.956236   0.9540032   0.9812092
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                     0     0     0
+invalid, out of validity range     0     0     0
+invalid, missing value             0     0     0
+valid ratios                    2858  1470  1094
+in plot range                   2857  1468  1091
+out of plot range                  1     2     3
+
+
+
+--------------------------------------------
+
+PeakView_builtin_proteins_6600-32w_r1_builtin_proteins
+name: PeakView_builtin_proteins_6600-32w_r1_builtin_proteins
+identification: 5070
+replication: 0.07764704
+accuracy: 
+$`A:B`
+           HUMAN       YEAST     ECOLI
+<2            NA          NA        NA
+<4            NA          NA        NA
+<6            NA          NA        NA
+<8            NA          NA        NA
+<10           NA          NA        NA
+>10 3.469447e-18 -0.03485155 0.3459945
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.2945538 0.4625684 0.7300626
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9465829    0.942754   0.9788689
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                     0     0     0
+invalid, out of validity range     0     0     0
+invalid, missing value             0     0     0
+valid ratios                    2700  1333  1037
+in plot range                   2699  1333  1036
+out of plot range                  1     0     1
+
+
+
+--------------------------------------------
+
+PeakView_builtin_proteins_6600-64w_r1_builtin_proteins
+name: PeakView_builtin_proteins_6600-64w_r1_builtin_proteins
+identification: 5749
+replication: 0.06318693
+accuracy: 
+$`A:B`
+    HUMAN      YEAST     ECOLI
+<2     NA         NA        NA
+<4     NA         NA        NA
+<6     NA         NA        NA
+<8     NA         NA        NA
+<10    NA         NA        NA
+>10     0 0.02174794 0.2008506
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.2894739 0.4336333 0.6091069
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9716798    0.970344   0.9886534
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                     0     0     0
+invalid, out of validity range     0     0     0
+invalid, missing value             0     0     0
+valid ratios                    2815  1672  1262
+in plot range                   2814  1670  1262
+out of plot range                  1     2     0
+
+
+

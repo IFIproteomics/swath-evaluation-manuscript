@@ -1,0 +1,426 @@
+--------------------------------------------
+
+ Metrics description: 
+	identification:
+		identification rate,
+		the number of identified proteins for benchmark species
+	replication:
+		replication variance,
+		the median CV for the background species
+	accuracy:
+		accuracy of relative quantification,
+		the median deviation of log-ratios to the expected value
+	precision:
+		precision of quantification,
+		the standard deviation of log-ratios
+	separation:
+		species separation ability,
+		the area under ROC curve between a species pair
+--------------------------------------------
+
+openSWATH_5600-32w_r1_CIS_peptides
+name: openSWATH_5600-32w_r1_CIS_peptides
+identification: 14060
+replication: 0.05020466
+accuracy: 
+$`A:B`
+    HUMAN     YEAST     ECOLI
+<2     NA        NA        NA
+<4     NA        NA        NA
+<6     NA        NA        NA
+<8     NA        NA        NA
+<10    NA        NA        NA
+>10     0 -0.321534 0.6767402
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.2418659 0.3327135 0.4354776
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9698989   0.9879198   0.9973516
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   414   526  1064
+invalid, out of validity range     0     0     0
+invalid, missing value           414   526  1064
+valid ratios                    7821  2360  1875
+in plot range                   7821  2360  1875
+out of plot range                  0     0     0
+
+
+
+--------------------------------------------
+
+openSWATH_5600-32w_r1_CIS_proteins
+name: openSWATH_5600-32w_r1_CIS_proteins
+identification: 2241
+replication: 0.03837163
+accuracy: 
+$`A:B`
+    HUMAN      YEAST     ECOLI
+<2     NA         NA        NA
+<4     NA         NA        NA
+<6     NA         NA        NA
+<8     NA         NA        NA
+<10    NA         NA        NA
+>10     0 -0.2666394 0.6180554
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.1631364 0.2429402 0.3928124
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9868736   0.9946151   0.9967276
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                    53    83   154
+invalid, out of validity range     0     0     0
+invalid, missing value            53    83   154
+valid ratios                    1211   433   307
+in plot range                   1211   433   307
+out of plot range                  0     0     0
+
+
+
+--------------------------------------------
+
+openSWATH_5600-64w_r1_CIS_peptides
+name: openSWATH_5600-64w_r1_CIS_peptides
+identification: 15383
+replication: 0.04775464
+accuracy: 
+$`A:B`
+            HUMAN      YEAST     ECOLI
+<2             NA         NA        NA
+<4             NA         NA        NA
+<6             NA         NA        NA
+<8             NA         NA        NA
+<10            NA         NA        NA
+>10 -2.710505e-20 -0.2048143 0.4836543
+
+
+precision: 
+$`A:B`
+       HUMAN     YEAST    ECOLI
+<2        NA        NA       NA
+<4        NA        NA       NA
+<6        NA        NA       NA
+<8        NA        NA       NA
+<10       NA        NA       NA
+>10 0.232782 0.2643674 0.402211
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9850645    0.993536   0.9990895
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   210   227   702
+invalid, out of validity range     0     0     0
+invalid, missing value           210   227   702
+valid ratios                    8660  3015  2569
+in plot range                   8658  3015  2566
+out of plot range                  2     0     3
+
+
+
+--------------------------------------------
+
+openSWATH_5600-64w_r1_CIS_proteins
+name: openSWATH_5600-64w_r1_CIS_proteins
+identification: 2414
+replication: 0.03368906
+accuracy: 
+$`A:B`
+    HUMAN      YEAST     ECOLI
+<2     NA         NA        NA
+<4     NA         NA        NA
+<6     NA         NA        NA
+<8     NA         NA        NA
+<10    NA         NA        NA
+>10     0 -0.1796193 0.4522862
+
+
+precision: 
+$`A:B`
+        HUMAN    YEAST     ECOLI
+<2         NA       NA        NA
+<4         NA       NA        NA
+<6         NA       NA        NA
+<8         NA       NA        NA
+<10        NA       NA        NA
+>10 0.1385246 0.207848 0.3043836
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9926306   0.9975469   0.9975904
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                    17    33    85
+invalid, out of validity range     0     0     0
+invalid, missing value            17    33    85
+valid ratios                    1331   533   415
+in plot range                   1331   533   415
+out of plot range                  0     0     0
+
+
+
+--------------------------------------------
+
+openSWATH_6600-32w_r1_CIS_peptides
+name: openSWATH_6600-32w_r1_CIS_peptides
+identification: 15165
+replication: 0.07088645
+accuracy: 
+$`A:B`
+    HUMAN      YEAST     ECOLI
+<2     NA         NA        NA
+<4     NA         NA        NA
+<6     NA         NA        NA
+<8     NA         NA        NA
+<10    NA         NA        NA
+>10     0 -0.2216551 0.5381447
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.3014562 0.3303222 0.5138553
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9778545   0.9852508   0.9961863
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   156   195   519
+invalid, out of validity range     0     0     0
+invalid, missing value           156   195   519
+valid ratios                    8537  3014  2744
+in plot range                   8533  3014  2742
+out of plot range                  4     0     2
+
+
+
+--------------------------------------------
+
+openSWATH_6600-32w_r1_CIS_proteins
+name: openSWATH_6600-32w_r1_CIS_proteins
+identification: 2376
+replication: 0.0689513
+accuracy: 
+$`A:B`
+    HUMAN      YEAST     ECOLI
+<2     NA         NA        NA
+<4     NA         NA        NA
+<6     NA         NA        NA
+<8     NA         NA        NA
+<10    NA         NA        NA
+>10     0 -0.2058787 0.5552579
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.1648156 0.2578764 0.3896873
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9893278   0.9906972   0.9997358
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                    15    28    58
+invalid, out of validity range     0     0     0
+invalid, missing value            15    28    58
+valid ratios                    1301   537   437
+in plot range                   1301   537   437
+out of plot range                  0     0     0
+
+
+
+--------------------------------------------
+
+openSWATH_6600-64w_r1_CIS_peptides
+name: openSWATH_6600-64w_r1_CIS_peptides
+identification: 15703
+replication: 0.06128434
+accuracy: 
+$`A:B`
+            HUMAN       YEAST     ECOLI
+<2             NA          NA        NA
+<4             NA          NA        NA
+<6             NA          NA        NA
+<8             NA          NA        NA
+<10            NA          NA        NA
+>10 -3.469447e-18 -0.07035176 0.2986405
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.2472072 0.2531401 0.4593211
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9915959   0.9910564   0.9984234
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                    25    35   175
+invalid, out of validity range     0     0     0
+invalid, missing value            25    35   175
+valid ratios                    8946  3312  3210
+in plot range                   8946  3311  3208
+out of plot range                  0     1     2
+
+
+
+--------------------------------------------
+
+openSWATH_6600-64w_r1_CIS_proteins
+name: openSWATH_6600-64w_r1_CIS_proteins
+identification: 2453
+replication: 0.05633082
+accuracy: 
+$`A:B`
+           HUMAN      YEAST     ECOLI
+<2            NA         NA        NA
+<4            NA         NA        NA
+<6            NA         NA        NA
+<8            NA         NA        NA
+<10           NA         NA        NA
+>10 3.469447e-18 -0.0665587 0.3032714
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.1219276 0.1816208 0.3218017
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9966052   0.9997578   0.9999931
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                     6     3    13
+invalid, out of validity range     0     0     0
+invalid, missing value             6     3    13
+valid ratios                    1354   580   497
+in plot range                   1354   580   497
+out of plot range                  0     0     0
+
+
+

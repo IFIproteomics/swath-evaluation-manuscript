@@ -1,0 +1,9 @@
+"name"	"HUMAN"	"YEAST"	"ECOLI"	"OTHER"	"sum"
+"Spectronaut_5600-32w_r1_CIS_peptides"	8610	3145	3119	0	14874
+"Spectronaut_5600-32w_r1_CIS_proteins"	1310	551	465	0	2326
+"Spectronaut_5600-64w_r1_CIS_peptides"	8864	3248	3248	0	15360
+"Spectronaut_5600-64w_r1_CIS_proteins"	1347	566	495	0	2408
+"Spectronaut_6600-32w_r1_CIS_peptides"	8848	3314	3356	0	15518
+"Spectronaut_6600-32w_r1_CIS_proteins"	1342	580	508	0	2430
+"Spectronaut_6600-64w_r1_CIS_peptides"	8967	3355	3410	0	15732
+"Spectronaut_6600-64w_r1_CIS_proteins"	1360	583	510	0	2453

@@ -1,0 +1,9 @@
+"name"	"HUMAN"	"YEAST"	"ECOLI"	"OTHER"	"sum"
+"DIAumpire_5600-32w_r1_CIS_peptides"	4234	1370	1495	0	7099
+"DIAumpire_5600-32w_r1_CIS_proteins"	728	267	259	0	1254
+"DIAumpire_5600-64w_r1_CIS_peptides"	5267	1752	1714	0	8733
+"DIAumpire_5600-64w_r1_CIS_proteins"	847	319	284	0	1450
+"DIAumpire_6600-32w_r1_CIS_peptides"	6286	2171	2206	0	10663
+"DIAumpire_6600-32w_r1_CIS_proteins"	1008	400	360	0	1768
+"DIAumpire_6600-64w_r1_CIS_peptides"	9118	3343	3302	0	15763
+"DIAumpire_6600-64w_r1_CIS_proteins"	1346	572	499	0	2417

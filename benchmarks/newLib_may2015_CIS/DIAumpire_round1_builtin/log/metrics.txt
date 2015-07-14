@@ -1,0 +1,222 @@
+--------------------------------------------
+
+ Metrics description: 
+	identification:
+		identification rate,
+		the number of identified proteins for benchmark species
+	replication:
+		replication variance,
+		the median CV for the background species
+	accuracy:
+		accuracy of relative quantification,
+		the median deviation of log-ratios to the expected value
+	precision:
+		precision of quantification,
+		the standard deviation of log-ratios
+	separation:
+		species separation ability,
+		the area under ROC curve between a species pair
+--------------------------------------------
+
+DIAumpire_5600-32w_r1_singleHits_proteins
+name: DIAumpire_5600-32w_r1_singleHits_proteins
+identification: 754
+replication: 0.09027035
+accuracy: 
+$`A:B`
+    HUMAN      YEAST     ECOLI
+<2     NA         NA        NA
+<4     NA         NA        NA
+<6     NA         NA        NA
+<8     NA         NA        NA
+<10    NA         NA        NA
+>10     0 -0.2507167 0.6672358
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.4676721 0.5548508 0.5486859
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9202254   0.9634518   0.9844037
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                    82    65    64
+invalid, out of validity range     0     0     0
+invalid, missing value            82    65    64
+valid ratios                     394   109    40
+in plot range                    393   109    40
+out of plot range                  1     0     0
+
+
+
+--------------------------------------------
+
+DIAumpire_5600-64w_r1_singleHits_proteins
+name: DIAumpire_5600-64w_r1_singleHits_proteins
+identification: 796
+replication: 0.095875
+accuracy: 
+$`A:B`
+    HUMAN      YEAST     ECOLI
+<2     NA         NA        NA
+<4     NA         NA        NA
+<6     NA         NA        NA
+<8     NA         NA        NA
+<10    NA         NA        NA
+>10     0 -0.2757598 0.6760328
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.3577429 0.4618352 0.7678057
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9032258   0.9052288   0.9433903
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   119    84    79
+invalid, out of validity range     0     0     0
+invalid, missing value           119    84    79
+valid ratios                     387    93    34
+in plot range                    387    93    34
+out of plot range                  0     0     0
+
+
+
+--------------------------------------------
+
+DIAumpire_6600-32w_r1_singleHits_proteins
+name: DIAumpire_6600-32w_r1_singleHits_proteins
+identification: 1074
+replication: 0.1231183
+accuracy: 
+$`A:B`
+    HUMAN      YEAST     ECOLI
+<2     NA         NA        NA
+<4     NA         NA        NA
+<6     NA         NA        NA
+<8     NA         NA        NA
+<10    NA         NA        NA
+>10     0 -0.2197049 0.4818101
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.5405391 0.5887906 0.6778239
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.8584031   0.9448447   0.9653446
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                    95    88   108
+invalid, out of validity range     0     0     0
+invalid, missing value            95    88   108
+valid ratios                     575   159    49
+in plot range                    574   159    49
+out of plot range                  1     0     0
+
+
+
+--------------------------------------------
+
+DIAumpire_6600-64w_r1_singleHits_proteins
+name: DIAumpire_6600-64w_r1_singleHits_proteins
+identification: 1119
+replication: 0.1343381
+accuracy: 
+$`A:B`
+    HUMAN      YEAST   ECOLI
+<2     NA         NA      NA
+<4     NA         NA      NA
+<6     NA         NA      NA
+<8     NA         NA      NA
+<10    NA         NA      NA
+>10     0 -0.1543693 0.48992
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.5550743 0.5191197 0.8297523
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.8973638    0.905421   0.9521982
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   166    92    99
+invalid, out of validity range     0     0     0
+invalid, missing value           166    92    99
+valid ratios                     578   139    45
+in plot range                    577   139    45
+out of plot range                  1     0     0
+
+
+

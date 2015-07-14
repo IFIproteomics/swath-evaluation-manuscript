@@ -1,0 +1,426 @@
+--------------------------------------------
+
+ Metrics description: 
+	identification:
+		identification rate,
+		the number of identified proteins for benchmark species
+	replication:
+		replication variance,
+		the median CV for the background species
+	accuracy:
+		accuracy of relative quantification,
+		the median deviation of log-ratios to the expected value
+	precision:
+		precision of quantification,
+		the standard deviation of log-ratios
+	separation:
+		species separation ability,
+		the area under ROC curve between a species pair
+--------------------------------------------
+
+Spectronaut_5600-32w_r2_CIS_peptides
+name: Spectronaut_5600-32w_r2_CIS_peptides
+identification: 30052
+replication: 0.06173309
+accuracy: 
+$`A:B`
+    HUMAN      YEAST     ECOLI
+<2     NA         NA        NA
+<4     NA         NA        NA
+<6     NA         NA        NA
+<8     NA         NA        NA
+<10    NA         NA        NA
+>10     0 -0.1334724 0.3040987
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.2504929 0.4498733 0.6086859
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9580956   0.9679246   0.9867422
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  1568  3498  4489
+invalid, out of validity range     0     0     0
+invalid, missing value          1568  3498  4489
+valid ratios                   12949  4879  2669
+in plot range                  12949  4874  2668
+out of plot range                  0     5     1
+
+
+
+--------------------------------------------
+
+Spectronaut_5600-32w_r2_CIS_proteins
+name: Spectronaut_5600-32w_r2_CIS_proteins
+identification: 3682
+replication: 0.04214378
+accuracy: 
+$`A:B`
+    HUMAN      YEAST     ECOLI
+<2     NA         NA        NA
+<4     NA         NA        NA
+<6     NA         NA        NA
+<8     NA         NA        NA
+<10    NA         NA        NA
+>10     0 -0.1241275 0.2976189
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.2060451 0.4930674 0.7450908
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10    0.949912   0.9596893   0.9754057
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   134   315   447
+invalid, out of validity range     0     0     0
+invalid, missing value           134   315   447
+valid ratios                    1699   714   373
+in plot range                   1699   713   371
+out of plot range                  0     1     2
+
+
+
+--------------------------------------------
+
+Spectronaut_5600-64w_r2_CIS_peptides
+name: Spectronaut_5600-64w_r2_CIS_peptides
+identification: 33598
+replication: 0.07269903
+accuracy: 
+$`A:B`
+    HUMAN       YEAST     ECOLI
+<2     NA          NA        NA
+<4     NA          NA        NA
+<6     NA          NA        NA
+<8     NA          NA        NA
+<10    NA          NA        NA
+>10     0 -0.05029604 0.1849147
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.2723648 0.4186247 0.5367337
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9685032   0.9781605   0.9932619
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  1224  3481  4855
+invalid, out of validity range     0     0     0
+invalid, missing value          1224  3481  4855
+valid ratios                   14363  6255  3420
+in plot range                  14361  6252  3419
+out of plot range                  2     3     1
+
+
+
+--------------------------------------------
+
+Spectronaut_5600-64w_r2_CIS_proteins
+name: Spectronaut_5600-64w_r2_CIS_proteins
+identification: 4017
+replication: 0.04380081
+accuracy: 
+$`A:B`
+            HUMAN       YEAST     ECOLI
+<2             NA          NA        NA
+<4             NA          NA        NA
+<6             NA          NA        NA
+<8             NA          NA        NA
+<10            NA          NA        NA
+>10 -8.673617e-19 -0.06524786 0.1932497
+
+
+precision: 
+$`A:B`
+       HUMAN     YEAST     ECOLI
+<2        NA        NA        NA
+<4        NA        NA        NA
+<6        NA        NA        NA
+<8        NA        NA        NA
+<10       NA        NA        NA
+>10 0.159387 0.3745066 0.5247152
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9708613   0.9808775   0.9927833
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                    91   309   458
+invalid, out of validity range     0     0     0
+invalid, missing value            91   309   458
+valid ratios                    1840   855   464
+in plot range                   1840   855   464
+out of plot range                  0     0     0
+
+
+
+--------------------------------------------
+
+Spectronaut_6600-32w_r2_CIS_peptides
+name: Spectronaut_6600-32w_r2_CIS_peptides
+identification: 38443
+replication: 0.05423304
+accuracy: 
+$`A:B`
+    HUMAN       YEAST     ECOLI
+<2     NA          NA        NA
+<4     NA          NA        NA
+<6     NA          NA        NA
+<8     NA          NA        NA
+<10    NA          NA        NA
+>10     0 -0.08202291 0.2726354
+
+
+precision: 
+$`A:B`
+       HUMAN     YEAST     ECOLI
+<2        NA        NA        NA
+<4        NA        NA        NA
+<6        NA        NA        NA
+<8        NA        NA        NA
+<10       NA        NA        NA
+>10 0.304559 0.4579528 0.6490848
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9546454    0.970293   0.9867693
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   537  2829  5143
+invalid, out of validity range     0     0     0
+invalid, missing value           537  2829  5143
+valid ratios                   15437  9026  5471
+in plot range                  15434  9016  5459
+out of plot range                  3    10    12
+
+
+
+--------------------------------------------
+
+Spectronaut_6600-32w_r2_CIS_proteins
+name: Spectronaut_6600-32w_r2_CIS_proteins
+identification: 4439
+replication: 0.03287929
+accuracy: 
+$`A:B`
+    HUMAN       YEAST     ECOLI
+<2     NA          NA        NA
+<4     NA          NA        NA
+<6     NA          NA        NA
+<8     NA          NA        NA
+<10    NA          NA        NA
+>10     0 -0.09466175 0.2122801
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.1868248 0.4862595 0.7169068
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9505574   0.9647113    0.979195
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                    50   248   418
+invalid, out of validity range     0     0     0
+invalid, missing value            50   248   418
+valid ratios                    1917  1126   680
+in plot range                   1917  1124   678
+out of plot range                  0     2     2
+
+
+
+--------------------------------------------
+
+Spectronaut_6600-64w_r2_CIS_peptides
+name: Spectronaut_6600-64w_r2_CIS_peptides
+identification: 42325
+replication: 0.06160537
+accuracy: 
+$`A:B`
+            HUMAN       YEAST     ECOLI
+<2             NA          NA        NA
+<4             NA          NA        NA
+<6             NA          NA        NA
+<8             NA          NA        NA
+<10            NA          NA        NA
+>10 -1.734723e-18 0.004121134 0.1182346
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.3037536 0.4360825 0.6082115
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9709349   0.9784118   0.9908938
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   202  1550  4281
+invalid, out of validity range     0     0     0
+invalid, missing value           202  1550  4281
+valid ratios                   16372 11935  7985
+in plot range                  16371 11923  7980
+out of plot range                  1    12     5
+
+
+
+--------------------------------------------
+
+Spectronaut_6600-64w_r2_CIS_proteins
+name: Spectronaut_6600-64w_r2_CIS_proteins
+identification: 4801
+replication: 0.03290618
+accuracy: 
+$`A:B`
+    HUMAN        YEAST      ECOLI
+<2     NA           NA         NA
+<4     NA           NA         NA
+<6     NA           NA         NA
+<8     NA           NA         NA
+<10    NA           NA         NA
+>10     0 -0.007962813 0.08037167
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.1336824 0.3329724 0.5553365
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9799649   0.9856143   0.9929983
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                    19   125   343
+invalid, out of validity range     0     0     0
+invalid, missing value            19   125   343
+valid ratios                    2005  1403   906
+in plot range                   2005  1403   905
+out of plot range                  0     0     1
+
+
+

@@ -1,0 +1,426 @@
+--------------------------------------------
+
+ Metrics description: 
+	identification:
+		identification rate,
+		the number of identified proteins for benchmark species
+	replication:
+		replication variance,
+		the median CV for the background species
+	accuracy:
+		accuracy of relative quantification,
+		the median deviation of log-ratios to the expected value
+	precision:
+		precision of quantification,
+		the standard deviation of log-ratios
+	separation:
+		species separation ability,
+		the area under ROC curve between a species pair
+--------------------------------------------
+
+DIAumpire_5600-32w_r1_CIS_peptides
+name: DIAumpire_5600-32w_r1_CIS_peptides
+identification: 12090
+replication: 0.07977615
+accuracy: 
+$`A:B`
+            HUMAN      YEAST     ECOLI
+<2             NA         NA        NA
+<4             NA         NA        NA
+<6             NA         NA        NA
+<8             NA         NA        NA
+<10            NA         NA        NA
+>10 -8.673617e-19 -0.2332846 0.5800575
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.2984022 0.4179005 0.4900527
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9443847   0.9821154   0.9927729
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   573   583   908
+invalid, out of validity range     0     0     0
+invalid, missing value           573   583   908
+valid ratios                    6454  2262  1310
+in plot range                   6453  2262  1309
+out of plot range                  1     0     1
+
+
+
+--------------------------------------------
+
+DIAumpire_5600-32w_r1_CIS_proteins
+name: DIAumpire_5600-32w_r1_CIS_proteins
+identification: 1755
+replication: 0.06624518
+accuracy: 
+$`A:B`
+    HUMAN      YEAST     ECOLI
+<2     NA         NA        NA
+<4     NA         NA        NA
+<6     NA         NA        NA
+<8     NA         NA        NA
+<10    NA         NA        NA
+>10     0 -0.1783721 0.4067779
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.2551549 0.4318057 0.4748863
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9631669   0.9970651   0.9964209
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                    53    53   127
+invalid, out of validity range     0     0     0
+invalid, missing value            53    53   127
+valid ratios                     964   353   205
+in plot range                    964   353   205
+out of plot range                  0     0     0
+
+
+
+--------------------------------------------
+
+DIAumpire_5600-64w_r1_CIS_peptides
+name: DIAumpire_5600-64w_r1_CIS_peptides
+identification: 15381
+replication: 0.09545922
+accuracy: 
+$`A:B`
+           HUMAN      YEAST     ECOLI
+<2            NA         NA        NA
+<4            NA         NA        NA
+<6            NA         NA        NA
+<8            NA         NA        NA
+<10           NA         NA        NA
+>10 1.084202e-19 -0.2376639 0.5269492
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.3280495 0.4075006 0.5046076
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9433068   0.9821965   0.9924769
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  1109  1063  1421
+invalid, out of validity range     0     0     0
+invalid, missing value          1109  1063  1421
+valid ratios                    7986  2531  1271
+in plot range                   7986  2530  1269
+out of plot range                  0     1     2
+
+
+
+--------------------------------------------
+
+DIAumpire_5600-64w_r1_CIS_proteins
+name: DIAumpire_5600-64w_r1_CIS_proteins
+identification: 1966
+replication: 0.08106163
+accuracy: 
+$`A:B`
+            HUMAN      YEAST    ECOLI
+<2             NA         NA       NA
+<4             NA         NA       NA
+<6             NA         NA       NA
+<8             NA         NA       NA
+<10            NA         NA       NA
+>10 -1.355253e-20 -0.1465037 0.303118
+
+
+precision: 
+$`A:B`
+        HUMAN    YEAST     ECOLI
+<2         NA       NA        NA
+<4         NA       NA        NA
+<6         NA       NA        NA
+<8         NA       NA        NA
+<10        NA       NA        NA
+>10 0.2977265 0.426766 0.5715103
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9631786   0.9790368   0.9913953
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                    92   112   148
+invalid, out of validity range     0     0     0
+invalid, missing value            92   112   148
+valid ratios                    1046   361   207
+in plot range                   1046   361   207
+out of plot range                  0     0     0
+
+
+
+--------------------------------------------
+
+DIAumpire_6600-32w_r1_CIS_peptides
+name: DIAumpire_6600-32w_r1_CIS_peptides
+identification: 21244
+replication: 0.1107527
+accuracy: 
+$`A:B`
+            HUMAN      YEAST     ECOLI
+<2             NA         NA        NA
+<4             NA         NA        NA
+<6             NA         NA        NA
+<8             NA         NA        NA
+<10            NA         NA        NA
+>10 -3.469447e-18 -0.1580538 0.4036324
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.4034166 0.4805286 0.6736383
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9353519   0.9628955   0.9810139
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  1355  1213  1638
+invalid, out of validity range     0     0     0
+invalid, missing value          1355  1213  1638
+valid ratios                   11154  3799  2085
+in plot range                  11148  3795  2080
+out of plot range                  6     4     5
+
+
+
+--------------------------------------------
+
+DIAumpire_6600-32w_r1_CIS_proteins
+name: DIAumpire_6600-32w_r1_CIS_proteins
+identification: 2757
+replication: 0.1224274
+accuracy: 
+$`A:B`
+    HUMAN       YEAST     ECOLI
+<2     NA          NA        NA
+<4     NA          NA        NA
+<6     NA          NA        NA
+<8     NA          NA        NA
+<10    NA          NA        NA
+>10     0 -0.05405342 0.2247623
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.3268744 0.4816045 0.6183291
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9631541   0.9832864   0.9963408
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   121   118   173
+invalid, out of validity range     0     0     0
+invalid, missing value           121   118   173
+valid ratios                    1503   535   307
+in plot range                   1503   535   306
+out of plot range                  0     0     1
+
+
+
+--------------------------------------------
+
+DIAumpire_6600-64w_r1_CIS_peptides
+name: DIAumpire_6600-64w_r1_CIS_peptides
+identification: 31256
+replication: 0.119896
+accuracy: 
+$`A:B`
+    HUMAN     YEAST     ECOLI
+<2     NA        NA        NA
+<4     NA        NA        NA
+<6     NA        NA        NA
+<8     NA        NA        NA
+<10    NA        NA        NA
+>10     0 -0.117593 0.3613336
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.4339408 0.5036987 0.6641211
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9298108   0.9626253   0.9827552
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  2355  1916  2529
+invalid, out of validity range     0     0     0
+invalid, missing value          2355  1916  2529
+valid ratios                   16477  5285  2694
+in plot range                  16467  5281  2687
+out of plot range                 10     4     7
+
+
+
+--------------------------------------------
+
+DIAumpire_6600-64w_r1_CIS_proteins
+name: DIAumpire_6600-64w_r1_CIS_proteins
+identification: 3654
+replication: 0.1258558
+accuracy: 
+$`A:B`
+            HUMAN       YEAST     ECOLI
+<2             NA          NA        NA
+<4             NA          NA        NA
+<6             NA          NA        NA
+<8             NA          NA        NA
+<10            NA          NA        NA
+>10 -3.469447e-18 -0.05911356 0.1674896
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.3504361 0.4439123 0.6536197
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9581273   0.9717652    0.988682
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   190   172   246
+invalid, out of validity range     0     0     0
+invalid, missing value           190   172   246
+valid ratios                    2002   679   365
+in plot range                   2002   679   365
+out of plot range                  0     0     0
+
+
+

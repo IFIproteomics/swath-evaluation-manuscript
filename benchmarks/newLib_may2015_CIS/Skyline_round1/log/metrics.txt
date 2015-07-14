@@ -1,0 +1,426 @@
+--------------------------------------------
+
+ Metrics description: 
+	identification:
+		identification rate,
+		the number of identified proteins for benchmark species
+	replication:
+		replication variance,
+		the median CV for the background species
+	accuracy:
+		accuracy of relative quantification,
+		the median deviation of log-ratios to the expected value
+	precision:
+		precision of quantification,
+		the standard deviation of log-ratios
+	separation:
+		species separation ability,
+		the area under ROC curve between a species pair
+--------------------------------------------
+
+Skyline_5600-32w_r1_CIS_peptides
+name: Skyline_5600-32w_r1_CIS_peptides
+identification: 15438
+replication: 0.05583394
+accuracy: 
+$`A:B`
+           HUMAN      YEAST     ECOLI
+<2            NA         NA        NA
+<4            NA         NA        NA
+<6            NA         NA        NA
+<8            NA         NA        NA
+<10           NA         NA        NA
+>10 5.421011e-20 -0.2021962 0.4516863
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.2770001 0.3465285 0.6860636
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9549206   0.9392033    0.977205
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  2190  1829  2297
+invalid, out of validity range     0     0     0
+invalid, missing value          2190  1829  2297
+valid ratios                    6212  1764  1146
+in plot range                   6211  1764  1144
+out of plot range                  1     0     2
+
+
+
+--------------------------------------------
+
+Skyline_5600-32w_r1_CIS_proteins
+name: Skyline_5600-32w_r1_CIS_proteins
+identification: 2196
+replication: 0.0738587
+accuracy: 
+$`A:B`
+    HUMAN      YEAST     ECOLI
+<2     NA         NA        NA
+<4     NA         NA        NA
+<6     NA         NA        NA
+<8     NA         NA        NA
+<10    NA         NA        NA
+>10     0 -0.1542431 0.3425298
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.3195037 0.4400942 0.7162566
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9441489   0.9620746   0.9907073
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   201   224   299
+invalid, out of validity range     0     0     0
+invalid, missing value           201   224   299
+valid ratios                     975   321   176
+in plot range                    975   321   176
+out of plot range                  0     0     0
+
+
+
+--------------------------------------------
+
+Skyline_5600-64w_r1_CIS_peptides
+name: Skyline_5600-64w_r1_CIS_peptides
+identification: 27281
+replication: 0.05749987
+accuracy: 
+$`A:B`
+    HUMAN      YEAST     ECOLI
+<2     NA         NA        NA
+<4     NA         NA        NA
+<6     NA         NA        NA
+<8     NA         NA        NA
+<10    NA         NA        NA
+>10     0 -0.1869932 0.4134895
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.2659063 0.3914233 0.6720124
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9480736   0.9385081   0.9717845
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  2047  2966  4018
+invalid, out of validity range     0     0     0
+invalid, missing value          2047  2966  4018
+valid ratios                   11654  4138  2458
+in plot range                  11654  4138  2457
+out of plot range                  0     0     1
+
+
+
+--------------------------------------------
+
+Skyline_5600-64w_r1_CIS_proteins
+name: Skyline_5600-64w_r1_CIS_proteins
+identification: 3499
+replication: 0.04735951
+accuracy: 
+$`A:B`
+    HUMAN      YEAST     ECOLI
+<2     NA         NA        NA
+<4     NA         NA        NA
+<6     NA         NA        NA
+<8     NA         NA        NA
+<10    NA         NA        NA
+>10     0 -0.1579246 0.3636798
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.2248801 0.4474171 0.7241684
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9414846   0.9319601   0.9715713
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   173   308   382
+invalid, out of validity range     0     0     0
+invalid, missing value           173   308   382
+valid ratios                    1598   656   382
+in plot range                   1598   656   382
+out of plot range                  0     0     0
+
+
+
+--------------------------------------------
+
+Skyline_6600-32w_r1_CIS_peptides
+name: Skyline_6600-32w_r1_CIS_peptides
+identification: 13970
+replication: 0.08025663
+accuracy: 
+$`A:B`
+    HUMAN       YEAST     ECOLI
+<2     NA          NA        NA
+<4     NA          NA        NA
+<6     NA          NA        NA
+<8     NA          NA        NA
+<10    NA          NA        NA
+>10     0 -0.06241526 0.2095442
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.3105214 0.3460791 0.7330441
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9678804   0.9448219   0.9791121
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  1772  1549  2129
+invalid, out of validity range     0     0     0
+invalid, missing value          1772  1549  2129
+valid ratios                    5925  1589  1006
+in plot range                   5923  1588  1004
+out of plot range                  2     1     2
+
+
+
+--------------------------------------------
+
+Skyline_6600-32w_r1_CIS_proteins
+name: Skyline_6600-32w_r1_CIS_proteins
+identification: 2019
+replication: 0.09607478
+accuracy: 
+$`A:B`
+    HUMAN       YEAST      ECOLI
+<2     NA          NA         NA
+<4     NA          NA         NA
+<6     NA          NA         NA
+<8     NA          NA         NA
+<10    NA          NA         NA
+>10     0 -0.01590521 0.07905842
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.3566804 0.5849698 0.7926635
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9447514   0.9574422   0.9738974
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   188   215   260
+invalid, out of validity range     0     0     0
+invalid, missing value           188   215   260
+valid ratios                     905   282   169
+in plot range                    903   282   169
+out of plot range                  2     0     0
+
+
+
+--------------------------------------------
+
+Skyline_6600-64w_r1_CIS_peptides
+name: Skyline_6600-64w_r1_CIS_peptides
+identification: 27121
+replication: 0.06749358
+accuracy: 
+$`A:B`
+    HUMAN       YEAST     ECOLI
+<2     NA          NA        NA
+<4     NA          NA        NA
+<6     NA          NA        NA
+<8     NA          NA        NA
+<10    NA          NA        NA
+>10     0 -0.06238194 0.2013995
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.2809747 0.3920053 0.7260336
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9644513   0.9408044   0.9797003
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  1704  3057  3855
+invalid, out of validity range     0     0     0
+invalid, missing value          1704  3057  3855
+valid ratios                   11828  4152  2525
+in plot range                  11826  4151  2524
+out of plot range                  2     1     1
+
+
+
+--------------------------------------------
+
+Skyline_6600-64w_r1_CIS_proteins
+name: Skyline_6600-64w_r1_CIS_proteins
+identification: 3468
+replication: 0.06963551
+accuracy: 
+$`A:B`
+    HUMAN        YEAST     ECOLI
+<2     NA           NA        NA
+<4     NA           NA        NA
+<6     NA           NA        NA
+<8     NA           NA        NA
+<10    NA           NA        NA
+>10     0 -0.008531171 0.1488089
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.2423042 0.5696966 0.8262235
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10    0.945826   0.9492763   0.9749584
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   130   317   388
+invalid, out of validity range     0     0     0
+invalid, missing value           130   317   388
+valid ratios                    1611   649   373
+in plot range                   1611   649   372
+out of plot range                  0     0     1
+
+
+

@@ -1,0 +1,9 @@
+"name"	"HUMAN"	"YEAST"	"ECOLI"	"OTHER"	"sum"
+"PeakView_5600-32w_r1_CIS_peptides"	9805	4146	3890	0	17841
+"PeakView_5600-32w_r1_CIS_proteins"	1405	678	565	0	2648
+"PeakView_5600-64w_r1_CIS_peptides"	13948	7279	6264	0	27491
+"PeakView_5600-64w_r1_CIS_proteins"	1815	1012	808	0	3635
+"PeakView_6600-32w_r1_CIS_peptides"	12736	6665	6202	0	25603
+"PeakView_6600-32w_r1_CIS_proteins"	1686	942	765	0	3393
+"PeakView_6600-64w_r1_CIS_peptides"	12714	8245	7465	0	28424
+"PeakView_6600-64w_r1_CIS_proteins"	1758	1191	977	0	3926
