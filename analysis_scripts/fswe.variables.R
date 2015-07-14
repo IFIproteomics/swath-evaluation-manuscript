@@ -12,6 +12,7 @@ protein_input <- F
 input.extension <- "*.csv$"
 nastrings = "NA"
 decoy.tags <- c("DECOY_","reverse")
+intensity.scale <- 1.0
 
 if(software_source == "Spectronaut"){
     qvalue.var <- "EG.Qvalue"
@@ -23,7 +24,7 @@ if(software_source == "Spectronaut"){
     nastrings <- "NaN"
     input.extension <- "*.tsv$"
     input_format <- "long"  # Options: "long", "wide"
-    
+    intensity.scale <- 393.5628154
 }
 
 if(software_source == "DIAumpire"){
@@ -36,7 +37,7 @@ if(software_source == "DIAumpire"){
     nastrings <- "NA"
     input.extension <- "*.tsv$"
     input_format <- "wide"  # Options: "long", "wide"
-
+    intensity.scale <- 65.0507483
 }
 
 if(software_source == "Skyline"){
@@ -51,11 +52,11 @@ if(software_source == "Skyline"){
     nastrings <- "#N/A"
     input.extension <- "*.tsv$"
     input_format <- "long"  # Options: "long", "wide"
-        
+    intensity.scale <- 0.8087744    
 }
 
 if(software_source == "PeakView"){
-    q_filter_threshold <- 0.01
+    q_filter_threshold <- 1.0
     quantitative.var.tag <- "Sample"
     fdr.var.tag <- "FDR"
     quantitative.var <- "TotalAreaFragment"
@@ -67,7 +68,8 @@ if(software_source == "PeakView"){
     input.extension <- "*.xls*"
     sheet.data <- "Area - peptides"
     sheet.fdr <- "FDR"
-    input_format <- "wide"  # Options: "long", "wide"        
+    input_format <- "wide"  # Options: "long", "wide"  
+    intensity.scale <- 1.0
 }
 
 if(software_source == "openSWATH"){
@@ -81,7 +83,7 @@ if(software_source == "openSWATH"){
     decoy.var <- "decoy"
     input.extension <- "*.tsv.gz$"
     input_format <- "long"  # Options: "long", "wide"
-    
+    intensity.scale <- 3.6483363
     ### Wide format
     # q_filter_threshold <- 0.05
     # qvalue.var <- "score"

@@ -28,18 +28,19 @@ working_dir <- "/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/output.from.soft
 # Options: "Spectronaut", "PeakView", "Skyline", "openSWATH", "DIAumpire", "PeakView_builtin_proteins", "DIAumpire_builtin_proteins"
 software_source <- "PeakView"    
 
-suffix <- "r2"
+suffix <- "r1_CIS"
 
-results_dir <- "input"
+results_dir <- "input_CIS"
 supplementary <- "supplementary"
 
 # Use sequencelist when you want to analyse a subset of peptides
-#sequencelist <- read.csv("/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/common_peptides/commonPeptides.csv", stringsAsFactors=F)$V1
+#sequencelist <- read.csv("/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/common_peptides/commonPeptides_Spectronaut_DIAumpire.csv", stringsAsFactors=F)$V1
+#sequencelist <- read.csv("/Users/napedro/Dropbox/PAPER_SWATHbenchmark_prv/common_peptides/commonPeptides_allSoftwares_6600_64w.csv", stringsAsFactors=F)$V1
 sequencelist <- NULL
 
 plotHistogram = T 
 plotHistNAs = T 
-reportSequences = F
+reportSequences = T
 singleHits = F
 
 
@@ -51,6 +52,9 @@ restrictNA = F
 top.N = 3 
 top.N.min = 2
 ##
+
+#histNAs.peptides.scale = c(0,2000)
+histNAs.proteins.scale = c(0,2000)
 
 source("fswe.variables.R")
 source("fswe.functions.R")
@@ -210,6 +214,9 @@ generateReports <- function(experiment_file,
     peptides_wide$sequence <- gsub( "*\\[.*?\\]", "", peptides_wide$sequenceID )
     peptides_wide$sequence <- gsub( "*\\(.*?\\)", "", peptides_wide$sequence )
     
+    # Scale intensities to a common intensity scale (CIS)
+    nums <- sapply(peptides_wide, is.numeric)
+    peptides_wide[, nums] <- peptides_wide[, nums] * intensity.scale 
     
     #expfile_noext <- file_path_sans_ext(basename(experiment_file))
     expfile_noext <- paste(software_source, names(experiment)[1], suffix,  sep="_")
@@ -316,11 +323,17 @@ generateReports <- function(experiment_file,
         p <- ggplot(proteins_wide, aes(x = numNAs))
         p <- p + geom_histogram()
         p <- p + aes() + ylab("# proteins")
+        if(exists("histNAs.proteins.scale")){
+            p <- p + scale_y_continuous(limits = histNAs.proteins.scale)
+        }
         hNAprot <- p + facet_wrap( ~ specie, ncol = 3) 
  
         p <- ggplot(peptides_wide, aes(x = numNAs))
         p <- p + geom_histogram()
         p <- p + aes() + ylab("# peptides")
+        if(exists("histNAs.peptides.scale")){
+            p <- p + scale_y_continuous(limits = histNAs.peptides.scale)
+        }
         hNApep <- p + facet_wrap( ~ specie, ncol = 3)
         
         ggsave(filename = file.path(working_dir, results_dir, supplementary, 
