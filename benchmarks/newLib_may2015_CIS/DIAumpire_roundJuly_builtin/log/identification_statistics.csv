@@ -1,0 +1,5 @@
+"name"	"HUMAN"	"YEAST"	"ECOLI"	"OTHER"	"sum"
+"DIAumpire_builtin_proteins_5600-32w_r1_builtin_proteins"	1300	527	417	0	2244
+"DIAumpire_builtin_proteins_5600-64w_r1_builtin_proteins"	1502	611	475	0	2588
+"DIAumpire_builtin_proteins_6600-32w_r1_builtin_proteins"	2128	859	656	0	3643
+"DIAumpire_builtin_proteins_6600-64w_r1_builtin_proteins"	2872	1149	828	0	4849
