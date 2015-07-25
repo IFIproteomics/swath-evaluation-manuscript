@@ -1,0 +1,89 @@
+---
+title: "shifted iRT values for PeakView"
+author: "Pedro Navarro"
+date: "19 Jul 2015"
+output: html_document
+---
+
+_Problem_: PeakView interprets the estimated calibration retention times in a different way than other software tools. When PeakView finds a negative iRT value, it interprets that it should search the peptide signal of that peptide across the whole run. To avoid this, we must shift iRT values of PeakView to positive values.
+
+```{r set_options, echo=FALSE, message=FALSE}
+loadLibrary <- function(x) 
+{
+  if(!require(x, character.only=T, quietly = T, warn.conflicts=F)) 
+  { 
+    install.packages(x); library(x, character.only=T, warn.conflicts=F) 
+  } 
+}
+
+library(knitr)
+opts_chunk$set(echo = TRUE)
+
+```
+
+```{r loadlibs}
+loadLibrary("dplyr")
+loadLibrary("tools")
+```
+
+We load the peakview ion libraries (32w and 64w):
+
+```{r loadfiles, cache=TRUE, cache.comments=TRUE,cache.lazy=TRUE}
+filename32 <- "ecolihumanyeast_concat_mayu_IRR_cons_peakview_32sw_curated.txt"
+filename64 <- "ecolihumanyeast_concat_mayu_IRR_cons_peakview_64var_curated.txt"
+
+ionlib32 <- read.table(file = filename32, sep="\t", header=T, stringsAsFactors = F)
+ionlib64 <- read.table(file = filename64, sep="\t", header=T, stringsAsFactors = F)
+```
+
+How many precursors are actually affected? (how many have a negative iRT value?)
+
+```{r libstats}
+
+countPrecursorsNegative_iRT <- function(df){
+    precursors <- df %>% 
+                  group_by(modification_sequence, prec_z) %>% 
+                  summarise(avg_iRT = mean(RT_detected))
+    
+    neg <- nrow(filter(precursors, avg_iRT < 0))
+    neg_relative <- neg / nrow(precursors) 
+    return(c(neg, neg_relative))
+}
+
+stats_libs <- rbind(
+                    countPrecursorsNegative_iRT(ionlib32),
+                    countPrecursorsNegative_iRT(ionlib64)
+                )
+
+stats_libs <- as.data.frame(stats_libs)
+
+row.names(stats_libs) <- c("lib32", "lib64")
+names(stats_libs) <- c("count_negative_iRT", "relative")
+
+knitr::kable(x = stats_libs)
+```
+
+
+It affected to more precursors I expected. We need to re-run all datasets in PeakView. 
+
+```{r shift.libraries}
+
+shift32 <- min(ionlib32$RT_detected)
+shift64 <- min(ionlib64$RT_detected)
+
+shift <- min(c(shift32, shift64))
+
+ionlib32$RT_detected = ionlib32$RT_detected - shift 
+ionlib64$RT_detected = ionlib64$RT_detected - shift 
+
+filename.new.32 <- paste0(file_path_sans_ext(filename32), "_shift_iRT.txt")
+filename.new.64 <- paste0(file_path_sans_ext(filename64), "_shift_iRT.txt")
+
+write.table(x = ionlib32, file = filename.new.32, sep = "\t", col.names = T, row.names=F, quote = F)
+write.table(x = ionlib64, file = filename.new.64, sep = "\t", col.names = T, row.names=F, quote = F)
+```
+
+We applied a shift of `r -shift` to both libraries, and generated the following new ion library files:
+
+`r filename.new.32`
+`r filename.new.64`
