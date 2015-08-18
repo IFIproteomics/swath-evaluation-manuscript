@@ -1,0 +1,120 @@
+--------------------------------------------
+
+ Metrics description: 
+	identification:
+		identification rate,
+		the number of identified proteins for benchmark species
+	replication:
+		replication variance,
+		the median CV for the background species
+	accuracy:
+		accuracy of relative quantification,
+		the median deviation of log-ratios to the expected value
+	precision:
+		precision of quantification,
+		the standard deviation of log-ratios
+	separation:
+		species separation ability,
+		the area under ROC curve between a species pair
+--------------------------------------------
+
+Skyline_5600-64w_it0_peptides
+name: Skyline_5600-64w_it0_peptides
+identification: 32799
+replication: 0.06130615
+accuracy: 
+$`A:B`
+    HUMAN      YEAST     ECOLI
+<2     NA         NA        NA
+<4     NA         NA        NA
+<6     NA         NA        NA
+<8     NA         NA        NA
+<10    NA         NA        NA
+>10     0 -0.1878104 0.4505763
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.2853056 0.4148288 0.6576018
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10    0.940803     0.94545   0.9768165
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  1326  3378  4544
+invalid, out of validity range     0     0     0
+invalid, missing value          1326  3378  4544
+valid ratios                   13966  5838  3747
+in plot range                  13965  5838  3745
+out of plot range                  1     0     2
+
+
+
+--------------------------------------------
+
+Skyline_5600-64w_it0_proteins
+name: Skyline_5600-64w_it0_proteins
+identification: 4015
+replication: 0.04509852
+accuracy: 
+$`A:B`
+    HUMAN      YEAST    ECOLI
+<2     NA         NA       NA
+<4     NA         NA       NA
+<6     NA         NA       NA
+<8     NA         NA       NA
+<10    NA         NA       NA
+>10     0 -0.1723331 0.426431
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.1829734 0.3968891 0.5982284
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10    0.950424   0.9564559   0.9871025
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                    97   314   404
+invalid, out of validity range     0     0     0
+invalid, missing value            97   314   404
+valid ratios                    1824   846   530
+in plot range                   1824   846   530
+out of plot range                  0     0     0
+
+
+

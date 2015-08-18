@@ -1,0 +1,1038 @@
+--------------------------------------------
+
+ Metrics description: 
+	identification:
+		identification rate,
+		the number of identified proteins for benchmark species
+	replication:
+		replication variance,
+		the median CV for the background species
+	accuracy:
+		accuracy of relative quantification,
+		the median deviation of log-ratios to the expected value
+	precision:
+		precision of quantification,
+		the standard deviation of log-ratios
+	separation:
+		species separation ability,
+		the area under ROC curve between a species pair
+--------------------------------------------
+
+DIAumpire_builtin_r1
+name: DIAumpire_builtin_r1
+identification: 2588
+replication: 0.1194555
+accuracy: 
+$`A:B`
+           HUMAN       YEAST     ECOLI
+<2            NA          NA        NA
+<4            NA          NA        NA
+<6            NA          NA        NA
+<8            NA          NA        NA
+<10  0.018430810  0.16178587 0.8357580
+>10 -0.004413082 -0.07738235 0.0348804
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10 0.8120964 0.9103193 0.7861128
+>10 0.3347152 0.4939367 0.9130033
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10   0.9001137   0.8602041   0.9638308
+>10   0.9489386   0.9811169   0.9937011
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                    62    67   102
+invalid, out of validity range     0     0     0
+invalid, missing value            62    67   102
+valid ratios                    1440   544   373
+in plot range                   1439   542   357
+out of plot range                  1     2    16
+
+
+
+--------------------------------------------
+
+DIAumpire_peptides_r1
+name: DIAumpire_peptides_r1
+identification: 15346
+replication: 0.1084524
+accuracy: 
+$`A:B`
+    HUMAN      YEAST     ECOLI
+<2     NA         NA        NA
+<4     NA         NA        NA
+<6     NA         NA        NA
+<8     NA         NA        NA
+<10    NA         NA        NA
+>10     0 -0.1700835 0.4487495
+
+
+precision: 
+$`A:B`
+       HUMAN     YEAST     ECOLI
+<2        NA        NA        NA
+<4        NA        NA        NA
+<6        NA        NA        NA
+<8        NA        NA        NA
+<10       NA        NA        NA
+>10 0.447521 0.5729845 0.7272942
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9285835   0.9699423   0.9871561
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   971   810  1066
+invalid, out of validity range     0     0     0
+invalid, missing value           971   810  1066
+valid ratios                    8149  2771  1579
+in plot range                   8146  2758  1563
+out of plot range                  3    13    16
+
+
+
+--------------------------------------------
+
+DIAumpire_r1
+name: DIAumpire_r1
+identification: 2037
+replication: 0.0952743
+accuracy: 
+$`A:B`
+    HUMAN       YEAST     ECOLI
+<2     NA          NA        NA
+<4     NA          NA        NA
+<6     NA          NA        NA
+<8     NA          NA        NA
+<10    NA          NA        NA
+>10     0 -0.07801802 0.2392074
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.3296407 0.4936851 0.6075214
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9645573   0.9846036   0.9971227
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   107    97   143
+invalid, out of validity range     0     0     0
+invalid, missing value           107    97   143
+valid ratios                    1078   386   226
+in plot range                   1078   386   225
+out of plot range                  0     0     1
+
+
+
+--------------------------------------------
+
+OpenSWATH_peptides_r1
+name: OpenSWATH_peptides_r1
+identification: 34154
+replication: 0.0508475
+accuracy: 
+$`A:B`
+    HUMAN      YEAST     ECOLI
+<2     NA         NA        NA
+<4     NA         NA        NA
+<6     NA         NA        NA
+<8     NA         NA        NA
+<10    NA         NA        NA
+>10     0 -0.2696596 0.5625672
+
+
+precision: 
+$`A:B`
+        HUMAN   YEAST     ECOLI
+<2         NA      NA        NA
+<4         NA      NA        NA
+<6         NA      NA        NA
+<8         NA      NA        NA
+<10        NA      NA        NA
+>10 0.2551564 0.33644 0.4934547
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9609065   0.9804806   0.9927789
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   849  2237  4076
+invalid, out of validity range     0     0     0
+invalid, missing value           849  2237  4076
+valid ratios                   14719  7592  4681
+in plot range                  14716  7592  4677
+out of plot range                  3     0     4
+
+
+
+--------------------------------------------
+
+OpenSWATH_peptides_r2
+name: OpenSWATH_peptides_r2
+identification: 34476
+replication: 0.07888771
+accuracy: 
+$`A:B`
+            HUMAN       YEAST     ECOLI
+<2             NA          NA        NA
+<4             NA          NA        NA
+<6             NA          NA        NA
+<8             NA          NA        NA
+<10  3.545589e+00  3.01519303        NA
+>10 -2.600684e-05 -0.05132338 0.1703321
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.3365522 0.4639043 0.6017838
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10   1.0000000         NaN         NaN
+>10   0.9543185   0.9781762   0.9935522
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   808  2266  4112
+invalid, out of validity range     0     0     0
+invalid, missing value           808  2266  4112
+valid ratios                   14766  7742  4782
+in plot range                  14762  7735  4764
+out of plot range                  4     7    18
+
+
+
+--------------------------------------------
+
+OpenSWATH_r1
+name: OpenSWATH_r1
+identification: 4215
+replication: 0.03682553
+accuracy: 
+$`A:B`
+    HUMAN      YEAST     ECOLI
+<2     NA         NA        NA
+<4     NA         NA        NA
+<6     NA         NA        NA
+<8     NA         NA        NA
+<10    NA         NA        NA
+>10     0 -0.2354076 0.4939485
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.1501476 0.2837003 0.4374838
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9786604    0.981917   0.9947277
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                    64   229   392
+invalid, out of validity range     0     0     0
+invalid, missing value            64   229   392
+valid ratios                    1887  1023   620
+in plot range                   1887  1023   620
+out of plot range                  0     0     0
+
+
+
+--------------------------------------------
+
+OpenSWATH_r2
+name: OpenSWATH_r2
+identification: 4256
+replication: 0.05202436
+accuracy: 
+$`A:B`
+            HUMAN       YEAST     ECOLI
+<2             NA          NA        NA
+<4             NA          NA        NA
+<6             NA          NA        NA
+<8             NA          NA        NA
+<10            NA          NA        NA
+>10 -2.168404e-19 -0.06384463 0.1731674
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.1840945 0.3101325 0.4304309
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10    0.981975   0.9893522   0.9978358
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                    59   229   400
+invalid, out of validity range     0     0     0
+invalid, missing value            59   229   400
+valid ratios                    1898  1040   630
+in plot range                   1898  1040   630
+out of plot range                  0     0     0
+
+
+
+--------------------------------------------
+
+PeakView_builtin_r1
+name: PeakView_builtin_r1
+identification: 5448
+replication: 0.04566275
+accuracy: 
+$`A:B`
+    HUMAN       YEAST     ECOLI
+<2     NA          NA        NA
+<4     NA          NA        NA
+<6     NA          NA        NA
+<8     NA          NA        NA
+<10    NA          NA        NA
+>10     0 -0.07595044 0.3125072
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.2957457 0.4694811 0.7266994
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9527475   0.9545035   0.9850746
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                     0     0     0
+invalid, out of validity range     0     0     0
+invalid, missing value             0     0     0
+valid ratios                    2855  1477  1116
+in plot range                   2854  1477  1113
+out of plot range                  1     0     3
+
+
+
+--------------------------------------------
+
+PeakView_peptides_r1
+name: PeakView_peptides_r1
+identification: 27750
+replication: 0.05787813
+accuracy: 
+$`A:B`
+           HUMAN       YEAST     ECOLI
+<2            NA          NA        NA
+<4            NA          NA        NA
+<6            NA          NA        NA
+<8            NA          NA        NA
+<10           NA  0.14922583 1.5574519
+>10 4.336809e-19 -0.06344561 0.2263607
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA 1.5780999        NA
+>10 0.3512701 0.5722757 0.7634776
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN   0.8333333
+>10   0.9505413   0.9613631   0.9866207
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                     0     0     0
+invalid, out of validity range     0     0     0
+invalid, missing value             0     0     0
+valid ratios                   14030  7324  6396
+in plot range                  14026  7313  6357
+out of plot range                  4    11    39
+
+
+
+--------------------------------------------
+
+PeakView_peptides_r2
+name: PeakView_peptides_r2
+identification: 27701
+replication: 0.04653287
+accuracy: 
+$`A:B`
+    HUMAN      YEAST     ECOLI
+<2     NA         NA        NA
+<4     NA         NA        NA
+<6     NA         NA        NA
+<8     NA         NA        NA
+<10    NA         NA        NA
+>10     0 -0.0891294 0.2474476
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.2241986 0.2947309 0.4474001
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9811026   0.9811326   0.9938055
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  2161  3216  3880
+invalid, out of validity range     0     0     0
+invalid, missing value          2161  3216  3880
+valid ratios                   11854  4089  2501
+in plot range                  11854  4088  2501
+out of plot range                  0     1     0
+
+
+
+--------------------------------------------
+
+PeakView_r1
+name: PeakView_r1
+identification: 3651
+replication: 0.03625816
+accuracy: 
+$`A:B`
+    HUMAN       YEAST     ECOLI
+<2     NA          NA        NA
+<4     NA          NA        NA
+<6     NA          NA        NA
+<8     NA          NA        NA
+<10    NA          NA        NA
+>10     0 -0.09903227 0.3331634
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.1582145 0.3497898 0.5520535
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9757856   0.9810392   0.9935029
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                     0     0     0
+invalid, out of validity range     0     0     0
+invalid, missing value             0     0     0
+valid ratios                    1825  1004   822
+in plot range                   1825  1004   822
+out of plot range                  0     0     0
+
+
+
+--------------------------------------------
+
+PeakView_r2
+name: PeakView_r2
+identification: 3512
+replication: 0.04166695
+accuracy: 
+$`A:B`
+    HUMAN       YEAST     ECOLI
+<2     NA          NA        NA
+<4     NA          NA        NA
+<6     NA          NA        NA
+<8     NA          NA        NA
+<10    NA          NA        NA
+>10     0 -0.06555843 0.2002147
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.1848897 0.3563562 0.4323327
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9740808   0.9832994   0.9980292
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   150   315   397
+invalid, out of validity range     0     0     0
+invalid, missing value           150   315   397
+valid ratios                    1631   642   377
+in plot range                   1631   642   377
+out of plot range                  0     0     0
+
+
+
+--------------------------------------------
+
+Skyline_peptides_r1
+name: Skyline_peptides_r1
+identification: 33937
+replication: 0.06539378
+accuracy: 
+$`A:B`
+           HUMAN      YEAST     ECOLI
+<2            NA         NA        NA
+<4            NA         NA        NA
+<6            NA         NA        NA
+<8            NA         NA        NA
+<10           NA         NA        NA
+>10 2.168404e-19 -0.1837428 0.4302505
+
+
+precision: 
+$`A:B`
+       HUMAN    YEAST     ECOLI
+<2        NA       NA        NA
+<4        NA       NA        NA
+<6        NA       NA        NA
+<8        NA       NA        NA
+<10       NA       NA        NA
+>10 0.269684 0.422367 0.6639662
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9383311    0.948129   0.9770663
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  1158  3423  4560
+invalid, out of validity range     0     0     0
+invalid, missing value          1158  3423  4560
+valid ratios                   14364  6287  4145
+in plot range                  14363  6286  4142
+out of plot range                  1     1     3
+
+
+
+--------------------------------------------
+
+Skyline_peptides_r2
+name: Skyline_peptides_r2
+identification: 30784
+replication: 0.08228848
+accuracy: 
+$`A:B`
+            HUMAN       YEAST     ECOLI
+<2             NA          NA        NA
+<4             NA          NA        NA
+<6             NA          NA        NA
+<8             NA          NA        NA
+<10            NA          NA        NA
+>10 -3.469447e-18 -0.07683883 0.2068509
+
+
+precision: 
+$`A:B`
+       HUMAN     YEAST    ECOLI
+<2        NA        NA       NA
+<4        NA        NA       NA
+<6        NA        NA       NA
+<8        NA        NA       NA
+<10       NA        NA       NA
+>10 0.319064 0.5019588 0.683606
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9452805   0.9649391    0.981803
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  2067  3744  4025
+invalid, out of validity range     0     0     0
+invalid, missing value          2067  3744  4025
+valid ratios                   12850  4766  3332
+in plot range                  12849  4762  3329
+out of plot range                  1     4     3
+
+
+
+--------------------------------------------
+
+Skyline_r1
+name: Skyline_r1
+identification: 4127
+replication: 0.04584187
+accuracy: 
+$`A:B`
+           HUMAN      YEAST     ECOLI
+<2            NA         NA        NA
+<4            NA         NA        NA
+<6            NA         NA        NA
+<8            NA         NA        NA
+<10           NA         NA        NA
+>10 2.168404e-19 -0.1561905 0.3945053
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.1837017 0.4187502 0.6557209
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9459956   0.9439526    0.979597
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                    78   322   378
+invalid, out of validity range     0     0     0
+invalid, missing value            78   322   378
+valid ratios                    1866   891   592
+in plot range                   1866   891   592
+out of plot range                  0     0     0
+
+
+
+--------------------------------------------
+
+Skyline_r2
+name: Skyline_r2
+identification: 3768
+replication: 0.06389667
+accuracy: 
+$`A:B`
+    HUMAN       YEAST     ECOLI
+<2     NA          NA        NA
+<4     NA          NA        NA
+<6     NA          NA        NA
+<8     NA          NA        NA
+<10    NA          NA        NA
+>10     0 -0.05590737 0.1747208
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.2474473 0.4615702 0.7208291
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9550116   0.9689015   0.9815004
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                   159   367   357
+invalid, out of validity range     0     0     0
+invalid, missing value           159   367   357
+valid ratios                    1700   710   475
+in plot range                   1700   710   474
+out of plot range                  0     0     1
+
+
+
+--------------------------------------------
+
+Spectronaut_peptides_r1
+name: Spectronaut_peptides_r1
+identification: 34335
+replication: 0.06629967
+accuracy: 
+$`A:B`
+    HUMAN      YEAST    ECOLI
+<2     NA         NA       NA
+<4     NA         NA       NA
+<6     NA         NA       NA
+<8     NA         NA       NA
+<10    NA         NA       NA
+>10     0 -0.1849553 0.425762
+
+
+precision: 
+$`A:B`
+       HUMAN     YEAST     ECOLI
+<2        NA        NA        NA
+<4        NA        NA        NA
+<6        NA        NA        NA
+<8        NA        NA        NA
+<10       NA        NA        NA
+>10 0.237893 0.4129385 0.5475594
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9534989   0.9659521   0.9872038
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  1077  3531  4715
+invalid, out of validity range     0     0     0
+invalid, missing value          1077  3531  4715
+valid ratios                   14646  6564  3802
+in plot range                  14644  6562  3802
+out of plot range                  2     2     0
+
+
+
+--------------------------------------------
+
+Spectronaut_peptides_r2
+name: Spectronaut_peptides_r2
+identification: 33598
+replication: 0.07269903
+accuracy: 
+$`A:B`
+    HUMAN       YEAST     ECOLI
+<2     NA          NA        NA
+<4     NA          NA        NA
+<6     NA          NA        NA
+<8     NA          NA        NA
+<10    NA          NA        NA
+>10     0 -0.05029604 0.1849147
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.2723648 0.4186247 0.5367337
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9685032   0.9781605   0.9932619
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                  1224  3481  4855
+invalid, out of validity range     0     0     0
+invalid, missing value          1224  3481  4855
+valid ratios                   14363  6255  3420
+in plot range                  14361  6252  3419
+out of plot range                  2     3     1
+
+
+
+--------------------------------------------
+
+Spectronaut_r1
+name: Spectronaut_r1
+identification: 4084
+replication: 0.04050528
+accuracy: 
+$`A:B`
+    HUMAN      YEAST     ECOLI
+<2     NA         NA        NA
+<4     NA         NA        NA
+<6     NA         NA        NA
+<8     NA         NA        NA
+<10    NA         NA        NA
+>10     0 -0.1726104 0.3730915
+
+
+precision: 
+$`A:B`
+        HUMAN     YEAST     ECOLI
+<2         NA        NA        NA
+<4         NA        NA        NA
+<6         NA        NA        NA
+<8         NA        NA        NA
+<10        NA        NA        NA
+>10 0.1476995 0.3456845 0.4965041
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9619237   0.9793271   0.9917084
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                    77   320   432
+invalid, out of validity range     0     0     0
+invalid, missing value            77   320   432
+valid ratios                    1865   889   501
+in plot range                   1865   889   501
+out of plot range                  0     0     0
+
+
+
+--------------------------------------------
+
+Spectronaut_r2
+name: Spectronaut_r2
+identification: 4017
+replication: 0.04380081
+accuracy: 
+$`A:B`
+           HUMAN       YEAST     ECOLI
+<2            NA          NA        NA
+<4            NA          NA        NA
+<6            NA          NA        NA
+<8            NA          NA        NA
+<10           NA          NA        NA
+>10 8.673617e-19 -0.06524786 0.1932497
+
+
+precision: 
+$`A:B`
+       HUMAN     YEAST     ECOLI
+<2        NA        NA        NA
+<4        NA        NA        NA
+<6        NA        NA        NA
+<8        NA        NA        NA
+<10       NA        NA        NA
+>10 0.159387 0.3745066 0.5247152
+
+
+separation: 
+$`A:B`
+    HUMAN-YEAST HUMAN-ECOLI YEAST-ECOLI
+<2          NaN         NaN         NaN
+<4          NaN         NaN         NaN
+<6          NaN         NaN         NaN
+<8          NaN         NaN         NaN
+<10         NaN         NaN         NaN
+>10   0.9708613   0.9808775   0.9927833
+
+
+quantification: 
+$`A:B`
+                               HUMAN YEAST ECOLI
+invalid ratios                    91   309   458
+invalid, out of validity range     0     0     0
+invalid, missing value            91   309   458
+valid ratios                    1840   855   464
+in plot range                   1840   855   464
+out of plot range                  0     0     0
+
+
+

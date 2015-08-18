@@ -1,0 +1,44 @@
+Iteration 1
+
+DIA-Umpire:
+5600_32_Pedro_PeptideSummary.tsv
+5600_64_Pedro_PeptideSummary.tsv
+6600_32_Pedro_PeptideSummary.tsv
+6600_64_Pedro_PeptideSummary.tsv
+
+DIA-Umpire (built-in protein reports):
+5600_32_Pedro_ProteinSummary.tsv
+5600_64_Pedro_ProteinSummary.tsv
+6600_32_Pedro_ProteinSummary.tsv
+6600_64_Pedro_ProteinSummary.tsv
+
+OpenSWATH:
+5600SW32_E1505221521_feature_alignment.tsv.gz
+5600SW64v_E1505221523_feature_alignment.tsv.gz
+6600SW32_round1_30ppm_E1508121128_feature_alignment.tsv.gz
+6600SW64_round1_30ppm_E1508121129_feature_alignment.tsv.gz
+
+PeakView:
+PeakView_TTOF5600_32w_10min_50ppm.xlsx
+PeakView_TTOF5600_64w_10min_50ppm.xlsx
+PeakView_TTOF6600_32w_shift_iRT_extractionWindow10min_30ppm.xlsx
+PeakView_TTOF6600_64w_shift_iRT_extractionWindow10min_30ppm.xlsx
+
+PeakView (built-in protein reports):
+PeakView_TTOF5600_32w_10min_50ppm.xlsx
+PeakView_TTOF5600_64w_10min_50ppm.xlsx
+PeakView_TTOF6600_32w_shift_iRT_extractionWindow10min_30ppm.xlsx
+PeakView_TTOF6600_64w_shift_iRT_extractionWindow10min_30ppm.xlsx
+
+Skyline:
+Skyline_TTOF5600_32w_10minAs5_40Krp.tsv
+Skyline_TTOF5600_64w_10minAs5_40Krp.tsv
+Skyline_TTOF6600_32w_10minAs5_66Krp.tsv
+Skyline_TTOF6600_64w_10minAs5_66Krp.tsv
+
+Spectronaut:
+20150529_132003_TTOF5600_32w_newLib_round1_Report.tsv
+20150602_113536_TTOF6600_32w_newLib_round1_Report.tsv
+TTOF5600_64w_newLib_round1.tsv
+TTOF6600_64w_newLib_round1.tsv
+
